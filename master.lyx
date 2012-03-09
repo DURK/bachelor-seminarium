@@ -126,6 +126,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
  eu fugiat nulla pariatur.
  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
  deserunt mollit anim id est laborum.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part
@@ -187,6 +191,10 @@ filename "heuristics_ga/conclusion.lyx"
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part
@@ -242,6 +250,10 @@ filename "jobshop/gls.lyx"
 LatexCommand include
 filename "jobshop/conclusion.lyx"
 
+\end_inset
+
+
+\begin_inset Newpage newpage
 \end_inset
 
 
