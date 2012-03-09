@@ -4,6 +4,7 @@
 \begin_header
 \textclass article
 \use_default_options true
+\master ../master.lyx
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -25,6 +26,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -59,8 +61,52 @@
 
 \begin_body
 
-\begin_layout Section*
-What are genetic algorithms?
+\begin_layout Section
+Genetic algorithms
+\end_layout
+
+\begin_layout Paragraph*
+Source of the idea
+\end_layout
+
+\begin_layout Paragraph*
+First concept by John Holland
+\end_layout
+
+\begin_layout Paragraph*
+Appliance of GA
+\end_layout
+
+\begin_layout Paragraph*
+Concept of GA
+\end_layout
+
+\begin_layout Subparagraph*
+..
+\end_layout
+
+\begin_layout Subparagraph*
+..
+\end_layout
+
+\begin_layout Subparagraph*
+..
+\end_layout
+
+\begin_layout Paragraph*
+Examples of GA
+\end_layout
+
+\begin_layout Subparagraph*
+Example 1
+\end_layout
+
+\begin_layout Subparagraph*
+Example 2
+\end_layout
+
+\begin_layout Paragraph*
+Critics
 \end_layout
 
 \end_body
