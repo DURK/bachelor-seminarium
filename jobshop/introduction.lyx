@@ -85,9 +85,15 @@ While precessing a job, it can not be paused and be resumed later.
 \end_layout
 
 \begin_layout Standard
-An instance with ten jobs to be processed on ten machines formulated in
- 1963 was not solved for more than 25 years.
+An instance with ten jobs which has to be processed on ten machines formulated
+ in 1963 was not solved for more than 25 years.
  It was finally solved by a branch-and-bound algorithm.
+\end_layout
+
+\begin_layout Standard
+The job shop problem is strongly NP-hard which means it can not be solved
+ in polynomal time.
+ This property makes our problem particulat interesting for genetic alghoritms.
 \end_layout
 
 \end_body
