@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{charniak85}
+E.~Charniak and D.~McDermott.
+\newblock {\em Introduction to Artificial Intelligence}.
+\newblock Addison-Wesley, Reading, MA, 1985.
+
+\bibitem{dijkstra68}
+E.W. Dijkstra.
+\newblock Goto statements considered harmful.
+\newblock {\em Communications of the ACM}, 11(3):147--148, 1968.
+
+\bibitem{steels98}
+L.~Steels.
+\newblock Bootstrapping cognition through language.
+\newblock In H.~La Poutr\'e and H.J. van~den Herik, editors, {\em Proceedings
+  of the Tenth Netherlands/Belgium Conference on Artificial Intelligence
+  (NAIC'98)}, page~3, 1998.
+
+\end{thebibliography}
