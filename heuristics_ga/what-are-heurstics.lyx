@@ -63,5 +63,72 @@
 What are heuristics
 \end_layout
 
+\begin_layout Paragraph*
+Introduction
+\end_layout
+
+\begin_layout Standard
+In general, heuristics can be seen as a "rule of thumb" by experience when
+ making decisions.
+ This definition also applies largely to heuristics in computer science;
+ also called heuristic algorithms.
+\end_layout
+
+\begin_layout Standard
+Heuristic algorithms are created by programmers to solve a problem, for
+ which there is no (doable, polynomial) exact algorithm.
+ Also, programmers want the most efficient algorithms to do so.
+ But because an exact solution does not exist, a heuristic algorithm cannot
+ be proven to be the most efficient.
+\end_layout
+
+\begin_layout Standard
+So, by using a "rule of thumb", programmers have to iteratively determine
+ if an algorithm solves the problem, and quantify how efficient it does
+ that.
+ This could mean testing by trial and error, adjusting formulas and variables
+ every iteration, until being satisfied with the accuracy of the results
+ and efficiency of the algorithm.
+\end_layout
+
+\begin_layout Paragraph*
+Examples of heuristics
+\end_layout
+
+\begin_layout Subparagraph*
+Product targeting problem
+\end_layout
+
+\begin_layout Standard
+The product targeting problem depictst finding an optimization model for
+ the selection of sets of clients that will receive an offer for one or
+ more products during a promotion campaign.
+ It has been shown that this problem is NP-hard and that it is unlikely
+ that a constant-factor approximation algorithm can be proposed for solving
+ this problem.
+ Especially for large input, heuristics are preferable.
+\end_layout
+
+\begin_layout Subparagraph*
+Greedy algorithm heuristic
+\end_layout
+
+\begin_layout Standard
+Another example of a heuristic algorithm is one Jon Bentley described for
+ solving the travelling salesman problem (TSP).
+ TSP is known to be NP-hard so an optimal solution for even moderate size
+ problem is intractable.
+ Instead the greedy algorithm can be used to to give a good but not optimal
+ (it is an approximation to the optimal answer) in a short amount of time.
+ The greedy algorithm heuristic says to pick whatever is currently the best
+ next step regardless of whether that precludes good steps later.
+ It is a heuristic in that practice says it is a good enough solution, theory
+ says there are better solutions.
+\end_layout
+
+\begin_layout Paragraph*
+Critics
+\end_layout
+
 \end_body
 \end_document
