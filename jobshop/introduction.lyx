@@ -64,6 +64,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 A job shop problem is one of the most known problems because of it's many
  possible applications.
  But it is also one of the most diffucult scheduling problems.
@@ -71,28 +72,50 @@ A job shop problem is one of the most known problems because of it's many
  as fast as possible".
  So a job sequence for each machine has to be determined to minimize the
  overall time.The following has to be kept in mind:
-\end_layout
-
-\begin_layout Itemize
-A machine can process only 1 job at a time.
-\end_layout
-
-\begin_layout Itemize
-Every job has a predefined processing time.
-\end_layout
-
-\begin_layout Itemize
-While precessing a job, it can not be paused and be resumed later.
- So you can not split the job.
+=======
+The job shop scheduling problem (JSSP) is a notoriously difficult problem
+ in combinatorial optimization that has garnered considerable attention
+ due to both its practical importance and its solution complexity.
+ The problem finds numerous applications in manufacturing and is central
+ to many supply chain problems that integrate production planning and scheduling.
+ For an extensive treatment of planning and scheduling models and applications
+ in various supply chain settings, see Pinedo [24].
+>>>>>>> 155e4b465bb7b69df52dcd31e0e14dbe35f880ea
 \end_layout
 
 \begin_layout Standard
-An instance with ten jobs which has to be processed on ten machines formulated
- in 1963 was not solved for more than 25 years.
- It was finally solved by a branch-and-bound algorithm.
+The JSSP can be defined by a set of machines specialized to perform ordered
+ operations unique for every job.
+ No machine can perform more than one operation at a time, each operation
+ has a fixed duration (or processing time) and preemption is not allowed.
+ Although several performance measures may be used, we consider the classical
+ goal of minimizing the duration of the longest job in the schedule, called
+ the makespan.
+ We use the following notation.
+ V = {0, 1, … , n} denotes the set of operations (with 0 and n the dummy
+ start and finish operations); M and J denote the sets of machines and jobs,
+ respectively; A denotes the set of pairs of operations constrained by precedenc
+e relations (established by the specified sequence of machines for each
+ job); and Ek denotes the set of pairs of operations to be performed on
+ machine k.
+ Finally, we let pv > 0 and tv represent the (fixed) processing time and
+ the (variable) start time of operation v, respectively.
+ The problem can then be stated as [2]
 \end_layout
 
 \begin_layout Standard
+The literature on job shop scheduling is immense and contains an abundant
+ variety of algorithms.
+ Exact solution methods chiefly are represented by branch-and-bound algorithms
+ [28], [29] and [3].
+ Due to the complexity of the JSSP within the class of NP-complete problems
+ [30] these approaches can only solve problems of relatively modest size
+ and therefore approximation (or heuristic) methods are required to provide
+ solutions for larger instances.
+\end_layout
+
+\begin_layout Standard
+<<<<<<< HEAD
 The job shop problem is strongly NP-hard which means it can not be solved
  in polynomal time.
  This property makes our problem particular interesting for genetic alghoritms.
@@ -100,6 +123,10 @@ The job shop problem is strongly NP-hard which means it can not be solved
 
 \begin_layout Standard
 Let's now 
+=======
+NOTE: DEZE INLEIDING KOMT UIT http://www.sciencedirect.com/science/article/pii/S03
+77221708000027, HIER KUNNEN WE VAST IETS ZINNIGS UITHALEN! zie dropbox.
+>>>>>>> 155e4b465bb7b69df52dcd31e0e14dbe35f880ea
 \end_layout
 
 \end_body
