@@ -91,30 +91,12 @@ So, by using a "rule of thumb", programmers have to iteratively determine
  and efficiency of the algorithm.
 \end_layout
 
-\begin_layout Paragraph*
-Examples of heuristics
-\end_layout
-
-\begin_layout Subparagraph*
-Product targeting problem
-\end_layout
-
-\begin_layout Standard
-The product targeting problem depictst finding an optimization model for
- the selection of sets of clients that will receive an offer for one or
- more products during a promotion campaign.
- It has been shown that this problem is NP-hard and that it is unlikely
- that a constant-factor approximation algorithm can be proposed for solving
- this problem.
- Especially for large input, heuristics are preferable.
-\end_layout
-
 \begin_layout Subparagraph*
 Greedy algorithm heuristic
 \end_layout
 
 \begin_layout Standard
-Another example of a heuristic algorithm is one Jon Bentley described for
+A clear example of a heuristic algorithm is one Jon Bentley described for
  solving the travelling salesman problem (TSP), which is NP-hard.
  This means finding an exact solution for large size (or even medium size)
  TSP's would result in unacceptable time-complexity.
@@ -128,10 +110,6 @@ Another example of a heuristic algorithm is one Jon Bentley described for
 
 \begin_layout Standard
 http://www.sciencedirect.com/science/article/pii/016780518490010X
-\end_layout
-
-\begin_layout Paragraph*
-Critics
 \end_layout
 
 \end_body
