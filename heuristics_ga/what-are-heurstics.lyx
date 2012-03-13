@@ -115,15 +115,19 @@ Greedy algorithm heuristic
 
 \begin_layout Standard
 Another example of a heuristic algorithm is one Jon Bentley described for
- solving the travelling salesman problem (TSP).
- TSP is known to be NP-hard so an optimal solution for even moderate size
- problem is intractable.
- Instead the greedy algorithm can be used to to give a good but not optimal
- (it is an approximation to the optimal answer) in a short amount of time.
- The greedy algorithm heuristic says to pick whatever is currently the best
- next step regardless of whether that precludes good steps later.
- It is a heuristic in that practice says it is a good enough solution, theory
- says there are better solutions.
+ solving the travelling salesman problem (TSP), which is NP-hard.
+ This means finding an exact solution for large size (or even medium size)
+ TSP's would result in unacceptable time-complexity.
+ However, the greedy algorithm can be used to give a good approximation
+ to the optimal answer, within an acceptable amount of time.
+ This algorithm is called 'greedy' in the way that it constantly picks the
+ best next step, even though this might preclude good steps later.
+ Greedy algorithms are heuristics in the sense that, although better solutions
+ are available, practice shows these are good enough solutions.
+\end_layout
+
+\begin_layout Standard
+http://www.sciencedirect.com/science/article/pii/016780518490010X
 \end_layout
 
 \begin_layout Paragraph*
