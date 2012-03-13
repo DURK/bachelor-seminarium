@@ -63,5 +63,31 @@
 What is genetic local search?
 \end_layout
 
+\begin_layout Standard
+memetic algorithms
+\end_layout
+
+\begin_layout Standard
+Geschiedenis van memetic
+\end_layout
+
+\begin_layout Standard
+- introductie laat jaren 80, familie van metaheuristics.
+\end_layout
+
+\begin_layout Standard
+- als combinatie -> Evolutionary Algorithms, Simulated Annealing (staat
+ in LS.lyx) en Tabu Search.
+\end_layout
+
+\begin_layout Standard
+- gene -> genetische evolutie.
+ meme -> kunstmatige evolutie
+\end_layout
+
+\begin_layout Paragraph
+
+\end_layout
+
 \end_body
 \end_document

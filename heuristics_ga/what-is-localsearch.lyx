@@ -63,8 +63,71 @@
 What is local search?
 \end_layout
 
+\begin_layout Paragraph*
+Intro:
+\end_layout
+
 \begin_layout Standard
-Wat is dat?
+Local search is a metaheuristic method to optimize solutions for NP-hard
+ problems.
+ Local search algorithms compares a certain solution with surrounding solutions.
+ Each surrounding solution are evaluated and the best one is chosen.
+ This repeats itself many times, until the optimized solution is found.
+ But how does this algorithm knows if the best solution is found and how
+ does it get there?
+\end_layout
+
+\begin_layout Paragraph
+Examples:
+\end_layout
+
+\begin_layout Standard
+GSAT in local search en GLS.pdf
+\end_layout
+
+\begin_layout Paragraph
+Problems:
+\end_layout
+
+\begin_layout Standard
+The algorithm obverses different states (possible solutions).
+ Each state is evaluated based on a chosen heuristic.
+ In the following example we use just one heuristic, so it can be drawn
+ on paper.
+ In the real world multiple dimensions are needed.
+\end_layout
+
+\begin_layout Standard
+Because there is no end to this algorithm, local search is a approximation
+ or incomplete algorithm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/state-space landscape.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+van http://superprofundo.com/2011/02/16/basics-of-ai-local-search-algorithms/
+\end_layout
+
+\begin_layout Standard
+The x-axis represents the domain of the problem, all possible states.
+ The y-axis represents the value of the state.
+\end_layout
+
+\begin_layout Standard
+Imagine the algorithm starts somewhere between the far left and point (a).
+ The algorithm will move to the right since the states left of the current
+ state are evaluated as worse.
+ When the algorithm reaches point (a) it will stop, because both surrounding
+ neigbors are worse then the current state.
+ In this case, the best solution is found, but what if the algorithm start
+ at point (b)? It fails and won't find the best solution.
 \end_layout
 
 \end_body

@@ -70,6 +70,8 @@ Introduction
 \begin_layout Standard
 There are several ways to solve a job-shop scheduling problem using different
  types of heuristic algorithms.
+ These algorithms are approximation methods for solving the minimum makespan
+ for the JSP.
  A few examples are given here:
 \end_layout
 
@@ -80,61 +82,40 @@ Examples
 \begin_layout Subparagraph
 
 \series bold
-Filter-and-Fan approach
+Shifting bottleneck procedure
 \end_layout
 
 \begin_layout Standard
-NOTE: DIT IS DE ABSTRACT VAN NUTTIGE PDF.
- GEEN FINAL TEXT
+The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
+ to approach optimal solutions for the JSP.
+ The SBP operates by iteratively bringing a new machine (termed the bottleneck)
+ into the schedule.
+ Every iteration, SPB locally optimizes the current partial scedule by solving
+ for each individual machine, one by one.
+ In essence, this reduces the JSP from solving a multi-machine scheduling
+ problem to repeatedly solving single-machine scheduling problems.
+ Because the partial schedules constructed in previous iterations may be
+ adjusted for improvement before starting the next iteration, the SBP may
+ be considered an adaptive constructive method, which in essence combines
+ construction with local search.
 \end_layout
 
 \begin_layout Standard
-The job shop scheduling problem (JSSP) is a notoriously difficult problem
- in combinatorial optimization.
- Extensive investigation has been devoted to developing efficient algorithms
- to find optimal or near-optimal solutions.
- This paper proposes a new heuristic algorithm for the JSSP that effectively
- combines the classical shifting bottleneck procedure (SBP) with a dynamic
- and adaptive neighborhood search procedure.
- Our new search method, based on a filter-and-fan (F&F) procedure, uses
- the SBP as a subroutine to generate a starting solution and to enhance
- the best schedules produced.
- The F&F approach is a local search procedure that generates compound moves
- by a strategically abbreviated form of tree search.
- Computational results carried out on a standard set of 43 benchmark problems
- show that our F&F algorithm performs more robustly and effectively than
- a number of leading metaheuristic algorithms and rivals the best of these
- algorithms.
+-http://www.sciencedirect.com/science/article/pii/S0377221708000027
+\end_layout
+
+\begin_layout Standard
+-http://www.jstor.org/stable/10.2307/2632051
 \end_layout
 
 \begin_layout Subparagraph
 
 \series bold
-parallel variable neighborhood search algorithm
+More examples...
 \end_layout
 
 \begin_layout Standard
-blablablabnalwenfblawnefawef
-\end_layout
-
-\begin_layout Subparagraph
-
-\series bold
-Ant colony optimization combined with taboo search
-\end_layout
-
-\begin_layout Standard
-blablablabnalwenfblawnefawef blablablabnalwenfblawnefawef lablablabnalwenfblawne
-fawef
-\end_layout
-
-\begin_layout Subparagraph
-particle swarm optimization
-\end_layout
-
-\begin_layout Standard
-blablablabnalwenfblawnefawefblablablabnalwenfblawnefawefblablablabnalwenfblawnef
-awef
+lorum ipsum
 \end_layout
 
 \begin_layout Paragraph
@@ -142,7 +123,11 @@ conclusion
 \end_layout
 
 \begin_layout Standard
-blabla
+Although many heuristic solutions have been proposed, most recearchers use
+ hybrid heuristics combined with local search optimizations to get significantly
+ better results.
+ Some of these solutions, specifically genetic heuristics and genetic local
+ search, will be shown in the next chapter.
 \end_layout
 
 \end_body
