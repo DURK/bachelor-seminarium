@@ -63,5 +63,22 @@
 Introduction
 \end_layout
 
+\begin_layout Standard
+There are a lot of ways to solve a problem.
+ For example by using an exact algoritm which, if written well, solves the
+ problem in polynomial time.
+ Unfortunately is it impossible to solve NP problems in polynominal time.
+ For these problems heuristics can be used.
+ It usually doesn't calculate but approaches the answer very well.
+ For more difficult problems in NP-HARD local search can be used to search
+ for solutions , which can be validated in polynominal time.
+ These two ways will be explained in the following chapter.
+ Also Genetic alghoritms will be explained, which are actually a form of
+ heuristic algoritms.
+ And finally genetic local search (a combination of genetic algoritms and
+ local search will be discussed.
+ 
+\end_layout
+
 \end_body
 \end_document
