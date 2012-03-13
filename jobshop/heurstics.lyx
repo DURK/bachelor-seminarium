@@ -127,7 +127,7 @@ Although many heuristic solutions have been proposed, most recearchers use
  hybrid heuristics combined with local search optimizations to get significantly
  better results.
  Some of these solutions, specifically genetic heuristics and genetic local
- search, will be shown in the next chapter.
+ search, will be shown in the following chapters.
 \end_layout
 
 \end_body
