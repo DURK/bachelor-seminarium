@@ -63,6 +63,10 @@
 What is local search?
 \end_layout
 
+\begin_layout Paragraph*
+Intro:
+\end_layout
+
 \begin_layout Standard
 Local search is a metaheuristic method to optimize solutions for NP-hard
  problems.
@@ -71,6 +75,26 @@ Local search is a metaheuristic method to optimize solutions for NP-hard
  This repeats itself many times, until the optimized solution is found.
  But how does this algorithm knows if the best solution is found and how
  does it get there?
+\end_layout
+
+\begin_layout Paragraph*
+Hoe is het opgebouwd:
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Paragraph
+Examples:
+\end_layout
+
+\begin_layout Standard
+GSAT in local search en GLS.pdf
+\end_layout
+
+\begin_layout Paragraph
+Problems:
 \end_layout
 
 \begin_layout Standard
@@ -112,18 +136,6 @@ Imagine the algorithm starts somewhere between the far left and point (a).
  neigbors are worse then the current state.
  In this case, the best solution is found, but what if the algorithm start
  at point (b)? It fails and won't find the best solution.
-\end_layout
-
-\begin_layout Standard
-Oplossingen om niet in een local max te blijven hangen -> GLS/memetic algorithms
-\end_layout
-
-\begin_layout Standard
-.
-\end_layout
-
-\begin_layout Standard
-.
 \end_layout
 
 \end_body
