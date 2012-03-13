@@ -115,21 +115,15 @@ Imagine the algorithm starts somewhere between the far left and point (a).
 \end_layout
 
 \begin_layout Standard
-Different approaches to prevent this are known.
- The worst one is when the algorithm hits a local maximum, it restarts randomly
- at another state.
- Another approach is simulated annealing.
- This method is able to jump between states, at distance x.
- The distance x is lowered by every iteration.
- Eventually this method will DUNNO the local maximum.
+Oplossingen om niet in een local max te blijven hangen -> GLS/memetic algorithms
 \end_layout
 
 \begin_layout Standard
-Some examples:
+.
 \end_layout
 
 \begin_layout Standard
-
+.
 \end_layout
 
 \end_body
