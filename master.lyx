@@ -98,16 +98,20 @@ Wouter Klein Heerenbrink
 
 \begin_layout Abstract
 Hier moet nog even een mooi samenvatting van het artikel komen
-\end_layout
+\begin_inset Newpage newpage
+\end_inset
 
-\begin_layout Section
-Contents
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -253,6 +257,13 @@ filename "jobshop/conclusion.lyx"
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
