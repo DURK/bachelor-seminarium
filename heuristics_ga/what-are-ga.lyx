@@ -207,24 +207,24 @@ There a multiple ways to terminate the algorithm.
  of chromosomes that meet a pre-set fitness value.
  Another way is stop when the population has not changed over the last generatio
 ns.
- It is also possible to stop after a fixed number of generations or time.
- 
+ It is also possible to stop after a fixed number of generations or after
+ a period of time.
 \end_layout
 
 \begin_layout Paragraph*
-Examples of GA
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subparagraph*
-Example 1
-\end_layout
-
-\begin_layout Subparagraph*
-Example 2
-\end_layout
-
-\begin_layout Paragraph*
-Critics
+\begin_layout Standard
+Genetic algorithms are suitable for problems with multiple solutions that
+ somewhere contain the most optimal solution.
+ Examples of problems can be finding the maximum value for some mathematical
+ formula, optimizing the number of switches in an electrical system but
+ also for finding the most optimal shape of a wing on a plain (which in
+ fact is the optimalisation of parameters in a formula).
 \end_layout
 
 \end_body
