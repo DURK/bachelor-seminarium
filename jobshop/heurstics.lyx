@@ -63,35 +63,24 @@
 Heuristics
 \end_layout
 
-\begin_layout Paragraph
-Introduction
-\end_layout
-
 \begin_layout Standard
 There are several ways to solve a job-shop scheduling problem using different
  types of heuristic algorithms.
  These algorithms are approximation methods for solving the minimum makespan
  for the JSP.
- A few examples are given here:
-\end_layout
-
-\begin_layout Paragraph
-Examples
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Shifting bottleneck procedure
 \end_layout
 
 \begin_layout Standard
 The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
  to approach optimal solutions for the JSP.
- The SBP operates by iteratively bringing a new machine (termed the bottleneck)
- into the schedule.
+ Given a JSP-instance, which consists of a multi-machine schedule and a
+ certain number of jobs.
+ The SBP starts by creating a partial schedule of just the first machine.
+ As many jobs as possible get assigned to this machine.
+ The SBP then continues by iteratively bringing another machine (named the
+ bottleneck) into the schedule.
  Every iteration, SPB locally optimizes the current partial scedule by solving
- for each individual machine, one by one.
+ the minimum makespan for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
