@@ -59,7 +59,7 @@
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 What are heuristics
 \end_layout
 
@@ -93,7 +93,7 @@ So, by using a "rule of thumb", computer scientists iteratively determine
  of the results and efficiency of the algorithm.
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subparagraph*
 Greedy algorithm heuristic
 \end_layout
 
@@ -101,26 +101,24 @@ Greedy algorithm heuristic
 A clear example of a heuristic algorithm is the Greedy Algorithm.
  This algorithm has been described for solving for example the Travelling
  Salesman Problem (TSP), which is NP-hard (Jon Bentley).
- A greedy algorithm always makes the choice that looks best at the moment.
- That means, it makes a locally optimal choice in the hope that this choice
- will lead to a globally optimal solution.(Cormen, Leiserson, Rivest, and
- Stein, 2001)
+ TSP is defined as: given a list of cities and their mutual distances, finding
+ the shortest possible route that visits each city exactly once.
 \end_layout
 
 \begin_layout Standard
-This algorithm is called 'greedy' because it constantly picks the best next
- step, even though this might preclude good steps later.
- <uitleg over steps>
+A greedy algorithm always makes the choice that looks best in the current
+ problem, without considering results from subproblems.
+ In other words, Greedy Algorithms continuesly make a locally optimal choice
+ in the hope that this choice will lead to a globally optimal solution (Cormen,
+ Leiserson, Rivest, and Stein, 2001).
+ In case of the Traveling Salesman Problem, each local optimal choice is
+ defined as visiting an unvisited city nearest to the current city.
 \end_layout
 
 \begin_layout Standard
 Greedy algorithms are heuristics in the sense that, although we cannot prove
  that this algorithm efficiently approximates the optimal answer, practice
  shows that it usually does.
-\end_layout
-
-\begin_layout Standard
-http://www.sciencedirect.com/science/article/pii/016780518490010X
 \end_layout
 
 \end_body
