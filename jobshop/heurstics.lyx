@@ -59,8 +59,12 @@
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 Heuristics
+\end_layout
+
+\begin_layout Paragraph
+Introduction
 \end_layout
 
 \begin_layout Standard
@@ -71,11 +75,11 @@ There are several ways to solve a job-shop scheduling problem using different
  A few examples are given here:
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Examples
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 
 \series bold
 Shifting bottleneck procedure
@@ -90,18 +94,23 @@ The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
  for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams"
+
+\end_inset
+
  Because the partial schedules constructed in previous iterations may be
  adjusted for improvement before starting the next iteration, the SBP may
  be considered an adaptive constructive method, which in essence combines
  construction with local search.
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CÃ©sar"
 
-\begin_layout Standard
--http://www.sciencedirect.com/science/article/pii/S0377221708000027
-\end_layout
+\end_inset
 
-\begin_layout Standard
--http://www.jstor.org/stable/10.2307/2632051
+
 \end_layout
 
 \begin_layout Subparagraph
@@ -114,11 +123,8 @@ More examples...
 lorum ipsum
 \end_layout
 
-\begin_layout Subsubsection*
-\begin_inset space ~
-\end_inset
-
-
+\begin_layout Paragraph
+conclusion
 \end_layout
 
 \begin_layout Standard

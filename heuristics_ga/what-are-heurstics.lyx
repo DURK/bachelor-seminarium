@@ -59,7 +59,7 @@
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 What are heuristics
 \end_layout
 
@@ -127,7 +127,7 @@ Greedy algorithms are heuristics in the sense that, although we cannot prove
  shows that it usually does.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Cormen_Leiserson_Rivest_Stein_2001"
+key "Cormen"
 
 \end_inset
 
