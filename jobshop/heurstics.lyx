@@ -79,7 +79,7 @@ There are several ways to solve a job-shop scheduling problem using different
 Examples
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Standard
 
 \series bold
 Shifting bottleneck procedure
@@ -93,24 +93,25 @@ The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
  Every iteration, SPB locally optimizes the current partial scedule by solving
  for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
- problem to repeatedly solving single-machine scheduling problems.
+ problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Adams"
+key "Adams-and-Joseph-1988"
 
 \end_inset
 
+.
  Because the partial schedules constructed in previous iterations may be
  adjusted for improvement before starting the next iteration, the SBP may
  be considered an adaptive constructive method, which in essence combines
- construction with local search.
+ construction with local search 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "CÃ©sar"
+key "Cesar-Rego-and-Renato-Duarte-2009"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subparagraph

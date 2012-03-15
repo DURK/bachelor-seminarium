@@ -103,7 +103,7 @@ A clear example of a heuristic algorithm is the Greedy Algorithm.
  Salesman Problem (TSP), which is NP-hard 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Bentley"
+key "Bentley-1982"
 
 \end_inset
 
@@ -124,14 +124,14 @@ A greedy algorithm always makes the choice that looks best in the current
 \begin_layout Standard
 Greedy algorithms are heuristics in the sense that, although we cannot prove
  that this algorithm efficiently approximates the optimal answer, practice
- shows that it usually does.
+ shows that it usually does 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Cormen"
+key "Cormen-Leiserson-Rivest-Stein-2001"
 
 \end_inset
 
-
+.
 \end_layout
 
 \end_body
