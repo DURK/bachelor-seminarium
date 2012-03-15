@@ -121,20 +121,13 @@ LatexCommand tableofcontents
 Introduction
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
+\begin_layout Section
 Heuristics, Genetic Algorithms and Localsearch
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "heuristics_ga/introduction.lyx"
 
 \end_inset
@@ -144,7 +137,7 @@ filename "heuristics_ga/introduction.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "heuristics_ga/what-are-heurstics.lyx"
 
 \end_inset
@@ -154,7 +147,7 @@ filename "heuristics_ga/what-are-heurstics.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "heuristics_ga/what-is-localsearch.lyx"
 
 \end_inset
@@ -164,7 +157,7 @@ filename "heuristics_ga/what-is-localsearch.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "heuristics_ga/what-are-ga.lyx"
 
 \end_inset
@@ -174,39 +167,31 @@ filename "heuristics_ga/what-are-ga.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "heuristics_ga/what-is-gls.lyx"
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "heuristics_ga/conclusion.lyx"
-
-\end_inset
-
-
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
-\begin_layout Part
+\begin_layout Section
 Applied at the jobshop problem
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/introduction.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/heurstics.lyx"
 
 \end_inset
@@ -216,14 +201,17 @@ filename "jobshop/heurstics.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/localsearch.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/ga.lyx"
 
 \end_inset
@@ -233,7 +221,7 @@ filename "jobshop/ga.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/gls.lyx"
 
 \end_inset
@@ -243,13 +231,9 @@ filename "jobshop/gls.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "jobshop/conclusion.lyx"
 
-\end_inset
-
-
-\begin_inset Newpage newpage
 \end_inset
 
 

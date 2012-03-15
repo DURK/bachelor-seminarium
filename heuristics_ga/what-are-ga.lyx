@@ -61,7 +61,7 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsection
 Genetic algorithms
 \end_layout
 
@@ -103,19 +103,11 @@ key "introduction-ga"
 
 \end_layout
 
-\begin_layout Standard
---
-\end_layout
-
-\begin_layout Paragraph*
-Appliance of GA
-\end_layout
-
-\begin_layout Paragraph*
+\begin_layout Subsubsection
 Concept of GA
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 Initial
 \end_layout
 
@@ -126,7 +118,7 @@ The algorithm starts by creating the first generation of chromosomes.
  next step.
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 Iterative step
 \end_layout
 
@@ -196,7 +188,7 @@ An extra step that can be added to the iterative step is the replacement
  This will also stimulate the diversive behaviour of the algorithm.
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 Termination step
 \end_layout
 
@@ -211,14 +203,15 @@ ns.
  a period of time.
 \end_layout
 
-\begin_layout Paragraph*
-\begin_inset space ~
+\begin_layout Subsubsection*
+\begin_inset space \thinspace{}
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\noindent
 Genetic algorithms are suitable for problems with multiple solutions that
  somewhere contain the most optimal solution.
  Examples of problems can be finding the maximum value for some mathematical
