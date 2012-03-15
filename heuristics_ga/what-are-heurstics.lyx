@@ -63,10 +63,6 @@
 What are heuristics
 \end_layout
 
-\begin_layout Paragraph*
-Introduction
-\end_layout
-
 \begin_layout Standard
 In general, heuristics can be seen as a "rule of thumb" by experience when
  making decisions.
@@ -75,20 +71,26 @@ In general, heuristics can be seen as a "rule of thumb" by experience when
 \end_layout
 
 \begin_layout Standard
-Heuristic algorithms are created by programmers to solve a problem, for
- which there is no (doable, polynomial) exact algorithm.
- Also, programmers want the most efficient algorithms to do so.
- But because an exact solution does not exist, a heuristic algorithm cannot
- be proven to be the most efficient.
+Heuristic algorithms are developed by computer scientists in order to solve
+ problems for which there either is no exact algorithm, or using an exact
+ algorithm would take too much time or space.
+ Using heuristics, the optimal solution to a problem can be approximated,
+ within an acceptable amount of time.
+ The amount of time that would lie between the margins of acceptability,
+ is defined by the user of the heuristic and depends on the problem.
+ Also, computer scientists want the most efficient algorithms to find these
+ approximations to the optimal solution for a problem.
+ However, because there may not be an exact solution to the problem, a heuristic
+ algorithm in most cases cannot be proven to be the most efficient.
 \end_layout
 
 \begin_layout Standard
-So, by using a "rule of thumb", programmers have to iteratively determine
- if an algorithm solves the problem, and quantify how efficient it does
- that.
- This could mean testing by trial and error, adjusting formulas and variables
- every iteration, until being satisfied with the accuracy of the results
- and efficiency of the algorithm.
+So, by using a "rule of thumb", computer scientists iteratively determine
+ whether an algorithm solves the problem, and quantify how efficiently it
+ does that.
+ This typically involves testing by trial and error, adjusting formulas
+ and variables on every iteration, until being satisfied with the accuracy
+ of the results and efficiency of the algorithm.
 \end_layout
 
 \begin_layout Subparagraph*
@@ -96,16 +98,25 @@ Greedy algorithm heuristic
 \end_layout
 
 \begin_layout Standard
-A clear example of a heuristic algorithm is one Jon Bentley described for
- solving the travelling salesman problem (TSP), which is NP-hard.
- This means finding an exact solution for large size (or even medium size)
- TSP's would result in unacceptable time-complexity.
- However, the greedy algorithm can be used to give a good approximation
- to the optimal answer, within an acceptable amount of time.
- This algorithm is called 'greedy' in the way that it constantly picks the
- best next step, even though this might preclude good steps later.
- Greedy algorithms are heuristics in the sense that, although better solutions
- are available, practice shows these are good enough solutions.
+A clear example of a heuristic algorithm is the Greedy Algorithm.
+ This algorithm has been described for solving for example the Travelling
+ Salesman Problem (TSP), which is NP-hard (Jon Bentley).
+ A greedy algorithm always makes the choice that looks best at the moment.
+ That means, it makes a locally optimal choice in the hope that this choice
+ will lead to a globally optimal solution.(Cormen, Leiserson, Rivest, and
+ Stein, 2001)
+\end_layout
+
+\begin_layout Standard
+This algorithm is called 'greedy' because it constantly picks the best next
+ step, even though this might preclude good steps later.
+ <uitleg over steps>
+\end_layout
+
+\begin_layout Standard
+Greedy algorithms are heuristics in the sense that, although we cannot prove
+ that this algorithm efficiently approximates the optimal answer, practice
+ shows that it usually does.
 \end_layout
 
 \begin_layout Standard
