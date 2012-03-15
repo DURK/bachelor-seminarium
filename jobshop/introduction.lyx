@@ -64,15 +64,16 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-A job shop problem is one of the most known problems because of it's many
- possible applications.
- The problem finds numerous applications in manufacturing and is central
- to many supply chain problems that integrate production planning and scheduling.
+A job shop problem (JSP) is well known problem because of it's many possible
+ applications in manufacturing and is central to many supply chain problems
+ that integrate production planning and scheduling.
  But it is also one of the most diffucult scheduling problems.
- It is specified: "for n jobs and m machine, find a way to process jobs
- as fast as possible".
+ The JSP is defined as follows: "for n jobs and m machines, find a way to
+ process jobs as fast as possible".
  So a job sequence for each machine has to be determined to minimize the
- overall time.The following has to be kept in mind:
+ makespan.
+ The makespan is the total length of the schedule, the overall time when
+ all the jobs have finished processing.Take the following in consideration:
 \end_layout
 
 \begin_layout Itemize
@@ -84,7 +85,7 @@ Every job has a predefined processing time.
 \end_layout
 
 \begin_layout Itemize
-While precessing a job, it can not be paused and be resumed later.
+While processing a job, it can not be paused and be resumed later.
  So you can not split the job.
 \end_layout
 
@@ -97,7 +98,7 @@ An instance with ten jobs which has to be processed on ten machines formulated
 \begin_layout Standard
 The job shop problem is strongly NP-hard which means it can not be solved
  in polynomal time.
- This property makes our problem particular interesting for genetic alghoritms.
+ This property makes our problem particular interesting for genetic algorithms.
 \end_layout
 
 \end_body
