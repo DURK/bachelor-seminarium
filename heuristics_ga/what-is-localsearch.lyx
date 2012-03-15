@@ -135,9 +135,5 @@ Imagine the algorithm starts somewhere between the far left and point (a).
  at point (b)? It fails and won't find the best solution.
 \end_layout
 
-\begin_layout Standard
-Solutions for this problem 
-\end_layout
-
 \end_body
 \end_document
