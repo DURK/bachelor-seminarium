@@ -95,25 +95,19 @@ There are a lot of ways to solve a problem.
  For example by using an exact algoritm which can solve a problem in polynominal
  time if a problem is in P.
  Otherways the exact algorithm will cost exponential time or even more.
- When..
-\end_layout
-
-\begin_layout Standard
-CRAP:
-\end_layout
-
-\begin_layout Standard
-Unfortunately is it impossible to solve NP problems in polynominal time.
- For these problems heuristics can be used.
- It usually doesn't calculate but approaches the answer very well.
+ When this is unacceptable, heuristics can be used.
+ Heuristics approximate the optimal solution to a problem within acceptable
+ amount of time.
+ More about it is explained in the next chapter.
  For more difficult problems in NP-HARD local search can be used to search
- for solutions , which can be validated in polynominal time.
- These two ways will be explained in the following chapter.
- Also Genetic alghoritms will be explained, which are actually a form of
- heuristic algoritms.
+ for solutions.
+ Local search returns the local optimum of the space.
+ Also Genetic alghoritms (GA) can be used, which are like local search also
+ a form of heuristic algoritms.
+ With GA you work with different answers for a problem, which convert to
+ a better answer.
  And finally genetic local search (a combination of genetic algoritms and
- local search will be discussed.
- 
+ local search will be discussed in the last chapter of this section
 \end_layout
 
 \end_body
