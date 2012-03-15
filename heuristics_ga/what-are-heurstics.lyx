@@ -100,7 +100,14 @@ Greedy algorithm heuristic
 \begin_layout Standard
 A clear example of a heuristic algorithm is the Greedy Algorithm.
  This algorithm has been described for solving for example the Travelling
- Salesman Problem (TSP), which is NP-hard (Jon Bentley).
+ Salesman Problem (TSP), which is NP-hard 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bentley"
+
+\end_inset
+
+.
  TSP is defined as: given a list of cities and their mutual distances, finding
  the shortest possible route that visits each city exactly once.
 \end_layout
@@ -109,8 +116,7 @@ A clear example of a heuristic algorithm is the Greedy Algorithm.
 A greedy algorithm always makes the choice that looks best in the current
  problem, without considering results from subproblems.
  In other words, Greedy Algorithms continuesly make a locally optimal choice
- in the hope that this choice will lead to a globally optimal solution (Cormen,
- Leiserson, Rivest, and Stein, 2001).
+ in the hope that this choice will lead to a globally optimal solution.
  In case of the Traveling Salesman Problem, each local optimal choice is
  defined as visiting an unvisited city nearest to the current city.
 \end_layout
@@ -119,6 +125,13 @@ A greedy algorithm always makes the choice that looks best in the current
 Greedy algorithms are heuristics in the sense that, although we cannot prove
  that this algorithm efficiently approximates the optimal answer, practice
  shows that it usually does.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cormen_Leiserson_Rivest_Stein_2001"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
