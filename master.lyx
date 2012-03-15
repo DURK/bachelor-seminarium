@@ -69,8 +69,8 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Wat zijn de mogelijkheden voor het oplossen van het jobshop-probleem mbv
- heuristische-, genetische methoden of een combinatie van beiden
+What are the possibilities for solving the jobshop problem with heurisitic,
+ genetic methods or combination of both?
 \end_layout
 
 \begin_layout Author
@@ -119,6 +119,16 @@ LatexCommand tableofcontents
 
 \begin_layout Section
 Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "introduction.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
