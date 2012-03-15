@@ -59,12 +59,8 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsection
 What are heuristics
-\end_layout
-
-\begin_layout Paragraph*
-Introduction
 \end_layout
 
 \begin_layout Standard
@@ -91,7 +87,7 @@ So, by using a "rule of thumb", programmers have to iteratively determine
  and efficiency of the algorithm.
 \end_layout
 
-\begin_layout Subparagraph*
+\begin_layout Subsubsection*
 Greedy algorithm heuristic
 \end_layout
 

@@ -59,12 +59,8 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsection
 What is local search?
-\end_layout
-
-\begin_layout Paragraph*
-Intro:
 \end_layout
 
 \begin_layout Standard
@@ -77,7 +73,7 @@ Local search is a metaheuristic method to optimize solutions for NP-hard
  does it get there?
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Examples:
 \end_layout
 
@@ -85,7 +81,7 @@ Examples:
 GSAT in local search en GLS.pdf
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Problems:
 \end_layout
 

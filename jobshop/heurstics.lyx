@@ -59,12 +59,8 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsection
 Heuristics
-\end_layout
-
-\begin_layout Paragraph
-Introduction
 \end_layout
 
 \begin_layout Standard
@@ -75,11 +71,11 @@ There are several ways to solve a job-shop scheduling problem using different
  A few examples are given here:
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Examples
 \end_layout
 
-\begin_layout Subparagraph
+\begin_layout Paragraph
 
 \series bold
 Shifting bottleneck procedure
@@ -118,8 +114,11 @@ More examples...
 lorum ipsum
 \end_layout
 
-\begin_layout Paragraph
-conclusion
+\begin_layout Subsubsection*
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
