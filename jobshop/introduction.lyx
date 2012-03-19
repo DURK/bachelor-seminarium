@@ -117,5 +117,20 @@ In the example below, there are 3 jobs and 3 machines.
 
 \end_layout
 
+\begin_layout Standard
+There are several ways to solve a job-shop scheduling problem using different
+ types of heuristic algorithms.
+ These algorithms are approximation methods for solving the minimum makespan
+ for the JSP.
+\end_layout
+
+\begin_layout Standard
+Although many heuristic solutions have been proposed over the years, most
+ researchers use hybrid heuristics combined with local search optimizations
+ to get significantly better results.
+ Some of these solutions, specifically genetic heuristics and genetic local
+ search, will be shown in the following sections.
+\end_layout
+
 \end_body
 \end_document
