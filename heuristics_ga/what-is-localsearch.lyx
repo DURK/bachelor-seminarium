@@ -66,8 +66,72 @@ What is local search?
 \begin_layout Standard
 Local search is a metaheuristic method to optimize solutions for NP-hard
  problems.
- Local search algorithms compare a certain solution with surrounding solutions.
- Each surrounding solution are evaluated and the best one is chosen.
+ The essence of local search algorithms lies in the search of lookalike
+ solutions to these problems.
+ One certain solution is selected as a canditate solution and evaluated.
+ The evaluation of these solutions are based on a chosen heuristic, indicating
+ the value of this solution.
+ All the surrounding solutions are located in the candidate's neighborhood.
+ The most valued solution in it's neighbourhood is then selected as new
+ candidate solution.
+ This search goes on until the algorithm hits the neighborhoods maximum.
+ This maximum solution is called a local maximum.
+\end_layout
+
+\begin_layout Standard
+To go into detail, consider the following notions:
+\end_layout
+
+\begin_layout Itemize
+Set F contains all feasible solutions.
+\end_layout
+
+\begin_layout Itemize
+Cost function: maps 
+\begin_inset Formula $F\rightarrow\mathbb{R}$
+\end_inset
+
+, quantifing the fitness for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Neighborhood function: maps 
+\begin_inset Formula $F\rightarrow2^{F}$
+\end_inset
+
+, defining for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ a neighborhood 
+\begin_inset Formula $N(x)\subseteq F.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+Each surrounding solution are evaluated and the best one is chosen.
  This repeats itself many times, until the optimized solution is found.
  But how does this algorithm knows if the best solution is found and how
  does it get there?

@@ -93,8 +93,8 @@ So, by using a "rule of thumb", computer scientists iteratively determine
  of the results and efficiency of the algorithm.
 \end_layout
 
-\begin_layout Subparagraph*
-Greedy algorithm heuristic
+\begin_layout Subsubsection
+Greedy algorithm example
 \end_layout
 
 \begin_layout Standard

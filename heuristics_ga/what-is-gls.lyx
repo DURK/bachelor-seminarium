@@ -64,29 +64,40 @@ What is genetic local search?
 \end_layout
 
 \begin_layout Standard
-memetic algorithms
+In this section we will mainly discuss memetic algorithms, which are mostly
+ the same as genetic algortihms.
+ 
 \end_layout
 
 \begin_layout Standard
-Geschiedenis van memetic
+Memetic algorithms were introduced in the late 80s to form a family of metaheuri
+stics that combine algorithmic approaches.
+ Memetic comes from the word 'meme', introduced by R.
+ Dawkins in 1976.
+ Memes are elements of a culture or behaviour that are passed by nongenetic
+ means, also knows as imitation.
 \end_layout
 
 \begin_layout Standard
-- introductie laat jaren 80, familie van metaheuristics.
+Initially, Evolutionary Algorithms, Simulated Annealing (+ variants) and
+ Tabu Search were combined.
+ Nowadays, more and/or other metaheuristics are applied in memetic algorithms.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Algorithms used for memetic algorithms
 \end_layout
 
 \begin_layout Standard
-- als combinatie -> Evolutionary Algorithms, Simulated Annealing en Tabu
- Search.
+Since memetic algorithms are based on the combination of other algorithms,
+ there is no concluding algorithm.
+ We will explain some of the algorithms that are combined to obtain a memetic
+ algorithm.
 \end_layout
 
 \begin_layout Standard
-- gene -> genetische evolutie.
- meme -> kunstmatige evolutie
-\end_layout
-
-\begin_layout Paragraph
-
+Evolutionary algorithms 
 \end_layout
 
 \end_body
