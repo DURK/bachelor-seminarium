@@ -60,7 +60,56 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic Local search
+Genetic Local search/Hybrid Genetic Algorithms
+\end_layout
+
+\begin_layout Standard
+In this section we will focus on genetic algorithms that rely heavily on
+ local search, which is a common form of hybrid genetic algorithms.
+ Genetic algorithms are good at global search, but converge slowly.
+ Local search on the other hand is good at fine-tuning but often fails to
+ find local optima.
+ The hybrid approach to combines the best of two worlds: GA performs global
+ search to prevent falling into local optima, while local search handles
+ the fine-tuning.
+ <insert quote cheng1999>
+\end_layout
+
+\begin_layout Standard
+-------- BULLOCKS -------
+\end_layout
+
+\begin_layout Standard
+The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
+ to approach optimal solutions for the JSP.
+ Given a JSP-instance, which consists of a multi-machine schedule and a
+ certain number of jobs.
+ The SBP starts by creating a partial schedule of just the first machine.
+ As many jobs as possible get assigned to this machine.
+ The SBP then continues by iteratively bringing another machine (named the
+ bottleneck) into the schedule.
+ Every iteration, SPB locally optimizes the current partial scedule by solving
+ the minimum makespan for each individual machine, one by one.
+ In essence, this reduces the JSP from solving a multi-machine scheduling
+ problem to repeatedly solving single-machine scheduling problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams-and-Joseph-1988"
+
+\end_inset
+
+.
+ Because the partial schedules constructed in previous iterations may be
+ adjusted for improvement before starting the next iteration, the SBP may
+ be considered an adaptive constructive method, which in essence combines
+ construction with local search 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cesar-Rego-and-Renato-Duarte-2009"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
