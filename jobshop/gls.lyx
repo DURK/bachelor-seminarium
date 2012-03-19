@@ -68,7 +68,17 @@ This section will focus on genetic algorithms that heavily rely on local
  search, a common form of hybrid genetic algorithms.
  Genetic algorithms are good at global search, but converge slowly.
  Local search on the other hand is good at fine-tuning but often fails to
- find local optima.
+ find local
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+niet global?
+\end_layout
+
+\end_inset
+
+ optima.
  The hybrid approach combines the best of both worlds by combining genetic
  algorithms that perform global search and avoid falling into local optima
  with local search that handles the fine-tuning

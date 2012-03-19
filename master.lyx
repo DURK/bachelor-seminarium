@@ -88,13 +88,6 @@ Karens Grigorjancs
 Wouter Klein Heerenbrink
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Abstract
 \begin_inset CommandInset include
 LatexCommand input
@@ -256,13 +249,6 @@ filename "jobshop/gls.lyx"
 LatexCommand input
 filename "jobshop/conclusion.lyx"
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
