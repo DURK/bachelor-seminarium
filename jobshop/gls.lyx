@@ -60,15 +60,16 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic Local search/Hybrid Genetic Algorithms
+Genetic Local Search
 \end_layout
 
 \begin_layout Standard
 This section will focus on genetic algorithms that heavily rely on local
  search, a common form of hybrid genetic algorithms.
- Genetic algorithms are good at global search, but converge slowly.
- Local search on the other hand is good at fine-tuning but often fails to
- find local
+ Genetic algorithms are designed to be effective at global search, but converge
+ slowly.
+ Local search on the other hand is effective at fine-tuning but often falls
+ into local 
 \begin_inset Marginal
 status open
 
@@ -78,9 +79,9 @@ niet global?
 
 \end_inset
 
- optima.
+ maxima, as shown in section 3.3.
  The hybrid approach combines the best of both worlds by combining genetic
- algorithms that perform global search and avoid falling into local optima
+ algorithms that perform global search and avoid falling into local maximum
  with local search that handles the fine-tuning
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -89,8 +90,85 @@ key "cheng99"
 \end_inset
 
 .
- Some state-of-the-art hybrid genetic algorithms to the job shop problem
+ In this section, the general principles of combining genetic algorithms
+ with local search are introduced first.
+ Next, some state-of-the-art hybrid genetic algorithms to the job shop problem
  are presented in this section.
+\end_layout
+
+\begin_layout Subsubsection
+Combining genetic algorithms with local search
+\end_layout
+
+\begin_layout Standard
+Typical genetic algorithms recombine parents, followed by mutation, in order
+ to produce new chromosomes.
+ Selection of chronosomes is based on their fitness.
+ In standard genetic algorithms, this fitness can be calculated immediately
+ after 'birth'.
+ In genetic algorithms combined with local search, selection is based on
+ fitness after performing local search.
+ This means offspring will be improved and these improvements will be passed
+ on trough crossover.
+ In essence, this causes offspring to 'learn', a principle called local
+ optimization.
+\end_layout
+
+\begin_layout Standard
+------ PSEUDOCODE DIE ER ALLICHT IN MAG!---
+\end_layout
+
+\begin_layout Standard
+begin
+\end_layout
+
+\begin_layout Standard
+t<-0
+\end_layout
+
+\begin_layout Standard
+initialize P(t )(job sequences)
+\end_layout
+
+\begin_layout Standard
+local search to improve chromosomes
+\end_layout
+
+\begin_layout Standard
+evaluate P(t )
+\end_layout
+
+\begin_layout Standard
+while (not termination condition) do 
+\end_layout
+
+\begin_layout Standard
+begin 
+\end_layout
+
+\begin_layout Standard
+recombine P(t ) 
+\end_layout
+
+\begin_layout Standard
+local search to improve chromosomes 
+\end_layout
+
+\begin_layout Standard
+evaluate P(t ) 
+\end_layout
+
+\begin_layout Standard
+select to next population P(t ) 
+\end_layout
+
+\begin_layout Standard
+t <-t+1 
+\end_layout
+
+\begin_layout Standard
+end.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -105,11 +183,10 @@ The first example is a combination of genetic algorithms with bottleneck
  Given a JSP-instance that consists of a multi-machine schedule and a certain
  number of jobs.
  The SBP starts by creating a partial schedule of just the first machine.
- As many jobs as possible get assigned to this machine.
  The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
- On every iteration SPB locally optimizes the current partial schedule by
- solving the minimum makespan for each individual machine, one by one.
+ On every iteration SPB locally reoptimizes the current partial schedule
+ for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
@@ -119,10 +196,10 @@ key "Adams-and-Joseph-1988"
 \end_inset
 
 .
- Because the partial schedules constructed in previous iterations may be
- adjusted for improvement before starting the next iteration, the SBP may
- be considered an adaptive constructive method, which in essence combines
- construction with local search 
+ By improving partial schedules constructed in previous iterations, before
+ entering the next iterationm, SBP is called an constructive algorithm combined
+ with local search.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cesar-Rego-and-Renato-Duarte-2009"
@@ -139,7 +216,7 @@ Consider the hybrid genetic approach for the SBP.
  Genetic algorithms evolve those chromosomes in order to retrieve better
  sequences of machines for SPB.
  The bottleneck shifting procedure is used to derive a schedule from these
- encodings of machine sequence.
+ encodings of machine sequences.
  Resulting schedules differ greatly in quality, depening on the sequence
  of bottleneck machines 
 \begin_inset CommandInset citation
@@ -149,6 +226,27 @@ key "cheng99"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Beam search
+\end_layout
+
+\begin_layout Standard
+---Combining genetic algorithms with beam search has been proposed by Holsapple.
+\end_layout
+
+\begin_layout Standard
+---In this approach a chromosome is denoted as an encoded job sequence.
+\end_layout
+
+\begin_layout Standard
+---Genetic algorithm manipulate the job sequence.
+\end_layout
+
+\begin_layout Standard
+---Filtered beam search generate 'best' schedule for give job sequence (chromoso
+me)
 \end_layout
 
 \end_body
