@@ -64,14 +64,21 @@ Genetic Local search/Hybrid Genetic Algorithms
 \end_layout
 
 \begin_layout Standard
-In this section we will focus on genetic algorithms that rely heavily on
- local search, which is a common form of hybrid genetic algorithms.
+This section will focus on genetic algorithms that heavily rely on local
+ search, a common form of hybrid genetic algorithms.
  Genetic algorithms are good at global search, but converge slowly.
  Local search on the other hand is good at fine-tuning but often fails to
  find local optima.
- The hybrid approach combines the best of two worlds: Genetic algorithms
- perform global search to avoid falling into local optima, while local search
- handles the fine-tuning <insert quote cheng1999>.
+ The hybrid approach combines the best of both worlds by combining genetic
+ algorithms that perform global search and avoid falling into local optima
+ with local search that handles the fine-tuning
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cheng99"
+
+\end_inset
+
+.
  Some state-of-the-art hybrid genetic algorithms to the job shop problem
  are presented in this section.
 \end_layout
@@ -82,23 +89,17 @@ Shifting Bottleneck Procedure
 
 \begin_layout Standard
 The first example is a combination of genetic algorithms with bottleneck
- shiting procedure.
- To get a good understanding of this hybrid genetic algorithms, let's first
- explore the definition of the shifting bottleneck procedure.
- 
-\end_layout
-
-\begin_layout Standard
-The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
+ shifting procedure.
+ The shifting bottleneck procedure (SBP) is an extensively used heuristic
  to approach optimal solutions for the job shop problem.
- Given a JSP-instance, which consists of a multi-machine schedule and a
- certain number of jobs.
+ Given a JSP-instance that consists of a multi-machine schedule and a certain
+ number of jobs.
  The SBP starts by creating a partial schedule of just the first machine.
  As many jobs as possible get assigned to this machine.
  The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
- Every iteration, SPB locally optimizes the current partial scedule by solving
- the minimum makespan for each individual machine, one by one.
+ On every iteration SPB locally optimizes the current partial schedule by
+ solving the minimum makespan for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
@@ -122,10 +123,10 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now, consider the hybrid genetic approach for the SBP.
- In this approach, we denote a chromosome as a list of ordered machines.
- Genetic algorithms here evolve those chromosomes in order to retrieve better
- sequences of machines, for SPB.
+Consider the hybrid genetic approach for the SBP.
+ In this approach a chromosome is denoted as a list of ordered machines.
+ Genetic algorithms evolve those chromosomes in order to retrieve better
+ sequences of machines for SPB.
  A genetic algorithm is used to evolve a sequence of machines and the bottleneck
  shifting procedure is used to deduce a schedule from the encoding of machine
  sequence.
