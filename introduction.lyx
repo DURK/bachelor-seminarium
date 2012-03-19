@@ -61,27 +61,30 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is one of the hardest combinatorial problems.
- It is an NP hard problem what means that there is no algorithm which solves
+ An instance with ten jobs consisting from 100 operrations which has to
+ be processed on ten machines formulated in 1963 was not solved for more
+ than 25 years until 1986.
+ Many solutions to this problem have been proposed but it was finally solved
+ by a branch-and-bound algorithm.
+\end_layout
+
+\begin_layout Standard
+It is an NP hard problem what means that there is no algorithm which solves
  the JSP in polynominal time.
  Because of that we need heuristic algorithms that solve the problem.
- In the first section different heuristics are being discussed.
- Also 
+ During the last century a lot of heuristics algorithms has been developed
+ and some of them have proven to be very succesful.
+ In this paper we will discuss genetic algorithm and local search approaches.
 \end_layout
 
 \begin_layout Standard
-aanleding
-\end_layout
-
-\begin_layout Standard
-onderwerp
-\end_layout
-
-\begin_layout Standard
-hoofdstukken
-\end_layout
-
-\begin_layout Standard
-probleem
+This paper is organized as follows.
+ In the first section different heuristics that can be used for solving
+ JSP are being discussed.
+ Local search and genetic algorithms are important parts of it.
+ In the second section we discuss how the heuristics from section 1 could
+ be applied to solve JSP.
+ Also different solutions to solve the jobshop problem will be compared.
 \end_layout
 
 \end_body
