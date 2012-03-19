@@ -124,14 +124,21 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 
 \begin_layout Standard
 Consider the hybrid genetic approach for the SBP.
- In this approach a chromosome is denoted as a list of ordered machines.
+ In this approach a chromosome is denoted as an encoded list of ordered
+ machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
  sequences of machines for SPB.
- A genetic algorithm is used to evolve a sequence of machines and the bottleneck
- shifting procedure is used to deduce a schedule from the encoding of machine
- sequence.
+ The bottleneck shifting procedure is used to derive a schedule from these
+ encodings of machine sequence.
  Resulting schedules differ greatly in quality, depening on the sequence
- of bottleneck machines.
+ of bottleneck machines 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cheng99"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
