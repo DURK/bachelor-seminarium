@@ -69,19 +69,28 @@ In this section we will focus on genetic algorithms that rely heavily on
  Genetic algorithms are good at global search, but converge slowly.
  Local search on the other hand is good at fine-tuning but often fails to
  find local optima.
- The hybrid approach to combines the best of two worlds: GA performs global
- search to prevent falling into local optima, while local search handles
- the fine-tuning.
- <insert quote cheng1999>
+ The hybrid approach combines the best of two worlds: Genetic algorithms
+ perform global search to avoid falling into local optima, while local search
+ handles the fine-tuning <insert quote cheng1999>.
+ Some state-of-the-art hybrid genetic algorithms to the job shop problem
+ are presented in this section.
+\end_layout
+
+\begin_layout Subsubsection
+Shifting Bottleneck Procedure
 \end_layout
 
 \begin_layout Standard
--------- BULLOCKS -------
+The first example is a combination of genetic algorithms with bottleneck
+ shiting procedure.
+ To get a good understanding of this hybrid genetic algorithms, let's first
+ explore the definition of the shifting bottleneck procedure.
+ 
 \end_layout
 
 \begin_layout Standard
 The Shifting Bottleneck Procedure (SBP) is an extensively used heuristic
- to approach optimal solutions for the JSP.
+ to approach optimal solutions for the job shop problem.
  Given a JSP-instance, which consists of a multi-machine schedule and a
  certain number of jobs.
  The SBP starts by creating a partial schedule of just the first machine.
@@ -110,6 +119,18 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Now, consider the hybrid genetic approach for the SBP.
+ In this approach, we denote a chromosome as a list of ordered machines.
+ Genetic algorithms here evolve those chromosomes in order to retrieve better
+ sequences of machines, for SPB.
+ A genetic algorithm is used to evolve a sequence of machines and the bottleneck
+ shifting procedure is used to deduce a schedule from the encoding of machine
+ sequence.
+ Resulting schedules differ greatly in quality, depening on the sequence
+ of bottleneck machines.
 \end_layout
 
 \end_body
