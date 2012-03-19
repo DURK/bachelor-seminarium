@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage{a4wide}
+\usepackage{fullpage}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -293,7 +293,7 @@ filename "conclusion.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "mybibfile"
-options "bibtotoc,plainnat"
+options "bibtotoc,plain"
 
 \end_inset
 

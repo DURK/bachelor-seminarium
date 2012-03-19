@@ -69,16 +69,16 @@ From 1990 until 2000 there has been extensive research into pure genetic
  A lot of different approaches have been defined for representing the solutions
  as chromosomes and there have been even more strategies for applying cross
  over onto these chromsomes.
- In the period after 2000 scientist realised that the usage of pure genetic
+ In the period after 2000 scientists realised that the usage of pure genetic
  algorithms was inefficient and they introduced extra heuristics to generate
  better results and produce them faster.
 \end_layout
 
 \begin_layout Standard
-This chapter will cover a couple of method that just use pure genetic algorithms
- without additional heuristis.
+This chapter will cover a couple of methods that use pure genetic algorithms
+ without additional heuristics.
  The first part will go into the different ways of representing the solution
- and the second part will cover cross-over.
+ and the second part will cover crossover.
  The last part will cover the selection of a new population step.
 \end_layout
 
@@ -87,11 +87,11 @@ Representations
 \end_layout
 
 \begin_layout Standard
-A good chromosome as representation of the solution is crucial for the functioni
-ng of genetic algorithms.
- The two core types of chromoses can be divided into binary and symbolic
+A chromosome as representation of the solution is crucial for the functioning
+ of genetic algorithms.
+ The two core types of chromosomes can be divided into binary and symbolic
  representations.
- As the name suggests the first one consists merely of zeros and ones.
+ As the name suggests, the first one consists merely of zeros and ones.
  This representation is how Holland described chromosomes in his original
  definition of genetic algorithms.
  The second representation, using symbols, was introduced to the field of
@@ -110,9 +110,9 @@ direct
 indirect
 \emph default
 .
- In direct chromosomes each gene represents an actual part of the schedule,
- for example each gene could be an task and the order of the genes within
- the chromosome a equal to the order or execution the tasks.
+ In direct chromosomes each gene represents an actual part of the schedule.
+ For example each gene could be a task and the order of the genes within
+ the chromosome are equal to the order or execution the tasks.
  For indirect chromosomes, the genes represent parameters for an algorithm
  that uses dispatching rules as described in [job shop inleiding].
 \end_layout
@@ -164,7 +164,6 @@ key "operation-based"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
