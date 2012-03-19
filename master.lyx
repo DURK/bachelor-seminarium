@@ -214,26 +214,6 @@ filename "jobshop/introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "jobshop/heurstics.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "jobshop/localsearch.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
 filename "jobshop/ga.lyx"
 
 \end_inset
