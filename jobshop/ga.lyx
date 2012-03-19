@@ -63,5 +63,270 @@
 Genetic algorithms
 \end_layout
 
+\begin_layout Standard
+From 1990 until 2000 there has been extensive research into pure genetic
+ algorithms for solving the job shop problem.
+ A lot of different approaches have been defined for representing the solutions
+ as chromosomes and there have been even more strategies for applying cross
+ over onto these chromsomes.
+ In the period after 2000 scientist realised that the usage of pure genetic
+ algorithms was inefficient and they introduced extra heuristics to generate
+ better results and produce them faster.
+\end_layout
+
+\begin_layout Standard
+This chapter will cover a couple of method that just use pure genetic algorithms
+ without additional heuristis.
+ The first part will go into the different ways of representing the solution
+ and the second part will cover cross-over.
+ The last part will cover the selection of a new population step.
+\end_layout
+
+\begin_layout Subsubsection
+Representations
+\end_layout
+
+\begin_layout Standard
+A good chromosome as representation of the solution is crucial for the functioni
+ng of genetic algorithms.
+ The two core types of chromoses can be divided into binary and symbolic
+ representations.
+ As the name suggests the first one consists merely of zeros and ones.
+ This representation is how Holland described chromosomes in his original
+ definition of genetic algorithms.
+ The second representation, using symbols, was introduced to the field of
+ genetic algorithms later.
+\end_layout
+
+\begin_layout Standard
+This section will discuss the symbolic representation only.
+ Within the set of symbolic representations it is again possible to distinct
+ two groups, namely 
+\emph on
+direct
+\emph default
+ and 
+\emph on
+indirect
+\emph default
+.
+ In direct chromosomes each gene represents an actual part of the schedule,
+ for example each gene could be an task and the order of the genes within
+ the chromosome a equal to the order or execution the tasks.
+ For indirect chromosomes, the genes represent parameters for an algorithm
+ that uses dispatching rules as described in [job shop inleiding].
+\end_layout
+
+\begin_layout Standard
+Within these two groups there are some ways to represent the actual solutions.
+ A list of different representations divided in the two groups can be found
+ in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ways-of-representing"
+
+\end_inset
+
+[ref to cheng part1].
+ As illustration of a representation, the rest of this section will describe
+ the 
+\emph on
+operation-based algorithm
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+In an operation-based algorithm each gene in the chromosome represents an
+ operation.
+ At first it might seem logical to number each operation independently of
+ its tasks.
+ This method would cause a lot of 
+\emph on
+illegal
+\emph default
+ combinations because the operations within a job have a precedence constraint.
+ Mixing up the order would cause an invalid schedule.
+\end_layout
+
+\begin_layout Standard
+A solution to prevent illegal combinations was found by Gen et al.
+ They have numbered all operations by their parental job number.
+ If a problem consisted of three jobs all having three operations, the chromosom
+e would consist of three times the numbers one, two and three as shown in
+ figure X.
+ Because the order of operations within a job are fixed, it is possible
+ to construct a valid schedule based on the slots reserved for the jobs.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Direct
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Indirect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operation-based
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Priority rule-based
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Job-based
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preference list-based
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Random keys
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Disjunctive graph-based
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Job pair relation-based
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Machine-based
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color magenta
+Completion time-based??
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Ways-of-representing"
+
+\end_inset
+
+Ways of representing a solution to the jobshop problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
