@@ -60,16 +60,30 @@
 \begin_body
 
 \begin_layout Standard
-The job shop problem (JSP) is one of the hardest combinatorial problems.
+The job shop problem (JSP) is one of the hardest combinatorial problems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vaessens-Aarts-Lenstra-1996"
+
+\end_inset
+
+.
  An instance with ten jobs consisting from 100 operrations which has to
  be processed on ten machines formulated in 1963 was not solved for more
  than 25 years until 1986.
  Many solutions to this problem have been proposed but it was finally solved
  by a branch-and-bound algorithm.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fisher-Thompson-1963"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-It is an NP hard problem what means that there is no algorithm which solves
+JSP is an NP hard problem what means that there is no algorithm which solves
  the JSP in polynominal time.
  Because of that we need heuristic algorithms that solve the problem.
  During the last century a lot of heuristics algorithms has been developed
