@@ -60,16 +60,12 @@
 \begin_body
 
 \begin_layout Standard
-A job shop problem (JSP) is well known problem because of its many possible
+A job shop problem (JSP) is a well known problem because of its many possible
  applications in manufacturing and is central to many supply chain problems
  that integrate production planning and scheduling.
- But it is also one of the most hardest combinatorial problems.
+ But it is also one of the hardest combinatorial problems.
  The JSP is defined as follows: "for n jobs and m machines, find a way to
  process jobs as fast as possible".
- So a job sequence for each machine has to be determined to minimize the
- makespan.
- The makespan is the total length of the schedule, the overall time when
- all the jobs have finished processing.
  Take the following in consideration:
 \end_layout
 
@@ -78,25 +74,27 @@ A machine can process only 1 job at a time.
 \end_layout
 
 \begin_layout Itemize
-Every job has a predefined processing time.
+A job consists of operations.
 \end_layout
 
 \begin_layout Itemize
-While processing a job, it cannot be paused and be resumed later.
- So you cannot split the job.
+Every operation has a predefined processing time.
+\end_layout
+
+\begin_layout Itemize
+The operation sequence within a job is also predefined.
+\end_layout
+
+\begin_layout Itemize
+While processing an operation, it cannot be paused and be resumed later.
+ So you cannot split an operation.
 \end_layout
 
 \begin_layout Standard
-An instance with ten jobs which has to be processed on ten machines formulated
- in 1963 was not solved for more than 25 years.
- It was finally solved by a branch-and-bound algorithm, discussed later.
-\end_layout
-
-\begin_layout Standard
-The job shop problem is strongly NP-hard which means it cannot be solved
- in polynomial time.
- This property makes our problem particular interesting for heuristics.
- 
+So a job sequence for each machine has to be determined to minimize the
+ makespan.
+ The makespan is the total length of the schedule, the overall time when
+ all the jobs have finished processing.
 \end_layout
 
 \end_body

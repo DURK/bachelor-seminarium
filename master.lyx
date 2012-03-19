@@ -69,8 +69,7 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-What are the possibilities for solving the jobshop problem with heurisitic,
- genetic methods or combination of both?
+Genetic algorithms and local search applied to the jobshop problem
 \end_layout
 
 \begin_layout Author
