@@ -92,7 +92,7 @@ Problems in NP HARD.
 
 \begin_layout Standard
 There are a lot of ways to solve a problem.
- For example by using an exact algoritm which can solve a problem in polynominal
+ For example by using an exact algorithm which can solve a problem in polynomial
  time if a problem is in P.
  Otherways the exact algorithm will cost exponential time or even more.
  When this is unacceptable, heuristics can be used.
@@ -102,11 +102,11 @@ There are a lot of ways to solve a problem.
  For more difficult problems in NP-HARD local search can be used to search
  for solutions.
  Local search returns the local optimum of the space.
- Also Genetic alghoritms (GA) can be used, which are like local search also
- a form of heuristic algoritms.
+ Also Genetic algorithms (GA) can be used, which are like local search also
+ a form of heuristic algorithms.
  With GA you work with different answers for a problem, which convert to
  a better answer.
- And finally genetic local search (a combination of genetic algoritms and
+ And finally genetic local search (a combination of genetic algorithms and
  local search will be discussed in the last chapter of this section.
 \end_layout
 

@@ -68,9 +68,9 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 .
- An instance with ten jobs consisting from 100 operrations which has to
- be processed on ten machines formulated in 1963 was not solved for more
- than 25 years until 1986.
+ An instance with ten jobs consisting from 100 operations which has to be
+ processed on ten machines formulated in 1963 was not solved for more than
+ 25 years until 1986.
  Many solutions to this problem have been proposed but it was finally solved
  by a branch-and-bound algorithm.
 \begin_inset CommandInset citation
@@ -84,10 +84,10 @@ key "Fisher-Thompson-1963"
 
 \begin_layout Standard
 JSP is an NP hard problem what means that there is no algorithm which solves
- the JSP in polynominal time.
+ the JSP in polynomial time.
  Because of that we need heuristic algorithms that solve the problem.
  During the last century a lot of heuristics algorithms has been developed
- and some of them have proven to be very succesful.
+ and some of them have proven to be very successful.
  In this paper we will discuss genetic algorithm and local search approaches.
 \end_layout
 

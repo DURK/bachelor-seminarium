@@ -97,5 +97,21 @@ So a job sequence for each machine has to be determined to minimize the
  all the jobs have finished processing.
 \end_layout
 
+\begin_layout Standard
+In the example below, there are 3 jobs and 3 machines.
+ The jobs are being splitted to approximate the optimal answer.
+ The makespan here is 365.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename gantt.jpg
+	scale 200
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
