@@ -115,64 +115,50 @@ Neighborhood function: maps
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
-Each surrounding solution are evaluated and the best one is chosen.
- This repeats itself many times, until the optimized solution is found.
- But how does this algorithm knows if the best solution is found and how
- does it get there?
-\end_layout
-
-\begin_layout Standard
-When the algorithm starts, it searches in the search space S for an answer.
- The optimal solutions are a subset of S, called S
-\begin_inset Formula $_{0}$
+At the start of a local search, choosing a candidate solution 
+\begin_inset Formula $x\in F$
 \end_inset
 
-.
- These solutions will be called states, since there is only one optimal
- solution.
- The algorithm decides which state starts as solution candidate.
- Then the neighourhood relation are consulted, to find a better state.
- The neighbourhood relations are defined by it's problem.
- For instance, the only possible relation between states in a CLIQUE-problem
- is to remove or add one node.
- When another state is considered 'better', the algorithm chooses this state
- as it's solution canditate and continues it's loop.
+, the cost function is executed to evaluate each 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula $\in N(x).$
+\end_inset
+
+ Now the next thing to know is the relation between y and x.
+ What is the size of N(x)? This is different for each problem.
+ For instance, if we look for the biggest CLIQUE in a graph, the relation
+ between x and y can be adding or removing a node from x.
+ Consider the size of CLIQUE x, k.
+ If y forms a CLIQUE of size k+1 the contrain c(x) < c(y) holds true and
+ y is a possible next candidate solution.
+ The next candidate solution, when available, is being selected based on
+ the first improvement or the best improvement.
+ The first improvement selects the first x that holds the following contraint:
+ c(x) < c(y).
+ "Mooi woord voor logisch nadenken" the best improvement select the highest
+ improving c(y) E N(x).
+ Finally, the algorithm must hit a candidate solution that holds c(x) =
+ max(c(x) E N(x)).
+ The algorithm then hits a local maximum and terminates.
+ Not in all cases the algorithm waits for the local maximum to be found.
+ Other stop conditions are also possible.
+ Like a threshold for c(x), the improvement isn't big enough or after a
+ certain amount of time.
 \end_layout
 
 \begin_layout Standard
-Since the algorithm doesn't have a standard stop condition, it only stops
- if there is no neighbor state which is better.
- It is possible to terminate before this scenario is reached.
- For instance, when time plays a role in the algorithm, or some states (but
- not the optimal state) are good enough.
-\end_layout
-
-\begin_layout Subsubsection
-Examples:
+Now consider the following image of a 1 dimensional problem (for instance,
+ choosing the biggest piece of a cake):
 \end_layout
 
 \begin_layout Standard
-Geen idee.
-\end_layout
 
-\begin_layout Subsubsection
-Problems:
+\emph on
+Please note that this problem isn't a NP-hard problem, but we need a few
+ more dimensions to visualize NP-hard problems.
 \end_layout
 
 \begin_layout Standard
@@ -185,18 +171,22 @@ Problems:
 \end_layout
 
 \begin_layout Standard
-The x-axis represents the domain of the problem, all possible states.
- The y-axis represents the value of the state.
+The x-axis represents the set F containing all the feasible solutions.
+ The y-axis represents c(x).
 \end_layout
 
 \begin_layout Standard
-Imagine the algorithm starts somewhere between the far left and point (a).
- The algorithm will move to the right since the states left of the current
- state are evaluated as worse.
- When the algorithm reaches point (a) it will stop, because both surrounding
- neigbors are worse then the current state.
- In this case, the best solution is found, but what if the algorithm start
- at point (b)? It fails and won't find the best solution.
+Imagine that the algorithm starts at the local minimum between point b and
+ c.
+ The next iterative step will lead to a candidate solution in the direction
+ of b.
+ This process continues until the candidate solution is at point b.
+ Expecting that everyone would agree that point a gives the optimal solution,
+ the algorithm will return point b, another local maximum.
+ It's easy to understand that the local search algorithm only return the
+ nearest local maximum.
+ In the next section we will explain how we open up the possibility of leaving
+ a local maximum.
 \end_layout
 
 \end_body

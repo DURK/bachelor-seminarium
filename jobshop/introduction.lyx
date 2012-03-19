@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Subsection
-Introduction
+Job shop problem
 \end_layout
 
 \begin_layout Standard
@@ -122,6 +122,18 @@ There are several ways to solve a job-shop scheduling problem using different
  types of heuristic algorithms.
  These algorithms are approximation methods for solving the minimum makespan
  for the JSP.
+ The easiest heuristics solutions for JSP are dispatching rules, which are
+ actually rules of thumb, discussed in section 2.1.
+ Dispatching rules are fast, simple to implement and reasonably good in
+ a relatively short time, but often to limited in practice when more constraints
+ are needed.
+ A dispatching rule priorities all the jobs that are awaiting for processing
+ on a machine.
+ When a machine has no more jobs to process, a dispatching rule grant the
+ job with the highest priority to the machine.
+ Dispatching rules prioritise in different ways, for example shortest processing
+ time first, earliest completion time first etc.
+ 
 \end_layout
 
 \begin_layout Standard
