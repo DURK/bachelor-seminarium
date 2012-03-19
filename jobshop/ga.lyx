@@ -156,11 +156,25 @@ A solution to prevent illegal combinations was found by Gen et al.
 e would consist of three times the numbers one, two and three as shown in
  figure X.
  Because the order of operations within a job are fixed, it is possible
- to construct a valid schedule based on the slots reserved for the jobs.
+ to construct a valid schedule based on the slots reserved for the jobs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "operation-based"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-
+The schedule is formed by processing the genes in order of occurence within
+ the chromosome.
+ Taking the example of figure X, the first job is job number one.
+ The algorithm will now schedule the first operation of job number one at
+ the first available spot.
+ The same for the gene, that will cause the first operation of the third
+ job to be placed at the next available spot.
 \end_layout
 
 \begin_layout Standard
