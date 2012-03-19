@@ -1,0 +1,121 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+There are diffirent kinds of problems to describe:
+\end_layout
+
+\begin_layout Itemize
+Problems in P, there exists an agorithm that solves a problem in polynomal
+ time.
+ P is in NP.
+\end_layout
+
+\begin_layout Itemize
+Problems in NP, there doesn't exist a algorithm that solves a problem in
+ a polynominal time, but the answer can be verfied in polynominal time.
+ 
+\end_layout
+
+\begin_layout Itemize
+Problems in NPC (np complete).
+ NPC is also in NP.
+ Because of that, also these problems are veryfiable in polynominal time.
+ Also every problem in NP is reducable to NPC.
+ NPC is also in NP HARD.
+ That means that NPC problems are hardest problems in NP
+\end_layout
+
+\begin_layout Itemize
+Problems in NP HARD.
+ This is the most difficult set of problems.
+ These problems cannot be verified in polynominal time.
+\end_layout
+
+\begin_layout Standard
+There are a lot of ways to solve a problem.
+ For example by using an exact algoritm which can solve a problem in polynominal
+ time if a problem is in P.
+ Otherways the exact algorithm will cost exponential time or even more.
+ When this is unacceptable, heuristics can be used.
+ Heuristics 
+\end_layout
+
+\begin_layout Standard
+CRAP:
+\end_layout
+
+\begin_layout Standard
+Unfortunately is it impossible to solve NP problems in polynominal time.
+ For these problems heuristics can be used.
+ It usually doesn't calculate but approaches the answer very well.
+ For more difficult problems in NP-HARD local search can be used to search
+ for solutions , which can be validated in polynominal time.
+ These two ways will be explained in the following chapter.
+ Also Genetic alghoritms will be explained, which are actually a form of
+ heuristic algoritms.
+ And finally genetic local search (a combination of genetic algoritms and
+ local search will be discussed.
+ 
+\end_layout
+
+\end_body
+\end_document
