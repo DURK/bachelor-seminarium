@@ -63,7 +63,7 @@
 The jobshop problem (JSP) is one of the well-known hardest combinatorial
  problems.
  This problem gained a lot of attention from computer scientists, who published
- a big amount of papers.
+ a large amount of papers.
  However no polynomial solution to JSP has been found.
  This is because of JSP is member of NP hard class.
  This property makes this scheduling problem very interesting for many heuristic
@@ -81,7 +81,7 @@ ed combinatorial optimization problems.
 In this paper we concentrate on genetic algorithms and simple hybrid combination
  of it with local search.
  In section 1 these methods are explained for general use.
- In section 2 appliance and implementation of those solutions is being discussed.
+ In section 2 application and implementation of those solutions is discussed.
  
 \end_layout
 
