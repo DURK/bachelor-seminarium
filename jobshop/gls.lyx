@@ -464,5 +464,19 @@ Beam search
 me)
 \end_layout
 
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+@Peter: More examples of hybrid genetics, with different chromosome-representati
+ons (like beam search), so comparisons can be made? Or dig deeper into SPB?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
