@@ -98,9 +98,9 @@ Greedy algorithm example
 \end_layout
 
 \begin_layout Standard
-A clear example of a heuristic algorithm is the Greedy Algorithm.
- This algorithm has been described for solving for example the Travelling
- Salesman Problem (TSP), which is NP-hard 
+A clear example of a heuristic algorithm is the greedy algorithm.
+ This algorithm has been described for solving for example the traveling
+ salesman problem (TSP), which is NP-hard 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bentley-1982"
@@ -115,7 +115,7 @@ key "Bentley-1982"
 \begin_layout Standard
 A greedy algorithm always makes the choice that looks best in the current
  problem, without considering results from subproblems.
- In other words, Greedy Algorithms continuesly make a locally optimal choice
+ In other words, Greedy Algorithms continuously make a locally optimal choice
  in the hope that this choice will lead to a globally optimal solution.
  The definition of a local and global optimal, which can be a maximum or
  minimum, will be explained in 

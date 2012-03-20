@@ -100,7 +100,7 @@ So a job sequence for each machine has to be determined to minimize the
 
 \begin_layout Standard
 In the example below, there are 3 jobs and 3 machines.
- The jobs are being splitted to approximate the optimal answer.
+ The jobs are being split to approximate the optimal answer.
  The makespan here is 6.
 \end_layout
 
@@ -122,15 +122,19 @@ There are several ways to solve a job shop scheduling problem using different
  These algorithms are approximation methods for solving the minimum makespan
  for the JSP.
  The easiest heuristics solutions for JSP are dispatching rules, which are
- actually rules of thumb, discussed in section 2.1.
+ actually rules of thumb, discussed in 
+\emph on
+section 3.1: Heuristics
+\emph default
+.
  Dispatching rules are fast, simple to implement and reasonably good in
- a relatively short time, but often to limited in practice when more constraints
+ a relatively short time, but often limited in practice when more constraints
  are needed.
- A dispatching rule priorities all the jobs that are awaiting for processing
+ A dispatching rule prioritizes all the jobs that are awaiting for processing
  on a machine.
  When a machine has no more jobs to process, a dispatching rule grant the
  job with the highest priority to the machine.
- Dispatching rules prioritise in different ways, for example shortest processing
+ Dispatching rules prioritize in different ways, for example shortest processing
  time first, earliest completion time first etc.
  
 \end_layout
@@ -140,7 +144,7 @@ Although many heuristic solutions have been proposed over the years, most
  researchers use hybrid heuristics combined with local search optimizations
  to get significantly better results.
  Some of these solutions, specifically genetic heuristics and genetic local
- search, will be shown in the following sections.
+ search, will be explored in the following sections.
 \end_layout
 
 \end_body

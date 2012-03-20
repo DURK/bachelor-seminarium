@@ -73,7 +73,7 @@ Memetic algorithms were introduced in the late 80s to form a family of metaheuri
 stics that combine algorithmic approaches.
  Memetic comes from the word 'meme', introduced by R.
  Dawkins in 1976.
- Memes are elements of a culture or behaviour that are passed by nongenetic
+ Memes are elements of a culture or behaviour that are passed by non-genetic
  means.
  Like genes in evolution, memes will work the same way in the algorithms.
 \end_layout
@@ -85,7 +85,7 @@ Algorithms used in memetic algorithms
 \begin_layout Standard
 Consider the first notions introduced in 
 \emph on
-2.2 What is local search?
+section 2.2: What is local search?
 \end_layout
 
 \begin_layout Itemize
@@ -118,7 +118,7 @@ Hyperneighborhood: defining for each solution
 \end_layout
 
 \begin_layout Standard
-Please note that the hyperneighborhood is differs from the neighborhood.
+Please note that the hyperneighborhood differs from the neighborhood.
  The amount of neighbors in local search are related to the size of 
 \begin_inset Formula $F$
 \end_inset
@@ -135,9 +135,9 @@ Please note that the hyperneighborhood is differs from the neighborhood.
 \end_layout
 
 \begin_layout Standard
-Evolutionary algorithms are, as the name implies, similar to the evolutionary
- way of survival of the fittest.
- EAs create a randomly subset 
+Evolutionary algorithms (EA) are, as the name implies, similar to the evolutiona
+ry way of survival of the fittest.
+ EAs first create a randomly subset 
 \begin_inset Formula $N\subseteq F$
 \end_inset
 
@@ -147,7 +147,7 @@ Evolutionary algorithms are, as the name implies, similar to the evolutionary
 \end_inset
 
 .
- Based on the best results, a selection of solutions, consider subset 
+ Based on the best results, a selection of solutions, a subset 
 \begin_inset Formula $C\subseteq N$
 \end_inset
 
@@ -157,14 +157,14 @@ Evolutionary algorithms are, as the name implies, similar to the evolutionary
  (parents) and result in one or more new candidate solutions (children).
  Mutation is applied to one candidate and results in one new candidate.
  Each new generation (the offspring) will compete against the old one.
- This can be iterated until the wanted result is reached or the amount of
- computation is reached.
- The difference between local search is that these recombinations and/or
- mutation can make bigger jumps in set 
+ This can be iterated until either the wanted result or the maximum specified
+ amount of computation has been reached.
+ The difference between local search and EAs is that EAs can make jumps
+ in set 
 \begin_inset Formula $F$
 \end_inset
 
-.
+, using recombinations and/or mutation.
 \end_layout
 
 \begin_layout Standard
@@ -173,7 +173,7 @@ Simulated Annealing uses statistics to find it's global maximum.
 \begin_inset Formula $N\subseteq F$
 \end_inset
 
- which is set to a global minima.
+ which is set to a global minimum.
  Consider the non increasing function T: 
 \begin_inset Formula $\mathbb{N}\rightarrow\mathbb{N}$
 \end_inset
@@ -243,9 +243,9 @@ If
 
 \begin_layout Standard
 We can conclude that if the current candidate solution has a relatively
- high fitness, that chances that y will be selected as candidate solution
+ high fitness, then chances that y will be selected as candidate solution
  will be low.
- If x is a 'low' local maximum, that chances are higher to select y as candidate.
+ If x is a 'low' local maximum, chances are higher to select y as candidate.
  This makes it possible for SAs to escape from a local maximum that isn't
  the global maximum.
  The temperature function T is added to decrease the possibility of a jump

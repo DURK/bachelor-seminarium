@@ -73,7 +73,7 @@ name "sub:Genetic-algorithms"
 \end_layout
 
 \begin_layout Standard
-From 1960 until 1970 a new form of heuristics was introduced that was inpspired
+From 1960 until 1970 a new form of heuristics was introduced that was inspired
  by the way nature is evolving.
  Some computer scientists were staggered with the fact that nature was able
  to produce solutions to problems that could not be solved by algorithms
@@ -83,9 +83,9 @@ From 1960 until 1970 a new form of heuristics was introduced that was inpspired
 \end_layout
 
 \begin_layout Standard
-Simultaneously two major algorithms were developped.
+Simultaneously two major algorithms were developed.
  On one side of the the globe the German computer scientist Rechenberg introduce
-d Evolutionary Algorithms and on the other side Johan Holland developped
+d Evolutionary Algorithms and on the other side Johan Holland developed
  Genetic Algorithms at the University of Michigan.
 \end_layout
 
@@ -94,22 +94,22 @@ Genetic algorithms are a specific group of heuristics defined by John Holland
  at the University of Michican in 1960.
  Holland was inspired by the way nature was able to produce solutions to
  problems quicker than man could using formula's.
- He defined a set of rules for an algorithm that would define a solutionset,
+ He defined a set of rules for an algorithm that would define a solution-set,
  also called a population.
  
 \end_layout
 
 \begin_layout Standard
 Each solution in the set is represented by a chromosome.
- This chromosome might be a bitstring or even a set of mathematical equations.
+ This chromosome might be a bit-string or even a set of mathematical equations.
  The different parts in chromosome are called genes and determine the actual
  outcome of the chromosomes solution.
- In case the chromosome is a bitstring, the developper might define every
+ In case the chromosome is a bit-string, the developer might define every
  bit as being a gene.
 \end_layout
 
 \begin_layout Standard
-A population holds a generation of chromosones from which a new generation
+A population holds a generation of chromosomes from which a new generation
  can be formed.
  The new generation is made up by combining chromosomes from the previous
  generation, using a form of natural selection, where the best chromosomes
@@ -165,7 +165,7 @@ crossover
  technique.
  This technique takes a couple of genes from the first chromosome and fills
  it up with genes from the other chromosome.
- The result is a new chromosome consisting of key-features from its parrents.
+ The result is a new chromosome consisting of key-features from its parents.
 \end_layout
 
 \begin_layout Standard
@@ -181,7 +181,7 @@ crossover
  solution.
  Their is no guarantee though that best combination of genes present is
  actually the best solution possible, for the starting generation might
- not nescearliy contain the best solution or early selection has gotten
+ not necessarily contain the best solution or early selection has gotten
  rid of genes that were part of the best solution.
  This would cause the algorithm to find a local optima instead of the global
  optima.
@@ -212,7 +212,7 @@ Crossover and mutation are not applied for every step.
 An extra step that can be added to the iterative step is the replacement
  of the chromosomes with the lowest fitness score by two completely new
  ones.
- This will also stimulate the diversive behaviour of the algorithm.
+ This will also stimulate the diverse behaviour of the algorithm.
 \end_layout
 
 \begin_layout Paragraph
@@ -223,7 +223,7 @@ Termination step
 There a multiple ways to terminate the algorithm.
  It depends on the type of problem which methods suits best.
  One of the ways is to stop when the population contains a (percentage)
- of chromosomes that meet a pre-set fitness value.
+ of chromosomes that meet a preset fitness value.
  Another way is stop when the population has not changed over the last generatio
 ns.
  It is also possible to stop after a fixed number of generations or after
