@@ -68,8 +68,8 @@ From 1990 until 2000 there has been extensive research into pure genetic
  algorithms for solving the job shop problem.
  A lot of different approaches have been defined for representing the solutions
  as chromosomes and there have been even more strategies for applying cross
- over onto these chromsomes.
- In the period after 2000 scientists realised that the usage of pure genetic
+ over onto these chromosomes.
+ In the period after 2000 scientists realized that the usage of pure genetic
  algorithms was inefficient and they introduced extra heuristics to generate
  better results and produce them faster.
 \end_layout
@@ -114,7 +114,11 @@ indirect
  For example each gene could be a task and the order of the genes within
  the chromosome are equal to the order or execution the tasks.
  For indirect chromosomes, the genes represent parameters for an algorithm
- that uses dispatching rules as described in [job shop inleiding].
+ that uses dispatching rules as described in 
+\emph on
+section 3.1
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -159,7 +163,7 @@ illegal
 A solution to prevent illegal combinations was found by Gen et al.
  They have numbered all operations by their parental job number.
  If a problem consisted of three jobs A,B,C having three, three and one
- operations repsectively, the chromosome consists of three times the letters
+ operations respectively, the chromosome consists of three times the letters
  A and B en one time the letter C as shown in figure X.
  Because the order of operations within a job are fixed, it is possible
  to construct a valid schedule based on the slots reserved for the jobs
@@ -173,7 +177,7 @@ key "operation-based"
 \end_layout
 
 \begin_layout Standard
-The schedule is formed by processing the genes in order of occurence within
+The schedule is formed by processing the genes in order of occurrence within
  the chromosome.
  Taking the example of figure X, the first job is job number one.
  The algorithm will now schedule the first operation of job number one at
@@ -545,8 +549,8 @@ name "fig:pmx3"
 
 \end_inset
 
-The rest of the chromome is built by copying genes 1-1 from the parent chromosom
-e.
+The rest of the chromosome is built by copying genes 1-1 from the parent
+ chromosome.
  The last gene 'B' of the chromosome to the left is not copy for it would
  result in an illegal chromosome.
  The substring is checked and the first gene is again illegal.

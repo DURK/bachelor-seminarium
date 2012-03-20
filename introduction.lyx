@@ -64,7 +64,11 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The job shop problem (JSP) is one of the hardest combinatorial problems
+The 
+\emph on
+job shop problem (JSP)
+\emph default
+ is one of the hardest combinatorial problems
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -77,10 +81,10 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_layout
 
 \begin_layout Standard
-A specific variant of the JSP with 10 jobs and 10 operations is known as
- the 10x10 benchmark problem and was proposed by Muth and Thompson in 1963
- and could not be solved for over 20 years.
- The first proven optimal solution was developped by Carlier and Pison in
+A specific variant of JSP with 10 jobs and 10 operations is known as the
+ 10x10 benchmark problem and was proposed by Muth and Thompson in 1963 and
+ could not be solved for over 20 years.
+ The first proven optimal solution was developed by Carlier and Pison in
  1987[muth][carlier][brucker]
 \begin_inset Foot
 status open
@@ -99,7 +103,7 @@ status open
 The problem was solved using a branch and bound algorithm (BB).
  BB algorithm is a heuristic that will enumerate all likely solutions in
  the solution space.
- Searching the complete solution space would be inpossible and therefore
+ Searching the complete solution space would be impossible and therefore
  the algorithm will constantly split up the space (add boundaries) and discard
  solutions that are not possible.
 \end_layout
@@ -109,17 +113,18 @@ Using BB is just one way of solving the problem.
  Although this algorithm is proven to produce the optimal solution of the
  10x10 benchmark problem, scientist are still looking for better (heuristic)
  solutions for the complete JSP.
- This paper will research solutions that have been found for solving the
- JSP problem using genetic algorithms and local search.
+ This paper will research solutions that have been found for solving JSP
+ using genetic algorithms and local search.
 \end_layout
 
 \begin_layout Standard
 JSP is an NP-hard problem what means that there is no algorithm which solves
- the JSP in polynomial time.
+ JSP in polynomial time.
  Because of that we need heuristic algorithms that solve the problem.
  During the last century a lot of heuristics algorithms has been developed
  and some of them have proven to be very successful.
- In this paper we will discuss genetic algorithm and local search approaches.
+ In this paper we will discuss genetic algorithms and local search approaches
+ to JSP.
 \end_layout
 
 \begin_layout Standard

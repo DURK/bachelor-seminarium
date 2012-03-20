@@ -93,7 +93,7 @@ Combining genetic algorithms with local search
 \begin_layout Standard
 Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
- Selection of chronosomes is based on their fitness.
+ Selection of chromosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
  after 'birth' by using a fitness function as shown in section 3.2.3.
  In genetic algorithms combined with local search, selection is based on
@@ -102,7 +102,7 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  on trough crossover.
  In essence, this causes offspring to 'learn', a principle called local
  optimization.
- An example of pseudo code for such an optimalization is shown in listing
+ An example of pseudo code for such an optimization is shown in listing
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -202,7 +202,7 @@ name "lis:Pseudocode-for-optimization"
 
 \end_inset
 
-Pseudocode for optimization
+Pseudo-code for optimization
 \end_layout
 
 \end_inset
@@ -272,8 +272,12 @@ Shifting Bottleneck Procedure
 \begin_layout Standard
 The first example is a combination of genetic algorithms with bottleneck
  shifting procedure.
- The shifting bottleneck procedure (SBP) is an extensively used heuristic
- to approach optimal solutions for the job shop problem.
+ 
+\emph on
+The shifting bottleneck procedure (SBP)
+\emph default
+ is an extensively used heuristic to approach optimal solutions for the
+ job shop problem.
  Given a JSP-instance that consists of a multi-machine schedule and a certain
  number of jobs.
  The SBP starts by creating a partial schedule of just the first machine.
@@ -429,7 +433,7 @@ This genetic shifting bottleneck procedure differs from the standard shifting
  In the genetic approach the bottleneck is not a criterion for the choice
  of the next machine, because this is determined by the given chromosome.
  Thus, this genetic approach doesn't need to identify a bottleneck machine
- every iteration 
+ on every iteration 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -458,6 +462,20 @@ Beam search
 \begin_layout Standard
 ---Filtered beam search generate 'best' schedule for give job sequence (chromoso
 me)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+@Peter: More examples of hybrid genetics, with different chromosome-representati
+ons (like beam search), so comparisons can be made? Or dig deeper into SPB?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
