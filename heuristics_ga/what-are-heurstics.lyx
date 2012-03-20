@@ -117,6 +117,12 @@ A greedy algorithm always makes the choice that looks best in the current
  problem, without considering results from subproblems.
  In other words, Greedy Algorithms continuesly make a locally optimal choice
  in the hope that this choice will lead to a globally optimal solution.
+ The definition of a local and global optimal, which can be a maximum or
+ minimum, will be explained in 
+\emph on
+section 2.2: Local Search
+\emph default
+.
  In case of the Traveling Salesman Problem, each local optimal choice is
  defined as visiting an unvisited city nearest to the current city.
 \end_layout
