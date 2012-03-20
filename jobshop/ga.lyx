@@ -128,8 +128,11 @@ reference "tab:Ways-of-representing"
 \end_inset
 
 [ref to cheng part1].
- As illustration of a representation, the rest of this section will describe
- the 
+ As illustration of a representation, the re
+\end_layout
+
+\begin_layout Standard
+st of this section will describe the 
 \emph on
 operation-based algorithm
 \emph default
@@ -174,14 +177,11 @@ The schedule is formed by processing the genes in order of occurence within
  the first available spot.
  The same for the gene, that will cause the first operation of the third
  job to be placed at the next available spot.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -339,6 +339,85 @@ Ways of representing a solution to the jobshop problem
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Crossover
+\end_layout
+
+\begin_layout Standard
+The crossover method will combine the genes of different chromosomes to
+ generate a new population that might be better than the previous one.
+ During this operation some genes are switched from one chrome to another.
+ In some basic genetic algorithms this operation is rather easy because
+ all permutations of genes are valid.
+\end_layout
+
+\begin_layout Standard
+In case of the job shop problem, given the operation-based representation,
+ there is a difficulty.
+ Each gene in the chromosome represents an actual operation.
+ Applying a simple crossover could generate a chromosome that contains an
+ actual operations twice, making this chromosome invalid.
+\end_layout
+
+\begin_layout Standard
+There are many solutions to this problem, that use an intelligent algorithms
+ for applying crossover[refer to some of them].
+ These algorithms still exchange their genes but instead of just crossing,
+ each gene is evaluated by some rules before it is inserted into the new
+ chromosome.
+\end_layout
+
+\begin_layout Standard
+An example of such an intelligent crossover method is 
+\emph on
+partially-mapped crossover (PMX)
+\emph default
+ that was proposed by Goldberg and Lingle[cite].
+ The algorithm starts like a standard crossover algorithm by selecting two
+ chromosomes from the parental population.
+ Next the algorithm chooses two random cutting positions as shown in figure
+ X.
+ The genes within the two cutting positions will be swapped.
+ This will cause a conflict within the chromosome because X and Y now have
+ more jobs within the chromosome than in the actual problem.
+ This is where the algorithm takes effect.
+ The two substrings are copied into the new generation and the algorithm
+ will now start to copy the other genes one by one.
+ Each gene is checked for validity.
+ If the gene is not already present it will be copied to the new chromosome.
+ If it is present already, the algorithm will take the first gene from the
+ original substring that is not already present in the current chromosome
+ and use this gene.
+ 
+\end_layout
+
+\begin_layout Standard
+Using this technique generates a valid new population, does exchange properties
+ and validity is kept in such a way that the properties (the order of executing
+ tasks) is preserved as much as possible.
+\end_layout
+
+\begin_layout Subsubsection
+Fitness
+\end_layout
+
+\begin_layout Standard
+Creating a fitness function for this algorithm is straightforward.
+ The job shop problem is about finding the schedule that finishes as quickly
+ as possible.
+ The fitness function can simply be based on the earliest finishing time.
+ A variation of the job shop problem could also check the number of time
+ machines are not doing anything.
+\end_layout
+
+\begin_layout Standard
+Using pure genetic algorithms will provide the user with a solution that
+ in some case is near-optimal.
+ The next section will show how combining genetic algorithms with local
+ search will provide solutions that are more optimal than the results of
+ pure genetics.
 \end_layout
 
 \end_body
