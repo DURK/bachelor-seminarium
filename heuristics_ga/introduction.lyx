@@ -87,12 +87,12 @@ Problems in NPC (np complete).
  NPC is also in NP.
  Because of that, also these problems are veryfiable in polynominal time.
  Also every problem in NP is reducable to NPC.
- NPC is also in NP HARD.
+ NPC is also in NP-hard.
  That means that NPC problems are hardest problems in NP
 \end_layout
 
 \begin_layout Itemize
-Problems in NP HARD.
+Problems in NP-hard.
  This is the most difficult set of problems, most found in real life.
  These problems cannot be verified in polynominal time.
 \end_layout
@@ -106,7 +106,7 @@ There are also a lot of ways to solve a problem.
  Heuristics approximate the optimal solution to a problem within acceptable
  amount of time.
  More about it is explained in the next chapter.
- For more difficult problems in NP-HARD local search can be used to search
+ For more difficult problems in NP-hard local search can be used to search
  for solutions.
  Local search returns the local optimum of the space.
  Also Genetic algorithms (GA) can be used, which are like local search also

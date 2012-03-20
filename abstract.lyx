@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Standard
-The jobshop problem (JSP) is one of the hardest well-known combinatorial
+The job shop problem (JSP) is one of the hardest well-known combinatorial
  problems.
  This problem gained a lot of attention from computer scientists, who published
  a large amount of papers presenting numerous solutions to JSP.

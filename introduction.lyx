@@ -114,7 +114,7 @@ Using BB is just one way of solving the problem.
 \end_layout
 
 \begin_layout Standard
-JSP is an NP hard problem what means that there is no algorithm which solves
+JSP is an NP-hard problem what means that there is no algorithm which solves
  the JSP in polynomial time.
  Because of that we need heuristic algorithms that solve the problem.
  During the last century a lot of heuristics algorithms has been developed
