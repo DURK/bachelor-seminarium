@@ -88,15 +88,14 @@ Karens Grigorjancs
 Wouter Klein Heerenbrink
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_layout Abstract
+\begin_inset CommandInset include
+LatexCommand input
+filename "abstract.lyx"
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Abstract
-Hier moet nog even een mooi samenvatting van het artikel komen
 \begin_inset Newpage newpage
 \end_inset
 
@@ -184,6 +183,13 @@ filename "heuristics_ga/what-is-gls.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Applied at the jobshop problem
 \end_layout
@@ -192,26 +198,6 @@ Applied at the jobshop problem
 \begin_inset CommandInset include
 LatexCommand input
 filename "jobshop/introduction.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "jobshop/heurstics.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "jobshop/localsearch.lyx"
 
 \end_inset
 
@@ -250,6 +236,16 @@ filename "jobshop/conclusion.lyx"
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "conclusion.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

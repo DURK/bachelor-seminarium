@@ -64,9 +64,8 @@ What is genetic local search?
 \end_layout
 
 \begin_layout Standard
-In this section we will mainly discuss memetic algorithms, which are mostly
- the same as genetic algortihms.
- 
+In this section we will mainly discuss memetic algorithms, which are then
+ being compared to local search since they all share the same genetic principle.
 \end_layout
 
 \begin_layout Standard
@@ -75,29 +74,115 @@ stics that combine algorithmic approaches.
  Memetic comes from the word 'meme', introduced by R.
  Dawkins in 1976.
  Memes are elements of a culture or behaviour that are passed by nongenetic
- means, also knows as imitation.
-\end_layout
-
-\begin_layout Standard
-Initially, Evolutionary Algorithms, Simulated Annealing (+ variants) and
- Tabu Search were combined.
- Nowadays, more and/or other metaheuristics are applied in memetic algorithms.
- 
+ means.
+ Like genes in evolution, memes will work the same way in the algorithms.
 \end_layout
 
 \begin_layout Subsubsection
-Algorithms used for memetic algorithms
+Algorithms used in memetic algorithms
 \end_layout
 
 \begin_layout Standard
-Since memetic algorithms are based on the combination of other algorithms,
- there is no concluding algorithm.
- We will explain some of the algorithms that are combined to obtain a memetic
- algorithm.
+Consider the first notions introduced in 
+\emph on
+2.2 What is local search?
+\end_layout
+
+\begin_layout Itemize
+Set F contains all feasible solutions.
+\end_layout
+
+\begin_layout Itemize
+Fitness function c: maps 
+\begin_inset Formula $F\rightarrow\mathbb{R}$
+\end_inset
+
+, measuring the fitness for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Hyperneighborhood: defining for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ a neighborhood 
+\begin_inset Formula $N(x)\subseteq F.$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Evolutionary algorithms 
+Please note that the hyperneighborhood is differs from the neighborhood.
+ The amount of neighbors in local search are related to the size of F, where
+ the subset N can hold any number of 1...F.
+\end_layout
+
+\begin_layout Standard
+Evolutionary algorithms are, as the name implies, similar to the evolutionary
+ way of survival of the fittest.
+ EAs create a randomly subset 
+\begin_inset Formula $N\subseteq F$
+\end_inset
+
+ of candidate solutions.
+ Secondly, the fitness function is applied to all 
+\begin_inset Formula $x\in N$
+\end_inset
+
+.
+ Based on the best results, a selection of solutions, consider subset 
+\begin_inset Formula $C\subseteq N$
+\end_inset
+
+ is picked to seed the next generation.
+ This is done by recombination and/or mutation.
+ Recombination is an operator applied to two or more candidate solutions
+ (parents) and result in one or more new candidate solutions (children).
+ Mutation is applied to one candidate and results in one new candidate.
+ Each new generation (the offspring) will compete against the old one.
+ This can be iterated until the wanted result is reached or the amount of
+ computation is reached.
+ The difference between local search is that these recombinations and/or
+ mutation can make bigger jumps in set F.
+\end_layout
+
+\begin_layout Standard
+Simulated Annealing uses statistics to find it's local maximum.
+ Given a hyperneighbourhood 
+\begin_inset Formula $N\subseteq F$
+\end_inset
+
+ which is set to a global minima.
+ Consider the non increasing function T: 
+\begin_inset Formula $\mathbb{N}\rightarrow\mathbb{N}$
+\end_inset
+
+.
+ T(t) is called the temperature at time t.
+ Starting at a random 
+\begin_inset Formula $x\in N$
+\end_inset
+
+, SA picks 
+\begin_inset Formula $y\in N$
+\end_inset
+
+ randomly.
+ The next candidate solution, x or y, is determined as follows:
+\end_layout
+
+\begin_layout Itemize
+If c(x) < c(y), then x(t+1) = x
+\end_layout
+
+\begin_layout Itemize
+If c(x) > c(y), then x(t+1) = y with a probability of exp[-(c(y) - c(x))/T(t)].
+ x(t+1) = x otherwise.
 \end_layout
 
 \end_body
