@@ -64,17 +64,17 @@ Local Search
 \end_layout
 
 \begin_layout Standard
-Local search is a metaheuristic method to optimize solutions for NP-hard
+Local search is a meta heuristic method to optimize solutions for NP-hard
  problems.
  The essence of local search algorithms lies in the search of lookalike
  solutions to these problems.
- One certain solution is selected as a canditate solution and evaluated.
+ One certain solution is selected as a candidate solution and evaluated.
  The evaluation of these solutions are based on a chosen heuristic, indicating
  the value of this solution.
  All the surrounding solutions are located in the candidate's neighborhood.
  The most valued solution in it's neighbourhood is then selected as new
  candidate solution.
- This search goes on until the algorithm hits the neighborhoods maximum.
+ This search goes on until the algorithm hits the neighbourhoods maximum.
  This maximum solution is called a local maximum.
 \end_layout
 
@@ -91,7 +91,7 @@ Cost function: maps
 \begin_inset Formula $F\rightarrow\mathbb{R}$
 \end_inset
 
-, quantifing the fitness for each solution 
+, quantifying the fitness for each solution 
 \begin_inset Formula $x\in F$
 \end_inset
 
@@ -128,21 +128,92 @@ At the start of a local search, choosing a candidate solution
 \begin_inset Formula $\in N(x).$
 \end_inset
 
- Now the next thing to know is the relation between y and x.
- What is the size of N(x)? This is different for each problem.
- For instance, if we look for the biggest CLIQUE in a graph, the relation
- between x and y can be adding or removing a node from x.
- Consider the size of CLIQUE x, k.
- If y forms a CLIQUE of size k+1 the contrain c(x) < c(y) holds true and
- y is a possible next candidate solution.
+ Now the next thing to know is the relation between 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ What is the size of 
+\begin_inset Formula $N(x)$
+\end_inset
+
+? This is different for each problem.
+ For instance, if we look for the biggest 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ in a graph, the relation between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ can be adding or removing a node from 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Consider the size of 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $y$
+\end_inset
+
+ forms a 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ of size 
+\begin_inset Formula $k+1$
+\end_inset
+
+ the constrain 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+ holds true and 
+\begin_inset Formula $y$
+\end_inset
+
+ is a possible next candidate solution.
  The next candidate solution, when available, is being selected based on
  the first improvement or the best improvement.
- The first improvement selects the first x that holds the following contraint:
- c(x) < c(y).
- "Mooi woord voor logisch nadenken" the best improvement select the highest
- improving c(y) E N(x).
- Finally, the algorithm must hit a candidate solution that holds c(x) =
- max(c(x) E N(x)).
+ The first improvement selects the first 
+\begin_inset Formula $x$
+\end_inset
+
+ that holds the following constraint: 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+.
+ Logically, the best improvement select the highest improving 
+\begin_inset Formula $c(y)\in N(x)$
+\end_inset
+
+.
+ Finally, the algorithm must hit a candidate solution that holds 
+\begin_inset Formula $c(x)=max(c(x)\in N(x))$
+\end_inset
+
+.
  The algorithm then hits a local maximum and terminates.
  Not in all cases the algorithm waits for the local maximum to be found.
  Other stop conditions are also possible.
