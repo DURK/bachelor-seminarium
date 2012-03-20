@@ -118,8 +118,19 @@ Hyperneighborhood: defining for each solution
 
 \begin_layout Standard
 Please note that the hyperneighborhood is differs from the neighborhood.
- The amount of neighbors in local search are related to the size of F, where
- the subset N can hold any number of 1...F.
+ The amount of neighbors in local search are related to the size of 
+\begin_inset Formula $F$
+\end_inset
+
+, where the subset 
+\begin_inset Formula $N$
+\end_inset
+
+ can hold any number of 
+\begin_inset Formula $1...F$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -148,7 +159,11 @@ Evolutionary algorithms are, as the name implies, similar to the evolutionary
  This can be iterated until the wanted result is reached or the amount of
  computation is reached.
  The difference between local search is that these recombinations and/or
- mutation can make bigger jumps in set F.
+ mutation can make bigger jumps in set 
+\begin_inset Formula $F$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -163,7 +178,15 @@ Simulated Annealing uses statistics to find it's local maximum.
 \end_inset
 
 .
- T(t) is called the temperature at time t.
+ 
+\begin_inset Formula $T(t)$
+\end_inset
+
+ is called the temperature at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
  Starting at a random 
 \begin_inset Formula $x\in N$
 \end_inset
@@ -173,16 +196,48 @@ Simulated Annealing uses statistics to find it's local maximum.
 \end_inset
 
  randomly.
- The next candidate solution, x or y, is determined as follows:
+ The next candidate solution, 
+\begin_inset Formula $x$
+\end_inset
+
+ or 
+\begin_inset Formula $y$
+\end_inset
+
+, is determined as follows:
 \end_layout
 
 \begin_layout Itemize
-If c(x) < c(y), then x(t+1) = x
+If 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+, then 
+\begin_inset Formula $x(t+1)=x$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-If c(x) > c(y), then x(t+1) = y with a probability of exp[-(c(y) - c(x))/T(t)].
- x(t+1) = x otherwise.
+If 
+\begin_inset Formula $c(x)>c(y)$
+\end_inset
+
+, then 
+\begin_inset Formula $x(t+1)=y$
+\end_inset
+
+ with a probability of 
+\begin_inset Formula $e^{\frac{-(c(y)-c(x))}{T(t)}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x(t+1)=x$
+\end_inset
+
+ otherwise.
 \end_layout
 
 \end_body
