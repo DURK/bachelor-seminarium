@@ -102,76 +102,113 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  on trough crossover.
  In essence, this causes offspring to 'learn', a principle called local
  optimization.
+ An example of pseudo code for such an optimalization is shown in listing
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:Pseudocode-for-optimization"
+
+\end_inset
+
+ and illustrated in figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-recombination-,-local"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-This process of local optimization is illustrated by the following pseudocode:
-\end_layout
+\begin_inset listings
+lstparams "basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4"
+inline false
+status open
 
-\begin_layout Description
+\begin_layout Plain Layout
+
 begin
 \end_layout
 
-\begin_layout Description
-t=0
+\begin_layout Plain Layout
+
+  t=0
 \end_layout
 
-\begin_layout Description
-initialize P(t) (job sequences)
+\begin_layout Plain Layout
+
+  initialize P(t) job sequences
 \end_layout
 
-\begin_layout Description
-localsearch to improve chromosomes
+\begin_layout Plain Layout
+
+  localsearch to improve chromosomes
 \end_layout
 
-\begin_layout Description
-evaluate P(t)
+\begin_layout Plain Layout
+
+  evaluate P(t)
 \end_layout
 
-\begin_layout Description
-while (not termination condition) do
+\begin_layout Plain Layout
+
+  while (not termination condition) do
 \end_layout
 
-\begin_layout Description
-begin
+\begin_layout Plain Layout
+
+    recombine P(t) by crossover and mutation
 \end_layout
 
-\begin_deeper
-\begin_layout Description
-recombine P(t) by crossover and mutation
+\begin_layout Plain Layout
+
+    localsearch to improve chromosomes
 \end_layout
 
-\begin_layout Description
-localsearch to improve chromosomes
+\begin_layout Plain Layout
+
+    evaluate P(t)
 \end_layout
 
-\begin_layout Description
-evaluate P(t)
+\begin_layout Plain Layout
+
+    select to next population P(t)
 \end_layout
 
-\begin_layout Description
-select to next population P(t)
+\begin_layout Plain Layout
+
+    t++
 \end_layout
 
-\begin_layout Description
-t++
+\begin_layout Plain Layout
+
+  endwhile
 \end_layout
 
-\begin_layout Description
-end.
+\begin_layout Plain Layout
+
+end
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-The recombination-, local search-, and evaluation-steps in the pseudo-code
- above, are illustrated in Fig.
- x below, elaborating on section 3.2.2: Crossover:
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Pseudocode-for-optimization"
+
+\end_inset
+
+Pseudocode for optimization
 \end_layout
 
-\begin_layout Standard
-\begin_inset Graphics
-	filename images/hybrid_gls_selection.png
-	scale 35
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -179,10 +216,42 @@ The recombination-, local search-, and evaluation-steps in the pseudo-code
 \end_layout
 
 \begin_layout Standard
-Local search as seen in Fig.
- x can be substituted by any form of local search algorithm that converts
- a given chromosome into a feasible solution.
- Such a local search algorithm will be explained in the following section.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pseudo-to-figure.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-recombination-,-local"
+
+\end_inset
+
+The recombination-, local search-, and evaluation-steps in the pseudo-code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
