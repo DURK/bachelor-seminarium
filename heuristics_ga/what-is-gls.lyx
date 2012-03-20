@@ -102,6 +102,7 @@ Fitness function c: maps
 \end_inset
 
 .
+ Higher is better.
 \end_layout
 
 \begin_layout Itemize
@@ -167,7 +168,7 @@ Evolutionary algorithms are, as the name implies, similar to the evolutionary
 \end_layout
 
 \begin_layout Standard
-Simulated Annealing uses statistics to find it's local maximum.
+Simulated Annealing uses statistics to find it's global maximum.
  Given a hyperneighbourhood 
 \begin_inset Formula $N\subseteq F$
 \end_inset
@@ -209,11 +210,11 @@ Simulated Annealing uses statistics to find it's local maximum.
 
 \begin_layout Itemize
 If 
-\begin_inset Formula $c(x)<c(y)$
+\begin_inset Formula $c(x)\leq c(y)$
 \end_inset
 
 , then 
-\begin_inset Formula $x(t+1)=x$
+\begin_inset Formula $x(t+1)=y$
 \end_inset
 
 
@@ -225,7 +226,7 @@ If
 \end_inset
 
 , then 
-\begin_inset Formula $x(t+1)=y$
+\begin_inset Formula $x(t+1)=x$
 \end_inset
 
  with a probability of 
@@ -234,10 +235,29 @@ If
 
 .
  
-\begin_inset Formula $x(t+1)=x$
+\begin_inset Formula $x(t+1)=y$
 \end_inset
 
  otherwise.
+\end_layout
+
+\begin_layout Standard
+We can conclude that if the current candidate solution has a relatively
+ high fitness, that chances that y will be selected as candidate solution
+ will be low.
+ If x is a 'low' local maximum, that chances are higher to select y as candidate.
+ This makes it possible for SAs to escape from a local maximum that isn't
+ the global maximum.
+ The temperature function T is added to decrease the possibility of a jump
+ after each iteration, which eventually will lead to a local maximum that
+ will be (close to) the global maximum.
+\end_layout
+
+\begin_layout Standard
+Local search has the major flaw of not having a possibility to escape a
+ local maximum.
+ The genetic part of the algorithm adds that possibility, therefore increasing
+ it's usability.
 \end_layout
 
 \end_body
