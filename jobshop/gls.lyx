@@ -104,16 +104,20 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  optimization.
 \end_layout
 
+\begin_layout Standard
+This process of local optimization is illustrated by the following pseudocode:
+\end_layout
+
 \begin_layout Description
 begin
 \end_layout
 
 \begin_layout Description
-t<-0
+t=0
 \end_layout
 
 \begin_layout Description
-initialize P(t )(job sequences)
+initialize P(t) (job sequences)
 \end_layout
 
 \begin_layout Description
@@ -121,7 +125,7 @@ localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Description
-evaluate P(t )
+evaluate P(t)
 \end_layout
 
 \begin_layout Description
@@ -134,7 +138,7 @@ begin
 
 \begin_deeper
 \begin_layout Description
-recombine P(t )
+recombine P(t) by crossover and mutation
 \end_layout
 
 \begin_layout Description
@@ -142,15 +146,15 @@ localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Description
-evaluate P(t )
+evaluate P(t)
 \end_layout
 
 \begin_layout Description
-select to next population P(t )
+select to next population P(t)
 \end_layout
 
 \begin_layout Description
-t<-t+1
+t++
 \end_layout
 
 \begin_layout Description
@@ -158,6 +162,29 @@ end.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+The recombination-, local search-, and evaluation-steps in the pseudo-code
+ above, are illustrated in Fig.
+ x below, elaborating on section 3.2.2: Crossover:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hybrid_gls_selection.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Local search as seen in Fig.
+ x can be substituted by any form of local search algorithm that converts
+ a given chromosome into a feasible solution.
+ Such a local search algorithm will be explained in the following section.
+\end_layout
+
 \begin_layout Subsubsection
 Shifting Bottleneck Procedure
 \end_layout
