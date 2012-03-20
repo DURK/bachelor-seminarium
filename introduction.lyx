@@ -59,10 +59,6 @@
 
 \begin_body
 
-\begin_layout Subsection
-Introduction
-\end_layout
-
 \begin_layout Standard
 The 
 \emph on
@@ -100,7 +96,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-The problem was solved using a branch and bound algorithm (BB).
+The problem was solved using a 
+\emph on
+branch and bound algorithm (BB)
+\emph default
+.
  BB algorithm is a heuristic that will enumerate all likely solutions in
  the solution space.
  Searching the complete solution space would be impossible and therefore
