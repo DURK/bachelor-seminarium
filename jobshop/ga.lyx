@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic algorithms
+Genetic Algorithms
 \end_layout
 
 \begin_layout Standard
@@ -127,16 +127,19 @@ reference "tab:Ways-of-representing"
 
 \end_inset
 
-[ref to cheng part1].
- As illustration of a representation, the re
-\end_layout
 
-\begin_layout Standard
-st of this section will describe the 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cheng99"
+
+\end_inset
+
+.
+ As illustration of a representation an example of the 
 \emph on
 operation-based algorithm
 \emph default
-.
+ will be given.
 \end_layout
 
 \begin_layout Standard
@@ -155,9 +158,9 @@ illegal
 \begin_layout Standard
 A solution to prevent illegal combinations was found by Gen et al.
  They have numbered all operations by their parental job number.
- If a problem consisted of three jobs all having three operations, the chromosom
-e would consist of three times the numbers one, two and three as shown in
- figure X.
+ If a problem consisted of three jobs A,B,C having three, three and one
+ operations repsectively, the chromosome consists of three times the letters
+ A and B en one time the letter C as shown in figure X.
  Because the order of operations within a job are fixed, it is possible
  to construct a valid schedule based on the slots reserved for the jobs
 \begin_inset CommandInset citation
@@ -363,10 +366,17 @@ In case of the job shop problem, given the operation-based representation,
 
 \begin_layout Standard
 There are many solutions to this problem, that use an intelligent algorithms
- for applying crossover[refer to some of them].
- These algorithms still exchange their genes but instead of just crossing,
- each gene is evaluated by some rules before it is inserted into the new
- chromosome.
+ for applying crossover
+\begin_inset CommandInset citation
+LatexCommand cite
+key "syswerda1989,davis1985,cheng1997"
+
+\end_inset
+
+.
+ These algorithms still exchange the genes of multiple chromosomes but instead
+ of just crossing, each gene is evaluated by some rules before it is inserted
+ into the new chromosome.
 \end_layout
 
 \begin_layout Standard
@@ -374,22 +384,51 @@ An example of such an intelligent crossover method is
 \emph on
 partially-mapped crossover (PMX)
 \emph default
- that was proposed by Goldberg and Lingle[cite].
+ that was proposed by Goldberg and Lingle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "goldberg1985"
+
+\end_inset
+
+.
  The algorithm starts like a standard crossover algorithm by selecting two
  chromosomes from the parental population.
  Next the algorithm chooses two random cutting positions as shown in figure
- X.
- The genes within the two cutting positions will be swapped.
- This will cause a conflict within the chromosome because X and Y now have
- more jobs within the chromosome than in the actual problem.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pmx1"
+
+\end_inset
+
+.
+ The genes within the two cutting positions will be swapped (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pmx2"
+
+\end_inset
+
+).
+ If the other genes are just copied one-to-one it would cause a conflict
+ within the chromosome because the chromosomes now have more jobs within
+ the chromosome than in the actual problem.
  This is where the algorithm takes effect.
  The two substrings are copied into the new generation and the algorithm
- will now start to copy the other genes one by one.
- Each gene is checked for validity.
+ will now start to copy the other genes one by one but each gene is checked
+ for validity.
  If the gene is not already present it will be copied to the new chromosome.
  If it is present already, the algorithm will take the first gene from the
  original substring that is not already present in the current chromosome
- and use this gene.
+ and use this gene as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pmx3"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -397,6 +436,137 @@ partially-mapped crossover (PMX)
 Using this technique generates a valid new population, does exchange properties
  and validity is kept in such a way that the properties (the order of executing
  tasks) is preserved as much as possible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pmx_1.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pmx1"
+
+\end_inset
+
+Two selected chromosomes that will be crossed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pmx_2.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pmx2"
+
+\end_inset
+
+Two new chromosomes are built starting with crossing the selected substring
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pmx_3.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pmx3"
+
+\end_inset
+
+The rest of the chromome is built by copying genes 1-1 from the parent chromosom
+e.
+ The last gene 'B' of the chromosome to the left is not copy for it would
+ result in an illegal chromosome.
+ The substring is checked and the first gene is again illegal.
+ The second gene of the substring is an A and will be copy to form a valid
+ gene.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
