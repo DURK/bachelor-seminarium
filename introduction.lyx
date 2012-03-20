@@ -99,8 +99,8 @@ status open
 The problem was solved using a branch and bound algorithm (BB).
  BB algorithm is a heuristic that will enumerate all likely solutions in
  the solution space.
- Search the complete solution space would be inpossible and therefore the
- algorithm will constantly split up the space (add boundaries) and discard
+ Searching the complete solution space would be inpossible and therefore
+ the algorithm will constantly split up the space (add boundaries) and discard
  solutions that are not possible.
 \end_layout
 
