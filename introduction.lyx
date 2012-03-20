@@ -68,18 +68,45 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 .
- An instance with ten jobs consisting from 100 operations which has to be
- processed on ten machines formulated in 1963 was not solved for more than
- 25 years until 1986.
- Many solutions to this problem have been proposed but it was finally solved
- by a branch-and-bound algorithm.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Fisher-Thompson-1963"
+ The problem belongs to the set op NP-hard problems, which means that it
+ is not possible to calculate an exact solution within polynomial time.
+\end_layout
+
+\begin_layout Standard
+A specific variant of the JSP with 10 jobs and 10 operations is known as
+ the 10x10 benchmark problem and was proposed by Muth and Thompson in 1963
+ and could not be solved for over 20 years.
+ The first proven optimal solution was developped by Carlier and Pison in
+ 1987[muth][carlier][brucker]
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+@Peter: What to refer here? The article(s) where this claim is made or the
+ actual articles by Muth and Carlier?
+\end_layout
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+The problem was solved using a branch and bound algorithm (BB).
+ BB algorithm is a heuristic that will enumerate all likely solutions in
+ the solution space.
+ Search the complete solution space would be inpossible and therefore the
+ algorithm will constantly split up the space (add boundaries) and discard
+ solutions that are not possible.
+\end_layout
+
+\begin_layout Standard
+Using BB is just one way of solving the problem.
+ Although this algorithm is proven to produce the optimal solution of the
+ 10x10 benchmark problem, scientist are still looking for better (heuristic)
+ solutions for the complete JSP.
+ This paper will research solutions that have been found for solving the
+ JSP problem using genetic algorithms and local search.
 \end_layout
 
 \begin_layout Standard
@@ -92,13 +119,9 @@ JSP is an NP hard problem what means that there is no algorithm which solves
 \end_layout
 
 \begin_layout Standard
-This paper is organized as follows.
- In the first section different heuristics that can be used for solving
- JSP are being discussed.
- Local search and genetic algorithms are important parts of it.
- In the second section we discuss how the heuristics from section 1 could
- be applied to solve JSP.
- Also different solutions to solve the jobshop problem will be compared.
+The paper will cover the basics of heuristic and specifically for genetic
+ algorithms, local search and the combination of the two in the first section.
+ In the second section these heuristics are applied at the job shop problem.
 \end_layout
 
 \end_body
