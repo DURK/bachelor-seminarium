@@ -179,7 +179,10 @@ The recombination-, local search-, and evaluation-steps in the pseudo-code
 \end_layout
 
 \begin_layout Standard
-Local search as seen in Fig.
+Selection as seen in Fig.
+ x is based on some JSP-specific priority-based dispatching rule, as described
+ in section 3.1.
+ Local search as seen in Fig.
  x can be substituted by any form of local search algorithm that converts
  a given chromosome into a feasible solution.
  Such a local search algorithm will be explained in the following section.
