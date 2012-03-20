@@ -65,13 +65,21 @@ Genetic Local Search
 
 \begin_layout Standard
 This section will focus on genetic algorithms that heavily rely on local
- search, a common form of hybrid genetic algorithms.
+ search, a common form of 
+\emph on
+hybrid genetic algorithms
+\emph default
+.
  Genetic algorithms are designed to be effective at global search, but converge
  slowly.
  Local search on the other hand is effective at fine-tuning but often falls
- into local maxima, as shown in section 2.2.
+ into local maxima, as shown in 
+\emph on
+section 2.2
+\emph default
+: Local Search.
  The hybrid approach combines the best of both worlds by combining genetic
- algorithms that perform global search to avoid falling into local maximum
+ algorithms that perform global search to avoid falling into local maxima
  with local search that handles the fine-tuning
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -100,8 +108,11 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  fitness after performing local search.
  This means offspring will be improved and these improvements will be passed
  on trough crossover.
- In essence, this causes offspring to 'learn', a principle called local
- optimization.
+ In essence, this causes offspring to 'learn', a principle called 
+\emph on
+local optimization
+\emph default
+.
  An example of pseudo code for such an optimization is shown in listing
  
 \begin_inset CommandInset ref
@@ -173,7 +184,7 @@ begin
 
 \begin_layout Plain Layout
 
-    select to next population P(t)
+    select to new population P(t)
 \end_layout
 
 \begin_layout Plain Layout

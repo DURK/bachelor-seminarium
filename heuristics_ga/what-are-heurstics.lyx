@@ -64,10 +64,17 @@ Heuristics
 \end_layout
 
 \begin_layout Standard
-In general, heuristics can be seen as a "rule of thumb" by experience when
- making decisions.
+In general, heuristics can be seen as a
+\emph on
+ "rule of thumb"
+\emph default
+ by experience when making decisions.
  This definition also applies largely to heuristics in computer science;
- also called heuristic algorithms.
+ also called 
+\emph on
+heuristic algorithms
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
