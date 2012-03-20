@@ -130,7 +130,7 @@ filename "introduction.lyx"
 \end_layout
 
 \begin_layout Section
-Heuristics, Genetic Algorithms and Localsearch
+Basics of heuristics, genetic algorithms and local search
 \end_layout
 
 \begin_layout Standard
@@ -191,7 +191,7 @@ filename "heuristics_ga/what-is-gls.lyx"
 \end_layout
 
 \begin_layout Section
-Applied at the jobshop problem
+Heuristics applied at the jobshop problem
 \end_layout
 
 \begin_layout Standard
