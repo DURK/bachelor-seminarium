@@ -69,19 +69,9 @@ This section will focus on genetic algorithms that heavily rely on local
  Genetic algorithms are designed to be effective at global search, but converge
  slowly.
  Local search on the other hand is effective at fine-tuning but often falls
- into local 
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-niet global?
-\end_layout
-
-\end_inset
-
- maxima, as shown in section 3.3.
+ into local maxima, as shown in section 2.2.
  The hybrid approach combines the best of both worlds by combining genetic
- algorithms that perform global search and avoid falling into local maximum
+ algorithms that perform global search to avoid falling into local maximum
  with local search that handles the fine-tuning
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -105,7 +95,7 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
  Selection of chronosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
- after 'birth'.
+ after 'birth' by using a fitness function as shown in section 3.2.3.
  In genetic algorithms combined with local search, selection is based on
  fitness after performing local search.
  This means offspring will be improved and these improvements will be passed
@@ -114,63 +104,60 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  optimization.
 \end_layout
 
-\begin_layout Standard
------- PSEUDOCODE DIE ER ALLICHT IN MAG!---
-\end_layout
-
-\begin_layout Standard
+\begin_layout Description
 begin
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 t<-0
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 initialize P(t )(job sequences)
 \end_layout
 
-\begin_layout Standard
-local search to improve chromosomes
+\begin_layout Description
+localsearch to improve chromosomes
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 evaluate P(t )
 \end_layout
 
-\begin_layout Standard
-while (not termination condition) do 
+\begin_layout Description
+while (not termination condition) do
 \end_layout
 
-\begin_layout Standard
-begin 
+\begin_layout Description
+begin
 \end_layout
 
-\begin_layout Standard
-recombine P(t ) 
+\begin_deeper
+\begin_layout Description
+recombine P(t )
 \end_layout
 
-\begin_layout Standard
-local search to improve chromosomes 
+\begin_layout Description
+localsearch to improve chromosomes
 \end_layout
 
-\begin_layout Standard
-evaluate P(t ) 
+\begin_layout Description
+evaluate P(t )
 \end_layout
 
-\begin_layout Standard
-select to next population P(t ) 
+\begin_layout Description
+select to next population P(t )
 \end_layout
 
-\begin_layout Standard
-t <-t+1 
+\begin_layout Description
+t<-t+1
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 end.
- 
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
 Shifting Bottleneck Procedure
 \end_layout
@@ -197,7 +184,7 @@ key "Adams-and-Joseph-1988"
 
 .
  By improving partial schedules constructed in previous iterations, before
- entering the next iterationm, SBP is called an constructive algorithm combined
+ entering the next iteration, SBP is called an constructive algorithm combined
  with local search.
  
 \begin_inset CommandInset citation
@@ -210,7 +197,7 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Consider the hybrid genetic approach for the SBP.
+Now consider the hybrid genetic approach for the SBP.
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
@@ -219,6 +206,123 @@ Consider the hybrid genetic approach for the SBP.
  encodings of machine sequences.
  Resulting schedules differ greatly in quality, depening on the sequence
  of bottleneck machines 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cheng99"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The procedure of deriving a schedule from the chromosome works as follows:
+\end_layout
+
+\begin_layout Itemize
+-Let 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ be the set of already sequenced machines (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $M_{0}=\emptyset$
+\end_inset
+
+ at the start)
+\end_layout
+
+\begin_layout Itemize
+-Given chromosome 
+\begin_inset Formula $[m_{1},m_{2},m_{3},...m_{m}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Start with 
+\begin_inset Formula $M_{0}=\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $i=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Optimally solve partial schedule (job sequence) for machine 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ and add 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ to 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Reoptimize the sequence of each critical machine 
+\begin_inset Formula $m_{i}\in M_{0}$
+\end_inset
+
+ in turn, while keeping the other sequences fixed.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i=1+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $i>m$
+\end_inset
+
+, stop.
+ Else, return to step 2.
+\end_layout
+
+\begin_layout Standard
+This genetic shifting bottleneck procedure differs from the standard shifting
+ bottleneck heuristic in a very crucial way.
+ In the genetic approach the bottleneck is not a criterion for the choice
+ of the next machine, because this is determined by the given chromosome.
+ Thus, this genetic approach doesn't need to identify a bottleneck machine
+ every iteration 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
