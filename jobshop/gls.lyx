@@ -270,7 +270,11 @@ reference "fig:The-recombination-,-local"
 \end_inset
 
  is based on some JSP-specific priority-based dispatching rule, as described
- in section 3.1.
+ in 
+\emph on
+section 3.1
+\emph default
+.
  Local search can be substituted by any form of local search algorithm that
  converts a given chromosome into a feasible solution.
  Such a local search algorithm will be explained in the following section.
@@ -281,7 +285,7 @@ Shifting Bottleneck Procedure
 \end_layout
 
 \begin_layout Standard
-The first example is a combination of genetic algorithms with bottleneck
+The first example is a combination of a genetic algorithm with a bottleneck
  shifting procedure.
  
 \emph on
@@ -326,7 +330,7 @@ Now consider the hybrid genetic approach for the SBP.
  sequences of machines for SPB.
  The bottleneck shifting procedure is used to derive a schedule from these
  encodings of machine sequences.
- Resulting schedules differ greatly in quality, depening on the sequence
+ Resulting schedules differ greatly in quality, depending on the sequence
  of bottleneck machines 
 \begin_inset CommandInset citation
 LatexCommand cite
