@@ -418,7 +418,7 @@ Optimally solve partial schedule (job sequence) for machine
 \end_layout
 
 \begin_layout Enumerate
-Reoptimize the sequence of each critical machine 
+Re-optimize the sequence of each critical machine 
 \begin_inset Formula $m_{i}\in M_{0}$
 \end_inset
 
