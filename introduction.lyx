@@ -64,7 +64,7 @@ The
 \emph on
 job shop problem (JSP)
 \emph default
- is one of the hardest combinatorial problems
+ is one of the hardest combinatorial optimalisation problems
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -72,27 +72,17 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 .
- The problem belongs to the set op NP-hard problems, which means that it
- is not possible to calculate an exact solution within polynomial time.
+ The problem belongs to the set of NP-hard problems, which means that the
+ exact method does not exist which calculates an optimal solution within
+ polynomial time for an arbitrary instance of JSP.
 \end_layout
 
 \begin_layout Standard
 A specific variant of JSP with 10 jobs and 10 operations is known as the
  10x10 benchmark problem and was proposed by Muth and Thompson in 1963 and
  could not be solved for over 20 years.
- The first proven optimal solution was developed by Carlier and Pison in
- 1987[muth][carlier][brucker]
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-@Peter: What to refer here? The article(s) where this claim is made or the
- actual articles by Muth and Carlier?
-\end_layout
-
-\end_inset
-
-.
+ The first proven optimal solution was developed by Carlier in 1987.
+ [2 bronnen!!!]
 \end_layout
 
 \begin_layout Standard
@@ -101,8 +91,8 @@ The problem was solved using a
 branch and bound algorithm (BB)
 \emph default
 .
- BB algorithm is a heuristic that will enumerate all likely solutions in
- the solution space.
+ BB algorithm is an exact algorithm that will enumerate all likely solutions
+ in the solution space.
  Searching the complete solution space would be impossible and therefore
  the algorithm will constantly split up the space (add boundaries) and discard
  solutions that are not possible.
@@ -111,7 +101,7 @@ branch and bound algorithm (BB)
 \begin_layout Standard
 Using BB is just one way of solving the problem.
  Although this algorithm is proven to produce the optimal solution of the
- 10x10 benchmark problem, scientist are still looking for better (heuristic)
+ 10x10 benchmark problem, scientists are still looking for better (heuristic)
  solutions for the complete JSP.
  This paper will research solutions that have been found for solving JSP
  using genetic algorithms and local search.
