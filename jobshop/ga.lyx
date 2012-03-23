@@ -70,8 +70,7 @@ From 1990 until 2000 there has been extensive research into pure genetic
  as chromosomes and there have been even more strategies for applying cross
  over onto these chromosomes.
  In the period after 2000 scientists realized that the usage of pure genetic
- algorithms was inefficient and they introduced extra heuristics to generate
- better results and produce them faster.
+ algorithms was not efficient enough compared to heuristics.
 \end_layout
 
 \begin_layout Standard
@@ -82,68 +81,72 @@ This chapter will cover a couple of methods that use pure genetic algorithms
  The last part will cover the selection of a new population step.
 \end_layout
 
-\begin_layout Subsubsection
-Representations
-\end_layout
-
 \begin_layout Standard
-A chromosome as representation of the solution is crucial for the functioning
- of genetic algorithms.
- The two core types of chromosomes can be divided into binary and symbolic
- representations.
- As the name suggests, the first one consists merely of zeros and ones.
- This representation is how Holland described chromosomes in his original
- definition of genetic algorithms.
- The second representation, using symbols, was introduced to the field of
- genetic algorithms later.
-\end_layout
-
-\begin_layout Standard
-This section will discuss the symbolic representation only.
- Within the set of symbolic representations it is again possible to distinct
- two groups, namely 
-\emph on
-direct
-\emph default
- and 
-\emph on
-indirect
-\emph default
-.
- In direct chromosomes each gene represents an actual part of the schedule.
- For example each gene could be a task and the order of the genes within
- the chromosome are equal to the order or execution the tasks.
- For indirect chromosomes, the genes represent parameters for an algorithm
- that uses dispatching rules as described in 
-\emph on
-section 3.1
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-Within these two groups there are some ways to represent the actual solutions.
- A list of different representations divided in the two groups can be found
- in table 
+The JSP is a permutation problem as described in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:Ways-of-representing"
+reference "sub:Introduction-jsp"
 
 \end_inset
 
+.
+ A permutation problems means that there is a list of items, in the JSP
+ case a list ofoperations, that must be ordered in some way.
+ 
+\end_layout
 
+\begin_layout Standard
+Creating genetic algorithm for a permutation problem starts with the design
+ of a representation.
+ It is important that this representation is able to produce a solution
+ to the problem, the representation will withstand crossover and allow mutations
+ to be applied.
+\end_layout
+
+\begin_layout Standard
+There exist two ways of representing a solutions.
+ The first, conventional, method is using a binary representation of the
+ problem.
+ The second method uses a symbolic representation.
+\end_layout
+
+\begin_layout Standard
+In the early days of genetic algorithms researchers thought that binary
+ representations were the only representation that would allow for crossovers
+ to be applied.
+ This has led to several implementations binary implementations of the algorithm
+ [source].
+\end_layout
+
+\begin_layout Standard
+The view on genetic algorithms has changed and scientists found a way to
+ apply crossover to symbolic representations.
+ Using symbolic representations was found to be far more suitable to permutation
+al problems.
+ This article will therefore only cover symbolic representations.
+\end_layout
+
+\begin_layout Standard
+Also symbolic representations can be divided in two different groups called
+ indirect and direct.
+ In indirect algorithms the representation of chromosome does not consist
+ of actual tasks, but of variables for other heuristic algorithms that can
+ construct a schedule.
+ This is out of the scope of this article.
+\end_layout
+
+\begin_layout Standard
+This article will cover direct representations, where each symbol in the
+ chromosomes represents an operation or job.
+ There are a couple of representations known but this article will only
+ cover the operation-based variant.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
 
 \end_inset
 
-.
- As illustration of a representation an example of the 
-\emph on
-operation-based algorithm
-\emph default
- will be given.
+
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,38 @@
+
+The JOB shop problem is permutation problem [see first chapter]
+
+Design of algorithm starts with a representation
+Representation must be able to withstand crossover and mutation
+
+You can choose for a binary of symbolic representation
+Binary was first seen as only option, but this was not found to be suitable for permutations
+Symbolic representations are very suitable for permutation problems
+
+Within symbolic repr. you can have direct and indirect representations
+Indirect representations define parameters for other heuristic formulas; beyond scope of article
+Direct representations use symbols for each tasks
+
+Their are several direct representations, we will give an example of operation based
+Operation based each symbol represents an operation
+Listing X shows how the solution can be constructed from the chromosome
+
+Problems with this repr. related to withstanding crossover:
+ * operations within job required precedence
+ * permutation requires fixed number of operation
+
+Precedence can be fixed by listing the job-name of each operation
+The actual solution is build by schedule the next task of the job that is listed in the chromosome, as seen in listing Y
+
+The second problem is not a problem if you use a correct crossover algorithm
+Several algorithms have been designed, we will discuss the PMX
+...
+Valid chromosomes are guaranteed
+
+For each new chromosome the fitness must be determined
+To determine the fitness, the schedule is build based on the chromosome
+The straightforward method for determining fitness is to check the earliest finishing time
+Though no prove found, you could also use different methods like comparing the number of minutes the machines are not doing anything
+
+Using pure genetic algorithms will show a approximate of the optimum, though it might be local
+Using pure genetic algorithms was very active in the period from 1990-2000
+Currently researches focus more on genetic algorithms in combination with local search, as described in the next section
