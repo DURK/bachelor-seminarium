@@ -75,9 +75,9 @@ name "sub:Genetic-algorithms"
 \begin_layout Standard
 From 1960 until 1970 a new form of heuristics was introduced that was inspired
  by the way nature is evolving.
- Some computer scientists were staggered with the fact that nature was able
- to produce solutions to problems that could not be solved by algorithms
- that could be constructed in these in a million years.
+ Computer scientists were staggered by the fact that nature was able to
+ produce solutions to problems that could not be solved by algorithms that
+ could be constructed in these in a million years.
  An example of such a problem could be how to schedule all tasks within
  a human body in such a way that every part of the body can function.
 \end_layout
@@ -87,34 +87,52 @@ Simultaneously two major algorithms were developed.
  On one side of the the globe the German computer scientist Rechenberg introduce
 d Evolutionary Algorithms and on the other side Johan Holland developed
  Genetic Algorithms at the University of Michigan.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rechenberg1973,Holland-1975"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Genetic algorithms are a specific group of heuristics defined by John Holland
- at the University of Michican in 1960.
+ at the University of Michigan in 1960.
  Holland was inspired by the way nature was able to produce solutions to
- problems quicker than man could using formula's.
- He defined a set of rules for an algorithm that would define a solution-set,
+ problems quicker than man could using formulas.
+ He defined a set of rules for an algorithm to work with a solution-set,
  also called a population.
  
 \end_layout
 
 \begin_layout Standard
 Each solution in the set is represented by a chromosome.
- This chromosome might be a bit-string or even a set of mathematical equations.
- The different parts in chromosome are called genes and determine the actual
- outcome of the chromosomes solution.
+ This chromosome might be a bit-string or even a set of mathematical equations.Th
+e different parts in chromosome are called genes.
  In case the chromosome is a bit-string, the developer might define every
  bit as being a gene.
+ When creating a chromosome for a schedule, each gene could be symbol representi
+ng a task.
 \end_layout
 
 \begin_layout Standard
-A population holds a generation of chromosomes from which a new generation
- can be formed.
- The new generation is made up by combining chromosomes from the previous
- generation, using a form of natural selection, where the best chromosomes
- are picked more often than the lesser ones.
- Using this strategy, the population would overall become better with each
+From a population of chromosomes a new generation can be created.
+ The regeneration process is started by evaluating the fitness of every
+ chromosome of the current population.
+ Fitness is determined by a set of rules that define the optimal solution.
+ The fitness of a chromosome that represent repesents the maximum of a formula
+ can be seen as the higher the number, the fitter the chromosome.
+\end_layout
+
+\begin_layout Standard
+Once this fitness is known a new generation can be created by selecting
+ chromosomes from the current population.
+ The selection algorithm should make sure that the fitter chromosomes are
+ more likely to be chosen than the less fitter ones.
+ These two chromosomes will now be used to create a new chromosome, using
+ a crossover technique that will be explained later on in this section.
+ Using this strategy, the population will overall become better with each
  new generation.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -125,8 +143,97 @@ key "introduction-ga"
 
 \end_layout
 
-\begin_layout Subsubsection
-Concept of GA
+\begin_layout Standard
+In the following paragaphs will explain the different steps of the genetic
+ algorithm in some more detail.
+ These steps are also illustrated using pseudo code from Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:Pseudocode-for-ga"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+begin
+\end_layout
+
+\begin_layout Plain Layout
+
+  t=0
+\end_layout
+
+\begin_layout Plain Layout
+
+  initialize P(t)
+\end_layout
+
+\begin_layout Plain Layout
+
+  while (not termination condition) do
+\end_layout
+
+\begin_layout Plain Layout
+
+    recombine P(t) by crossover and mutation
+\end_layout
+
+\begin_layout Plain Layout
+
+    evaluate P(t)
+\end_layout
+
+\begin_layout Plain Layout
+
+    select to new population P(t)
+\end_layout
+
+\begin_layout Plain Layout
+
+    t++
+\end_layout
+
+\begin_layout Plain Layout
+
+  endwhile
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Pseudocode-for-ga"
+
+\end_inset
+
+Pseudo code of genetic algorithm 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -135,7 +242,8 @@ Initial
 
 \begin_layout Standard
 The algorithm starts by creating the first generation of chromosomes.
- This size may differ from a couple of chromosomes to a couple of thousand.
+ The size of a population may differ from a couple of chromosomes to a couple
+ of thousand.
  This starting population will be used to generate a new generation in the
  next step.
 \end_layout
@@ -145,12 +253,12 @@ Iterative step
 \end_layout
 
 \begin_layout Standard
-During the iterative step the generation is reproduced into a new generation.
+During the iterative step the population is evolved into a new generation.
  Before reproduction the algorithm calculates the fitness of every chromosome.
  The formula for fitness is written such that it will give a higher score
  to chromosomes that tend to be closer to the ideal solution.
- The chromosomes are than ordered by ratio of their fitness and a mating
- population will be selected accordingly.
+ The chromosomes are ordered by ratio of their fitness and a mating population
+ will be selected accordingly.
  In other words, if a chromosome has a relatively high score it will likely
  be used more often in reproduction.
 \end_layout
@@ -176,20 +284,20 @@ crossover
  step will create a combination of genes from solutions that are already
  present within the current population.
  Due to the selection method this new chromosome is likely to be equally
- best or even better than the chromosomes it was based upon.
+ as good or even better than the chromosomes it was based upon.
  If this is the case, the solutions will converge to a, perhaps local, optimal
  solution.
  Their is no guarantee though that best combination of genes present is
- actually the best solution possible, for the starting generation might
- not necessarily contain the best solution or early selection has gotten
- rid of genes that were part of the best solution.
- This would cause the algorithm to find a local optima instead of the global
- optima.
+ the right genes possible, for the starting generation might not necessarily
+ contain the best solution or early selection has gotten rid of genes that
+ were part of the optimal solution.
+ This would cause the algorithm to find a local optimum instead of the global
+ optimum.
 \end_layout
 
 \begin_layout Standard
-Not finding the global optimal solution is prevented by including an incidental
- extra step: a 
+The chance of converging to a local optimum can be descreased by including
+ an incidental extra step: a 
 \emph on
 mutation
 \emph default
@@ -212,7 +320,11 @@ Crossover and mutation are not applied for every step.
 An extra step that can be added to the iterative step is the replacement
  of the chromosomes with the lowest fitness score by two completely new
  ones.
- This will also stimulate the diverse behaviour of the algorithm.
+ This will also stimulate the diverse 
+\lang british
+behavior
+\lang english
+ of the algorithm.
 \end_layout
 
 \begin_layout Paragraph
@@ -238,8 +350,12 @@ Genetic algorithms are suitable for problems with a large solution space
  The natural selection offers the possibility for the solutions to become
  closer to each other and for converging to a (local) optimum.
  In contrast to local search algorithms, the genetic algorithms has a built-in
- solution to prevent a local optimum as solution by adding mutation that
- will make the algorithm search through a larger part of the solution space.
+ solution to lessen the change of a local optimum as solution by adding
+ mutation that will make the algorithm search through a larger part of the
+ solution space.
+ It is important to find a good balance in applying crossover and mutation.
+ Having an incorrect balance could cause the algorithm to become very slow,
+ never to find an optimum or converging to a local optimum.
 \end_layout
 
 \end_body
