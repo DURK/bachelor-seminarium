@@ -1,0 +1,264 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Genetic Local Search
+\end_layout
+
+\begin_layout Standard
+In this section we will mainly discuss memetic algorithms, which are then
+ being compared to local search since they all share the same genetic principle.
+\end_layout
+
+\begin_layout Standard
+Memetic algorithms were introduced in the late 80s to form a family of metaheuri
+stics that combine algorithmic approaches.
+ Memetic comes from the word 'meme', introduced by R.
+ Dawkins in 1976.
+ Memes are elements of a culture or behaviour that are passed by non-genetic
+ means.
+ Like genes in evolution, memes will work the same way in the algorithms.
+\end_layout
+
+\begin_layout Subsubsection
+Algorithms used in memetic algorithms
+\end_layout
+
+\begin_layout Standard
+Consider the first notions introduced in 
+\emph on
+section 2.2: What is local search?
+\end_layout
+
+\begin_layout Itemize
+Set F contains all feasible solutions.
+\end_layout
+
+\begin_layout Itemize
+Fitness function c: maps 
+\begin_inset Formula $F\rightarrow\mathbb{R}$
+\end_inset
+
+, measuring the fitness for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+ Higher is better.
+\end_layout
+
+\begin_layout Itemize
+Hyperneighborhood: defining for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ a neighborhood 
+\begin_inset Formula $N(x)\subseteq F.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Please note that the hyperneighborhood differs from the neighborhood.
+ The amount of neighbors in local search are related to the size of 
+\begin_inset Formula $F$
+\end_inset
+
+, where the subset 
+\begin_inset Formula $N$
+\end_inset
+
+ can hold any number of 
+\begin_inset Formula $1...F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Evolutionary algorithms (EA) are, as the name implies, similar to the evolutiona
+ry way of survival of the fittest.
+ EAs first create a randomly subset 
+\begin_inset Formula $N\subseteq F$
+\end_inset
+
+ of candidate solutions.
+ Secondly, the fitness function is applied to all 
+\begin_inset Formula $x\in N$
+\end_inset
+
+.
+ Based on the best results, a selection of solutions, a subset 
+\begin_inset Formula $C\subseteq N$
+\end_inset
+
+ is picked to seed the next generation.
+ This is done by recombination and/or mutation.
+ Recombination is an operator applied to two or more candidate solutions
+ (parents) and result in one or more new candidate solutions (children).
+ Mutation is applied to one candidate and results in one new candidate.
+ Each new generation (the offspring) will compete against the old one.
+ This can be iterated until either the wanted result or the maximum specified
+ amount of computation has been reached.
+ The difference between local search and EAs is that EAs can make jumps
+ in set 
+\begin_inset Formula $F$
+\end_inset
+
+, using recombinations and/or mutation.
+\end_layout
+
+\begin_layout Standard
+Simulated Annealing uses statistics to find it's global maximum.
+ Given a hyperneighbourhood 
+\begin_inset Formula $N\subseteq F$
+\end_inset
+
+ which is set to a global minimum.
+ Consider the non increasing function T: 
+\begin_inset Formula $\mathbb{N}\rightarrow\mathbb{N}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T(t)$
+\end_inset
+
+ is called the temperature at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Starting at a random 
+\begin_inset Formula $x\in N$
+\end_inset
+
+, SA picks 
+\begin_inset Formula $y\in N$
+\end_inset
+
+ randomly.
+ The next candidate solution, 
+\begin_inset Formula $x$
+\end_inset
+
+ or 
+\begin_inset Formula $y$
+\end_inset
+
+, is determined as follows:
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $c(x)\leq c(y)$
+\end_inset
+
+, then 
+\begin_inset Formula $x(t+1)=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $c(x)>c(y)$
+\end_inset
+
+, then 
+\begin_inset Formula $x(t+1)=x$
+\end_inset
+
+ with a probability of 
+\begin_inset Formula $e^{\frac{-(c(y)-c(x))}{T(t)}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x(t+1)=y$
+\end_inset
+
+ otherwise.
+\end_layout
+
+\begin_layout Standard
+We can conclude that if the current candidate solution has a relatively
+ high fitness, then chances that y will be selected as candidate solution
+ will be low.
+ If x is a 'low' local maximum, chances are higher to select y as candidate.
+ This makes it possible for SAs to escape from a local maximum that isn't
+ the global maximum.
+ The temperature function T is added to decrease the possibility of a jump
+ after each iteration, which eventually will lead to a local maximum that
+ will be (close to) the global maximum.
+\end_layout
+
+\begin_layout Standard
+Local search has the major flaw of not having a possibility to escape a
+ local maximum.
+ The genetic part of the algorithm adds that possibility, therefore increasing
+ it's usability.
+\end_layout
+
+\end_body
+\end_document
