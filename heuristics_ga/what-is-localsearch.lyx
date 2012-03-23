@@ -66,16 +66,22 @@ Local Search
 \begin_layout Standard
 Local search is a meta heuristic method to optimize solutions for NP-hard
  problems.
- The essence of local search algorithms lies in the search of lookalike
- solutions to these problems.
+ Meta heuristics searches for the optimal solution in a discrete search
+ space, but is uses a combination of heuristics.
+ The essence of local search algorithms lies in the search of complete solutions
+ to these problems.
  One certain solution is selected as a candidate solution and evaluated.
  The evaluation of these solutions are based on a chosen heuristic, indicating
  the value of this solution.
- All the surrounding solutions are located in the candidate's neighborhood.
+ The value is determined by the All the surrounding solutions are located
+ in the candidate's neighborhood.
  The most valued solution in it's neighbourhood is then selected as new
  candidate solution.
  This search goes on until the algorithm hits the neighbourhoods maximum.
- This maximum solution is called a local maximum.
+ Sometimes the computer has only a certain amount of computational power
+ and the search for it's global maximum takes too much time.
+ In that case the algorithm will terminate after a specific amount of time.
+ One third option is the lack of improvement between the candidate solutions.
 \end_layout
 
 \begin_layout Standard
@@ -115,6 +121,36 @@ Neighborhood function: maps
 
 \end_layout
 
+\begin_layout Itemize
+Improvement criterion: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Best improvement: Selecting 
+\begin_inset Formula $y$
+\end_inset
+
+ as next candidate when 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+First improvement: Selecting 
+\begin_inset Formula $y\in N(x)$
+\end_inset
+
+ which has the highest value of 
+\begin_inset Formula $c(y)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 At the start of a local search, choosing a candidate solution 
 \begin_inset Formula $x\in F$
@@ -159,6 +195,9 @@ At the start of a local search, choosing a candidate solution
 \end_inset
 
 .
+ A graph contains a clique if all nodes within that clique are connected
+ to each other.
+ So each node in a clique of size 4 is connected to the 3 other nodes.
  Consider the size of 
 \begin_inset Formula $CLIQUE$
 \end_inset
@@ -214,11 +253,8 @@ At the start of a local search, choosing a candidate solution
 \end_inset
 
 .
- The algorithm then hits a local maximum and terminates.
- Not in all cases the algorithm waits for the local maximum to be found.
- Other stop conditions are also possible.
- Like a threshold for c(x), the improvement isn't big enough or after a
- certain amount of time.
+ Finally, one stop condition will be true (optimal solution, out of computationa
+l power, time limit reached) and the algorithm terminates.
 \end_layout
 
 \begin_layout Standard
@@ -241,12 +277,10 @@ Imagine that the algorithm starts at the local minimum between point b and
  The next iterative step will lead to a candidate solution in the direction
  of b.
  This process continues until the candidate solution is at point b.
- Expecting that everyone would agree that point a gives the optimal solution,
- the algorithm will return point b, another local maximum.
+ Knowing that the global maximum is point a, the algorithm will return point
+ b, another local maximum.
  It's easy to understand that the local search algorithm only return the
  nearest local maximum.
- In the next section we will explain how we open up the possibility of leaving
- a local maximum.
 \end_layout
 
 \end_body
