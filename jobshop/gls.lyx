@@ -327,7 +327,7 @@ Now consider the hybrid genetic approach for the SBP.
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
- sequences of machines for SPB.
+ sequences of machines for SBP.
  The bottleneck shifting procedure is used to derive a schedule from these
  encodings of machine sequences.
  Resulting schedules differ greatly in quality, depending on the sequence
@@ -456,7 +456,7 @@ key "cheng99"
 \end_inset
 
 .
- In the next section, the genetic SPB will be tested for time, quality and
+ In the next section, the genetic SBP will be tested for time, quality and
  ease-of-use and will be compared to other genetic hybrids.
 \end_layout
 
