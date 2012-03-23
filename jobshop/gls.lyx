@@ -75,9 +75,9 @@ hybrid genetic algorithms
  Local search on the other hand is effective at fine-tuning but often falls
  into local maxima, as shown in 
 \emph on
-section 2.2
+Section 2.2
 \emph default
-: Local Search.
+.
  The hybrid approach combines the best of both worlds by combining genetic
  algorithms that perform global search to avoid falling into local maxima
  with local search that handles the fine-tuning
@@ -298,7 +298,7 @@ The shifting bottleneck procedure (SBP)
  The SBP starts by creating a partial schedule of just the first machine.
  The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
- On every iteration SPB locally reoptimizes the current partial schedule
+ On every iteration SBP locally reoptimizes the current partial schedule
  for each individual machine, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
@@ -327,7 +327,7 @@ Now consider the hybrid genetic approach for the SBP.
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
- sequences of machines for SPB.
+ sequences of machines for SBP.
  The bottleneck shifting procedure is used to derive a schedule from these
  encodings of machine sequences.
  Resulting schedules differ greatly in quality, depending on the sequence
@@ -456,41 +456,16 @@ key "cheng99"
 \end_inset
 
 .
+ In the next section, the genetic SBP will be tested for time, quality and
+ ease-of-use and will be compared to other genetic hybrids.
 \end_layout
 
 \begin_layout Subsubsection
-Beam search
+Benchmarks
 \end_layout
 
 \begin_layout Standard
----Combining genetic algorithms with beam search has been proposed by Holsapple.
-\end_layout
-
-\begin_layout Standard
----In this approach a chromosome is denoted as an encoded job sequence.
-\end_layout
-
-\begin_layout Standard
----Genetic algorithm manipulate the job sequence.
-\end_layout
-
-\begin_layout Standard
----Filtered beam search generate 'best' schedule for give job sequence (chromoso
-me)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-@Peter: More examples of hybrid genetics, with different chromosome-representati
-ons (like beam search), so comparisons can be made? Or dig deeper into SPB?
-\end_layout
-
-\end_inset
-
-
+blaaablablabla
 \end_layout
 
 \end_body

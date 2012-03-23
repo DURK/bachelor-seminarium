@@ -184,7 +184,7 @@ At the start of a local search, choosing a candidate solution
 \begin_inset Formula $k+1$
 \end_inset
 
- the constrain 
+ the inequality 
 \begin_inset Formula $c(x)<c(y)$
 \end_inset
 
@@ -219,18 +219,6 @@ At the start of a local search, choosing a candidate solution
  Other stop conditions are also possible.
  Like a threshold for c(x), the improvement isn't big enough or after a
  certain amount of time.
-\end_layout
-
-\begin_layout Standard
-Now consider the following image of a 1 dimensional problem (for instance,
- choosing the biggest piece of a cake):
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please note that this problem isn't a NP-hard problem, but we need a few
- more dimensions to visualize NP-hard problems.
 \end_layout
 
 \begin_layout Standard
