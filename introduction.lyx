@@ -111,16 +111,16 @@ Using BB is just one way of solving the problem.
 JSP is an NP-hard problem what means that there is no algorithm which solves
  JSP in polynomial time.
  Because of that we need heuristic algorithms that solve the problem.
- During the last century a lot of heuristics algorithms has been developed
+ During the last century a lot of heuristics algorithms have been developed
  and some of them have proven to be very successful.
  In this paper we will discuss genetic algorithms and local search approaches
  to JSP.
 \end_layout
 
 \begin_layout Standard
-The paper will cover the basics of heuristic and specifically for genetic
+The paper will cover the basics of heuristics and specifically for genetic
  algorithms, local search and the combination of the two in the first section.
- In the second section these heuristics are applied at the job shop problem.
+ In the second section these heuristics are applied to the job shop problem.
 \end_layout
 
 \end_body

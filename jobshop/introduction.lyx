@@ -82,8 +82,8 @@ A job consists of at most m operations.
 \end_layout
 
 \begin_layout Itemize
-An operation has be processed for a given time on a given machine in a predefine
-d sequence
+An operation has to be processed for a given time on a given machine in
+ a predefined sequence
 \end_layout
 
 \begin_layout Itemize
@@ -100,6 +100,8 @@ So a job sequence for each machine has to be determined to minimize the
 
 \begin_layout Standard
 In the example below, there are 3 jobs and 3 machines.
+ Each job consists of 3 operations which have to be processed in a given
+ sequence.
  The jobs are being split to approximate the optimal answer.
  The makespan here is 6.
 \end_layout
@@ -107,8 +109,17 @@ In the example below, there are 3 jobs and 3 machines.
 \begin_layout Standard
 \begin_inset Graphics
 	filename gantt.pdf
-	width 100text%
-	BoundingBox 58bp 700bp 480bp 795bp
+	width 60text%
+	BoundingBox 70bp 700bp 420bp 795bp
+	clip
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename table.pdf
+	width 40line%
+	BoundingBox 50bp 630bp 250bp 800bp
 	clip
 
 \end_inset
@@ -119,12 +130,10 @@ In the example below, there are 3 jobs and 3 machines.
 \begin_layout Standard
 There are several ways to solve a job shop scheduling problem using different
  types of heuristic algorithms.
- These algorithms are approximation methods for solving the minimum makespan
- for the JSP.
  The easiest heuristics solutions for JSP are dispatching rules, which are
- actually rules of thumb, discussed in 
+ actually rules of thumb, discussed i
 \emph on
-section 3.1: Heuristics
+n Section 3.1
 \emph default
 .
  Dispatching rules are fast, simple to implement and reasonably good in
