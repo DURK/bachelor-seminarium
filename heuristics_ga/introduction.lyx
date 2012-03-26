@@ -67,13 +67,67 @@ Algorithmic design is a major research area in computer science.
  Most problems that are of interest to the practical computer scientist
  are rather difficult.
  It is important to understand the basics of the computational theory to
- understand the different kinds of problems.
+ understand the different types of problems.
+\end_layout
+
+\begin_layout Paragraph
+Types of problems
 \end_layout
 
 \begin_layout Standard
-A decision problem is a problem which an algorithm can answer with 'yes'
+Let us first introduce a few terms.
+ A decision problem is a problem which an algorithm can answer with 'yes'
  or 'no'.
- A decision
+ There are two kinds of machines: deterministic and non-deterministic.
+ Deterministic machine is a regular machine, doing process at a time.
+ A non-deterministic machine can have parallelism.
+ At some point (fork) you can get more than one process to execute so you
+ should do them both.
+\end_layout
+
+\begin_layout Standard
+A decision problem is in 
+\series bold
+P
+\series default
+ if there is an algorithm that solves it in polynomial time.
+ A decision problem is in 
+\series bold
+NP
+\series default
+ if there is polynomial -time algorithm that gets an answer on the non-determini
+stic machine and this problem can be verified in polynomial time.
+ Verifying means that for a given answer it can be verified if it is a valid
+ answer.
+ Problems in P are also in NP.
+\end_layout
+
+\begin_layout Standard
+A problem is 
+\series bold
+NP-complete
+\series default
+ if it is in NP and it is reducible in polynomial time to another already
+ NP-complete problem.
+ Reducible means that for problems A and B a solution for A can be transformed
+ to solution of B.
+ So all 'yes' instances of A will be transformed to 'yes' instances of B
+ and all 'no' instances of A will be transformed to 'no' instances of B.
+\end_layout
+
+\begin_layout Standard
+A problem is 
+\series bold
+NP-hard
+\series default
+ if it is at least as hard as NP-complete problem.
+ This is the set of hardest problems.
+ The most interesting problems found in real life are in this set.
+ Like mentioned above JSP is also NP-hard.
+\end_layout
+
+\begin_layout Paragraph
+Types of algorithms
 \end_layout
 
 \begin_layout Standard
@@ -81,19 +135,20 @@ There are also a lot of ways to solve a problem.
  For example by using an exact algorithm which can solve a problem in polynomial
  time if a problem is in P.
  Otherwise the exact algorithm will cost exponential time or even more.
- When this is unacceptable, heuristics can be used.
+ This is usually unacceptable, that is when heuristics can be used.
  Heuristics approximate the optimal solution to a problem within acceptable
  amount of time.
  More about it is explained in the next chapter.
  For more difficult problems in NP-hard local search can be used to search
  for solutions.
- Local search returns the local optimum of the space.
- Also Genetic algorithms (GA) can be used, which are like local search also
+ Local search returns a local optimum of the space.
+ Also Genetic algorithms (GA) can be used, which like local search also
  a form of heuristic algorithms.
- With GA you work with different answers for a problem, which convert to
+ With GA you work with different answers for a problem, which converge to
  a better answer.
  And finally genetic local search (a combination of genetic algorithms and
  local search will be discussed in the last chapter of this section.
+ 
 \end_layout
 
 \end_body
