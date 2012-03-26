@@ -172,13 +172,41 @@ There are also a lot of ways to solve a problem.
  GA use the same strategy to solve problems as nature does.
  They try to evolve a solution to a problem using the natural selection
  and the survival of the fittest.
- 
+ Genetic local search (GLS) combines these two methods, getting an effective
+ global search from GA and effective fine-tuning from local search.
+ GLS will be discussed in the last chapter of this section.
 \end_layout
 
 \begin_layout Standard
-Genetic local search (GLS) combines these two methods, getting an effective
- global search form GA and effective fine-tuning from local search.
- GLS will be discussed in the last chapter of this section.
+sd
+\end_layout
+
+\begin_layout Standard
+sd
+\end_layout
+
+\begin_layout Standard
+s
+\end_layout
+
+\begin_layout Standard
+s
+\end_layout
+
+\begin_layout Standard
+s
+\end_layout
+
+\begin_layout Standard
+s
+\end_layout
+
+\begin_layout Standard
+s
+\end_layout
+
+\begin_layout Standard
+s
 \end_layout
 
 \end_body
