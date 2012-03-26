@@ -64,33 +64,7 @@ Genetic Local Search - intro herschrijven (geen GLS)
 \end_layout
 
 \begin_layout Standard
-This section will focus on genetic algorithms that heavily rely on local
- search, a common form of 
-\emph on
-hybrid genetic algorithms
-\emph default
-.
- Genetic algorithms are designed to be effective at global search, but converge
- slowly.
- Local search on the other hand is effective at fine-tuning but often falls
- into local maxima, as shown in 
-\emph on
-Section 2.2
-\emph default
-.
- The hybrid approach combines the best of both worlds by combining genetic
- algorithms that perform global search to avoid falling into local maxima
- with local search that handles the fine-tuning
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cheng99"
-
-\end_inset
-
-.
- In this section, the general principles of combining genetic algorithms
- with local search are introduced first.
- Next, some state-of-the-art hybrid genetic algorithms to the job shop problem
+Next, some state-of-the-art hybrid genetic algorithms to the job shop problem
  are presented in this section.
 \end_layout
 
