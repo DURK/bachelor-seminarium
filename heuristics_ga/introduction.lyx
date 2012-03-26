@@ -61,28 +61,39 @@
 
 \begin_layout Standard
 Algorithmic design is a major research area in computer science.
- Computer scientists try to achieve faster algorithms using less amount
- of memory for problems.
- But they also have a lot of problems to solve.
- Most problems that are of interest to the practical computer scientist
- are rather difficult.
- It is important to understand the basics of the computational theory to
- understand the different types of problems.
+ Computer scientists try to solve problems using algorithms that run in
+ less time using less memory.
+ In some cases problems can be solved already and scientist are just looking
+ for optimizations but in many cases there is not yet an (exact) algorithm
+ to the problem at all.
+ This section will explain some basics of the computational complexity theory.
 \end_layout
 
 \begin_layout Paragraph
-Types of problems
+Types of problems 
 \end_layout
 
 \begin_layout Standard
-Let us first introduce a few terms.
- A decision problem is a problem which an algorithm can answer with 'yes'
- or 'no'.
+A decision problem is a problem which an algorithm can answer with 
+\emph on
+yes
+\emph default
+ or 
+\emph on
+no
+\emph default
+.
  There are two kinds of machines: deterministic and non-deterministic.
- Deterministic machine is a regular machine, doing process at a time.
+ Deterministic machine is a regular machine, doing one process at a time.
  A non-deterministic machine can have parallelism.
- At some point (fork) you can get more than one process to execute so you
- should do them both.
+ It allows multiple instructions for any state when it reads any input symbol.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sipser"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -90,13 +101,15 @@ A decision problem is in
 \series bold
 P
 \series default
- if there is an algorithm that solves it in polynomial time.
+ if there exists an algorithm that can solve the problem in polynomial time
+ using a single-tape Turing machine.
  A decision problem is in 
 \series bold
 NP
 \series default
- if there is polynomial -time algorithm that gets an answer on the non-determini
-stic machine and this problem can be verified in polynomial time.
+ if there is a polynomial-time algorithm that gets an answer on the non-determin
+istic machine.
+ All problems in NP can also be verified in polynomial time.
  Verifying means that for a given answer it can be verified if it is a valid
  answer.
  Problems in P are also in NP.
@@ -107,12 +120,13 @@ A problem is
 \series bold
 NP-complete
 \series default
- if it is in NP and it is reducible in polynomial time to another already
- NP-complete problem.
+ if it is in NP and no other NP problem is more than polynomial factor harder.
+ NP-complete problems are polinomial-time reducible to all other NP-problems.
  Reducible means that for problems A and B a solution for A can be transformed
  to solution of B.
- So all 'yes' instances of A will be transformed to 'yes' instances of B
- and all 'no' instances of A will be transformed to 'no' instances of B.
+ So all yes-instances of A will be transformed to yes-instances of B and
+ all no-instances of A will be transformed to no-instances of B.
+ A NP-complete problem is in NP and is also NP-hard.
 \end_layout
 
 \begin_layout Standard
@@ -121,8 +135,21 @@ A problem is
 NP-hard
 \series default
  if it is at least as hard as NP-complete problem.
+ These problems cannot be solved by a nondeterministic machine in polynomial
+ time.
+ If NP-hard problem is not NP-complete, means it is also not in NP.
  This is the set of hardest problems.
- The most interesting problems found in real life are in this set.
+ The most interesting problems found in real life are in this set
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Weird location for an opinion?
+\end_layout
+
+\end_inset
+
+.
  Like mentioned above JSP is also NP-hard.
 \end_layout
 
@@ -132,22 +159,26 @@ Types of algorithms
 
 \begin_layout Standard
 There are also a lot of ways to solve a problem.
- For example by using an exact algorithm which can solve a problem in polynomial
- time if a problem is in P.
- Otherwise the exact algorithm will cost exponential time or even more.
- This is usually unacceptable, that is when heuristics can be used.
- Heuristics approximate the optimal solution to a problem within acceptable
- amount of time.
- More about it is explained in the next chapter.
- For more difficult problems in NP-hard local search can be used to search
- for solutions.
- Local search returns a local optimum of the space.
- Also Genetic algorithms (GA) can be used, which like local search also
- a form of heuristic algorithms.
- With GA you work with different answers for a problem, which converge to
- a better answer.
- And finally genetic local search (a combination of genetic algorithms and
- local search will be discussed in the last chapter of this section.
+ There are exact algorithms that give an optimal therefore best solution
+ to the problem.
+ There are also heuristic algorithms which approximate the optimal solution
+ to a problem within an acceptable amount of time but without any guarantees
+ that the obtained answer is optimal.
+ For example local search or genetic algorithms can be used.
+ These two are different specific types of heuristics.
+ Local search can be used to optimize solutions in discrete search space
+ to a local optimum.
+ Genetic algorithms (GA) can also be used.
+ GA use the same strategy to solve problems as nature does.
+ They try to evolve a solution to a problem using the natural selection
+ and the survival of the fittest.
+ 
+\end_layout
+
+\begin_layout Standard
+Genetic local search (GLS) combines these two methods, getting an effective
+ global search form GA and effective fine-tuning from local search.
+ GLS will be discussed in the last chapter of this section.
 \end_layout
 
 \end_body

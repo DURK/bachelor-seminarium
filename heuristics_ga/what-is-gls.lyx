@@ -64,12 +64,32 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-In the previous sections local search and genetic algorithms were discussed,
- both with a weakness.
- Local search is great for finding a slightly better solution (fine tuning)
- but often falls into a local optima.
- Genetic algorithms are perfect for global search, but slow to converge.
- Combining these two will level out those weaknesses.
+This section will focus on genetic algorithms that heavily rely on local
+ search, a common form of 
+\emph on
+hybrid genetic algorithms
+\emph default
+.
+ Genetic algorithms are designed to be effective at global search, but converge
+ slowly.
+ Local search on the other hand is effective at fine-tuning but often falls
+ into local maxima, as shown in 
+\emph on
+Section 2.2
+\emph default
+.
+ The hybrid approach combines the best of both worlds by combining genetic
+ algorithms that perform global search to avoid falling into local maxima
+ with local search that handles the fine-tuning
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cheng99"
+
+\end_inset
+
+.
+ In this section, the general principles of combining genetic algorithms
+ with local search are introduced first.
 \end_layout
 
 \begin_layout Standard

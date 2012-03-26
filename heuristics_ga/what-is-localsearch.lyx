@@ -67,13 +67,14 @@ Local Search
 Local search is a meta heuristic method to optimize solutions for NP-hard
  problems.
  Meta heuristics searches for the optimal solution in a discrete search
- space, but is uses a combination of heuristics.
+ space.
+ This also indicates a (partial) exclusion of assumptions.
  The essence of local search algorithms lies in the search of complete solutions
  to these problems.
  One certain solution is selected as a candidate solution and evaluated.
  The evaluation of these solutions are based on a chosen heuristic, indicating
  the value of this solution.
- The value is determined by the All the surrounding solutions are located
+ The value is determined by the all the surrounding solutions are located
  in the candidate's neighborhood.
  The most valued solution in it's neighbourhood is then selected as new
  candidate solution.
@@ -255,7 +256,9 @@ At the start of a local search, choosing a candidate solution
 
 .
  Finally, one stop condition will be true (optimal solution, out of computationa
-l power, time limit reached) and the algorithm terminates.
+l power, time limit reached) and the algorithm returns a solution.
+ Notice that local search will return 'a' solution and not the optimal solution.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -269,17 +272,40 @@ l power, time limit reached) and the algorithm terminates.
 
 \begin_layout Standard
 The x-axis represents the set F containing all the feasible solutions.
- The y-axis represents c(x).
+ The y-axis represents 
+\begin_inset Formula $c(x)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Imagine that the algorithm starts at the local minimum between point b and
- c.
+Imagine that the algorithm starts at the local minimum between point 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
  The next iterative step will lead to a candidate solution in the direction
- of b.
- This process continues until the candidate solution is at point b.
+ of point 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ This process continues until the candidate solution is at point 
+\begin_inset Formula $b$
+\end_inset
+
+.
  Knowing that the global maximum is point a, the algorithm will return point
- b, another local maximum.
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, another local maximum.
  It's easy to understand that the local search algorithm only return the
  nearest local maximum.
 \end_layout
