@@ -64,13 +64,22 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
+In the previous sections local search and genetic algorithms were discussed,
+ both with a weakness.
+ Local search is great for finding a slightly better solution (fine tuning)
+ but often falls into a local optima.
+ Genetic algorithms are perfect for global search, but slow to converge.
+ Combining these two will level out those weaknesses.
+\end_layout
+
+\begin_layout Standard
 Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
  Selection of chromosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
  after 'birth' by using a fitness function as shown in 
 \emph on
-Section 3.2.3
+Section
 \emph default
 .
  In genetic algorithms combined with local search, selection is based on
@@ -118,17 +127,17 @@ begin
 
 \begin_layout Plain Layout
 
-  initialize P(t) job sequences
+  initialize P(t) 
 \end_layout
 
 \begin_layout Plain Layout
 
-  localsearch to improve chromosomes
+  localsearch to improve chromosomes  
 \end_layout
 
 \begin_layout Plain Layout
 
-  evaluate P(t)
+  evaluate P(t)	  
 \end_layout
 
 \begin_layout Plain Layout
@@ -138,27 +147,27 @@ begin
 
 \begin_layout Plain Layout
 
-    recombine P(t) by crossover and mutation
+    recombine P(t) by crossover and mutation	
 \end_layout
 
 \begin_layout Plain Layout
 
-    localsearch to improve chromosomes
+    localsearch to improve chromosomes		  
 \end_layout
 
 \begin_layout Plain Layout
 
-    evaluate P(t)
+    evaluate P(t)						 
 \end_layout
 
 \begin_layout Plain Layout
 
-    select to new population P(t)
+    select to new population P(t)				
 \end_layout
 
 \begin_layout Plain Layout
 
-    t++
+    t++										
 \end_layout
 
 \begin_layout Plain Layout
