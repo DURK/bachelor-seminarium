@@ -60,41 +60,20 @@
 \begin_body
 
 \begin_layout Standard
-Computer scientists do a lot of research in algorithmic field.
- They try to achieve more optimal, faster and less memory hungry algorithms
- for problems.
+Algorithmic design is a major research area in computer science.
+ Computer scientists try to achieve faster algorithms using less amount
+ of memory for problems.
  But they also have a lot of problems to solve.
  Most problems that are of interest to the practical computer scientist
  are rather difficult.
- There are diffirent kinds of problems to describe:
+ It is important to understand the basics of the computational theory to
+ understand the different kinds of problems.
 \end_layout
 
-\begin_layout Itemize
-Problems in P, there exists an agorithm that solves a problem in polynomal
- time.
- P is in NP.
- These problems are doable.
-\end_layout
-
-\begin_layout Itemize
-Problems in NP, there doesn't exist a algorithm that solves a problem in
- a polynominal time, but the answer can be verfied in polynominal time.
- 
-\end_layout
-
-\begin_layout Itemize
-Problems in NPC (np complete).
- NPC is also in NP.
- Because of that, also these problems are veryfiable in polynominal time.
- Also every problem in NP is reducable to NPC.
- NPC is also in NP-hard.
- That means that NPC problems are hardest problems in NP
-\end_layout
-
-\begin_layout Itemize
-Problems in NP-hard.
- This is the most difficult set of problems, most found in real life.
- These problems cannot be verified in polynominal time.
+\begin_layout Standard
+A decision problem is a problem which an algorithm can answer with 'yes'
+ or 'no'.
+ A decision
 \end_layout
 
 \begin_layout Standard
