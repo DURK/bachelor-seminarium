@@ -90,22 +90,26 @@ reference "sub:Introduction-jsp"
 \end_inset
 
 .
- A permutation problems means that there is a list of items, in the JSP
- case a list ofoperations, that must be ordered in some way.
- 
+ A permutation problem means that there is a list of items, in the JSP case
+ a list ofoperations, that must be ordered in some way.
+\end_layout
+
+\begin_layout Paragraph
+Representation
 \end_layout
 
 \begin_layout Standard
 Creating genetic algorithm for a permutation problem starts with the design
  of a representation.
- It is important that this representation is able to produce a solution
- to the problem, the representation will withstand crossover and allow mutations
- to be applied.
+ This representation must hold all characteristics of the solution in order
+ to create a consistent schedule.
+ Furthermore the chromosome must be able to withstand crossover and mutation
+ operations.
 \end_layout
 
 \begin_layout Standard
-There exist two ways of representing a solutions.
- The first, conventional, method is using a binary representation of the
+There are two main ways to represent a solution.
+ The first, conventional, method is to use a binary representation of the
  problem.
  The second method uses a symbolic representation.
 \end_layout
@@ -121,25 +125,34 @@ In the early days of genetic algorithms researchers thought that binary
 \begin_layout Standard
 The view on genetic algorithms has changed and scientists found a way to
  apply crossover to symbolic representations.
- Using symbolic representations was found to be far more suitable to permutation
-al problems.
+ Using symbolic representations was found to be more suitable to permutational
+ problems [reason+source].
  This article will therefore only cover symbolic representations.
 \end_layout
 
 \begin_layout Standard
-Also symbolic representations can be divided in two different groups called
- indirect and direct.
- In indirect algorithms the representation of chromosome does not consist
- of actual tasks, but of variables for other heuristic algorithms that can
- construct a schedule.
- This is out of the scope of this article.
+When using symbolic representations there are again two different groups
+ called 
+\emph on
+indirect
+\emph default
+ and 
+\emph on
+direct
+\emph default
+.
+ Indirect algorithms use a chromosome that does not consist of actual tasks,
+ but of variables for other heuristic algorithms that can construct a schedule.
+ The use of indirect representations is out of the scope of this article.
+ This article will cover direct representations, where each symbol in the
+ chromosomes represents an operation or job.
 \end_layout
 
 \begin_layout Standard
-This article will cover direct representations, where each symbol in the
- chromosomes represents an operation or job.
- There are a couple of representations known but this article will only
- cover the operation-based variant.
+To illustrate the use of a direct symbolic representation this article will
+ show how an operation-based representation could work.
+ Operation-based representation is one of the many ways of representing
+ the schedule
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -147,218 +160,77 @@ key "cheng99"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-In an operation-based algorithm each gene in the chromosome represents an
- operation.
- At first it might seem logical to number each operation independently of
- its tasks.
- This method would cause a lot of 
-\emph on
-illegal
-\emph default
- combinations because the operations within a job have a precedence constraint.
- Mixing up the order would cause an invalid schedule.
-\end_layout
-
-\begin_layout Standard
-A solution to prevent illegal combinations was found by Gen et al.
- They have numbered all operations by their parental job number.
- If a problem consisted of three jobs A,B,C having three, three and one
- operations respectively, the chromosome consists of three times the letters
- A and B en one time the letter C as shown in figure X.
- Because the order of operations within a job are fixed, it is possible
- to construct a valid schedule based on the slots reserved for the jobs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "operation-based"
 
 \end_inset
 
-.
+..
+ As the name suggests, each gene in the chromosome represents an operation.
+ Given a problem with two jobs A and B both consisting of two operations.
+ Call them A_1, A_2, B_1 and B_2.
+ The chromosome would have length of four genes.
 \end_layout
 
 \begin_layout Standard
-The schedule is formed by processing the genes in order of occurrence within
- the chromosome.
- Taking the example of figure X, the first job is job number one.
- The algorithm will now schedule the first operation of job number one at
- the first available spot.
- The same for the gene, that will cause the first operation of the third
- job to be placed at the next available spot.
-\begin_inset Float table
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Direct
+This chromosome must somehow map to a solution.
+ This can be done by popping each element from the chromosome and schedule
+ this element at the first location possible, in order of appearence.
+ In other words, if the chromosome is A_1 B_1 A_2 B_2, then A_1 is planned
+ first, next B_1 and so on as is shown in figure X.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Indirect
+\begin_layout Standard
+Although there is a perfect mapping possible there is a problem with this
+ representation.
+ As stated before, the chromosome must be able to withstand crossover operations.
+ In the job shop problem there is a preceedence constraint within the operations
+, meaning that A_1 should come before A_2.
+ When applying a crossover it could easily be possible that A_2 is placed
+ before A_1, resulting in A_2 being scheduled before A_1.
+ This leads to an 
+\emph on
+illegal
+\emph default
+ combination.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Operation-based
+\begin_layout Standard
+A solution to prevent illegal combinations was found by Gen et al.
+ They have numbered all operations by their parental job number.
+ Give the same problem of two jobs with both two operations, the chromosome
+ would consist of two A's and two B's.
+ The construction of the solution would be similar to the original situation
+ but this time when a job is read from the chromosome, the first operation
+ for that job is scheduled.
+ Given the chromosome ABAB, the algorithm would now first find job A and
+ therefore schedule operation A_1.
+ Next is finds B, so it will schedule B_1.
+ Again it will find job A, and will schedule the next task for job A which
+ is A_2.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Priority rule-based
+\begin_layout Standard
+This solves the preceeding constraint but there is still a problem left,
+ which is the repetition.
+ There is a fixed number of operations within a job and using plain crossover
+ methods could result in having a job occuring more times than there are
+ operations for this job while another job occures less times than there
+ are operations.
+ This can not be fixed in the operation and will therefore be fixed in the
+ crossover method described in the next paragraph.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Job-based
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Preference list-based
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Random keys
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Disjunctive graph-based
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Job pair relation-based
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Machine-based
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color magenta
-Completion time-based??
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Ways-of-representing"
-
-\end_inset
-
-Ways of representing a solution to the job shop problem
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Paragraph*
 Crossover
 \end_layout
 
 \begin_layout Standard
 The crossover method will combine the genes of different chromosomes to
- generate a new population that might be better than the previous one.
- During this operation some genes are switched from one chrome to another.
+ generate a new population.
+ During this operation some genes are switched from one chromesome to the
+ other.
  In some basic genetic algorithms this operation is rather easy because
  all permutations of genes are valid.
 \end_layout
@@ -372,8 +244,8 @@ In case of the job shop problem, given the operation-based representation,
 \end_layout
 
 \begin_layout Standard
-There are many solutions to this problem, that use an intelligent algorithms
- for applying crossover
+There are many solutions to this problem, that use an algorithm for applying
+ crossover
 \begin_inset CommandInset citation
 LatexCommand cite
 key "syswerda1989,davis1985,cheng1997"
@@ -387,7 +259,7 @@ key "syswerda1989,davis1985,cheng1997"
 \end_layout
 
 \begin_layout Standard
-An example of such an intelligent crossover method is 
+An example of such a method crossover is 
 \emph on
 partially-mapped crossover (PMX)
 \emph default
@@ -399,7 +271,7 @@ key "goldberg1985"
 \end_inset
 
 .
- The algorithm starts like a standard crossover algorithm by selecting two
+ The algorithm starts like a default crossover algorithm by selecting two
  chromosomes from the parental population.
  Next the algorithm chooses two random cutting positions as shown in figure
  
@@ -576,22 +448,29 @@ The rest of the chromosome is built by copying genes 1-1 from the parent
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph*
 Fitness
 \end_layout
 
 \begin_layout Standard
-Creating a fitness function for this algorithm is straightforward.
- The job shop problem is about finding the schedule that finishes as quickly
- as possible.
- The fitness function can simply be based on the earliest finishing time.
- A variation of the job shop problem could also check the number of time
- machines are not doing anything.
+Next the fitness of each chromosome must be determined.
+ A straightforward way of determining the fitness is to construct the schedule
+ in the way describe in the representation paragragh.
+ Once a schedule has been built the finish time is known.
+ This finish time can be used a fitnessvalue.
+\end_layout
+
+\begin_layout Standard
+Another approach could be to look for other properties of the algorithm.
+ One example is to look at the number of time machines are not doing anything
+ and use this as fitnessvalue.
 \end_layout
 
 \begin_layout Standard
 Using pure genetic algorithms will provide the user with a solution that
  in some case is near-optimal.
+ Currently scientist do not use pure genetics anymore, they always combine
+ the algorithm with other stragetegies like local search.
  The next section will show how combining genetic algorithms with local
  search will provide solutions that are more optimal than the results of
  pure genetics.
