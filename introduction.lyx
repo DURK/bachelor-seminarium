@@ -61,14 +61,13 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is one of the hardest combinatorial optimalisation
- problems
+ problems.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-.
  In optimalisation problem the best solution has to be found from all possible
  problems.
  Combinatorial optimalisation problems like JSP are optimalisation problems
@@ -142,7 +141,6 @@ key "Vaessens-Aarts-Lenstra-1996"
 The paper will cover the basics of heuristics and specifically for genetic
  algorithms, local search and the combination of the two in the first section.
  In the second section these heuristics are applied to the job shop problem.
- 
 \end_layout
 
 \end_body
