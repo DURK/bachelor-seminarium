@@ -61,13 +61,12 @@
 
 \begin_layout Standard
 Algorithmic design is a major research area in computer science.
- Computer scientists try to achieve faster algorithms using less amount
- of memory for problems.
- But they also have a lot of problems to solve.
- Most problems that are of interest to the practical computer scientist
- are rather difficult.
- It is important to understand the basics of the computational theory to
- understand the different types of problems.
+ Computer scientists try to solve problems using algorithms that run in
+ less time using less memory.
+ In some cases problems can be solved already and scientist are just looking
+ for optimizations but in many cases there is not yet an (exact) algorithm
+ to the problem at all.
+ This section will explain some basics of the computational complexity theory.
 \end_layout
 
 \begin_layout Paragraph
@@ -75,14 +74,30 @@ Types of problems
 \end_layout
 
 \begin_layout Standard
-Let us first introduce a few terms.
- A decision problem is a problem which an algorithm can answer with 'yes'
- or 'no'.
+A decision problem is a problem which an algorithm can answer with 
+\emph on
+yes
+\emph default
+ or 
+\emph on
+no
+\emph default
+.
  There are two kinds of machines: deterministic and non-deterministic.
- Deterministic machine is a regular machine, doing process at a time.
+ Deterministic machine is a regular machine, doing one process at a time.
  A non-deterministic machine can have parallelism.
  At some point (fork) you can get more than one process to execute so you
  should do them both.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This definition is incorrect.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -90,16 +105,68 @@ A decision problem is in
 \series bold
 P
 \series default
- if there is an algorithm that solves it in polynomial time.
+ if there exists an algorithm that can solve the problem in polynomial time
+ using a single-tape Turing machine
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Refer to Sipser?
+\end_layout
+
+\end_inset
+
+.
  A decision problem is in 
 \series bold
 NP
 \series default
  if there is polynomial -time algorithm that gets an answer on the non-determini
-stic machine and this problem can be verified in polynomial time.
+stic machine and this problem can be verified in polynomial time
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Rephrase
+\end_layout
+
+\end_inset
+
+.
  Verifying means that for a given answer it can be verified if it is a valid
  answer.
  Problems in P are also in NP.
+\end_layout
+
+\begin_layout Standard
+A problem is 
+\series bold
+NP-hard
+\series default
+ if it is at least as hard as NP-complete problem
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Missing part of definition where NP-hard problems might not belong to NP
+\end_layout
+
+\end_inset
+
+.
+ This is the set of hardest problems.
+ The most interesting problems found in real life are in this set
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Weird location for an opinion?
+\end_layout
+
+\end_inset
+
+.
+ Like mentioned above JSP is also NP-hard.
 \end_layout
 
 \begin_layout Standard
@@ -111,19 +178,18 @@ NP-complete
  NP-complete problem.
  Reducible means that for problems A and B a solution for A can be transformed
  to solution of B.
- So all 'yes' instances of A will be transformed to 'yes' instances of B
- and all 'no' instances of A will be transformed to 'no' instances of B.
+ So all yes-instances of A will be transformed to yes-instances of B and
+ all no-instances of A will be transformed to no-instances of B.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+NP-complete means that thre problem is in NP-hard and in NP!
 \end_layout
 
-\begin_layout Standard
-A problem is 
-\series bold
-NP-hard
-\series default
- if it is at least as hard as NP-complete problem.
- This is the set of hardest problems.
- The most interesting problems found in real life are in this set.
- Like mentioned above JSP is also NP-hard.
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -134,20 +200,97 @@ Types of algorithms
 There are also a lot of ways to solve a problem.
  For example by using an exact algorithm which can solve a problem in polynomial
  time if a problem is in P.
- Otherwise the exact algorithm will cost exponential time or even more.
- This is usually unacceptable, that is when heuristics can be used.
- Heuristics approximate the optimal solution to a problem within acceptable
+ Otherwise the exact algorithm will cost exponential time or even more
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Not true
+\end_layout
+
+\end_inset
+
+.
+ This is usually unacceptable
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+usually? why / when not?
+\end_layout
+
+\end_inset
+
+, that is when heuristics can be used
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+pretty informal.
+ Perhaps better to write ¨Heuristic algorithms can be used to approximate..¨
+\end_layout
+
+\end_inset
+
+.
+ Heuristics approximate the optimal solution to a problem within an acceptable
  amount of time.
- More about it is explained in the next chapter.
+ More about heuristics is explained in the Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Heuristics"
+
+\end_inset
+
+.
  For more difficult problems in NP-hard local search can be used to search
- for solutions.
- Local search returns a local optimum of the space.
- Also Genetic algorithms (GA) can be used, which like local search also
+ for solutions
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Not true
+\end_layout
+
+\end_inset
+
+.
+ Local search returns a local optimum of the space
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Weird statement
+\end_layout
+
+\end_inset
+
+.
+ Also genetic algorithms (GA) can be used, which like local search also
  a form of heuristic algorithms.
  With GA you work with different answers for a problem, which converge to
- a better answer.
- And finally genetic local search (a combination of genetic algorithms and
+ a better answer
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Rephrase
+\end_layout
+
+\end_inset
+
+.
+ And finally genetic local search a combination of genetic algorithms and
  local search will be discussed in the last chapter of this section.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+rephrase
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
