@@ -128,18 +128,6 @@ Improvement criterion:
 \begin_deeper
 \begin_layout Itemize
 Best improvement: Selecting 
-\begin_inset Formula $y$
-\end_inset
-
- as next candidate when 
-\begin_inset Formula $c(x)<c(y)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-First improvement: Selecting 
 \begin_inset Formula $y\in N(x)$
 \end_inset
 
@@ -148,6 +136,19 @@ First improvement: Selecting
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Itemize
+First improvement: Selecting 
+\begin_inset Formula $y$
+\end_inset
+
+ as next candidate when 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_deeper
@@ -195,7 +196,7 @@ At the start of a local search, choosing a candidate solution
 \end_inset
 
 .
- A graph contains a clique if all nodes within that clique are connected
+ A graph is a CLIQUE-graph if all nodes within that clique are connected
  to each other.
  So each node in a clique of size 4 is connected to the 3 other nodes.
  Consider the size of 
