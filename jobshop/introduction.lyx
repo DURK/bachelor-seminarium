@@ -107,20 +107,159 @@ In the example below, there are 3 jobs and 3 machines.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename gantt.pdf
-	width 60text%
-	BoundingBox 70bp 700bp 420bp 795bp
-	clip
+	filename images/jobshop_1.pdf
+	width 100text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+On the left a schedule for three machines.
+ To the right a list of three jobs each having three operations.
+ The labels state the machine on which the operations must be filled
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename table.pdf
-	width 40line%
-	BoundingBox 50bp 630bp 250bp 800bp
-	clip
+	filename images/jobshop2.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In the above figure, the algorithm first scheduled all operations for the
+ first job.
+ Note that every next operation can only be scheduled after the previous
+ has finished
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/jobshop3.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Every job has been scheduled and the finish time would be 16
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/jobshop4.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+An example of a schedule with an earlier finish time of 12.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of scheduling a jobshop problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
