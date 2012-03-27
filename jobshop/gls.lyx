@@ -64,21 +64,28 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-In this section genetic local search (explained in Section 2.3) will be applied
- to JSP by using Shifting Bottleneck Procedure.
- Recall the pseudocode in Section 2.3.2.
- 
+In this section genetic local search (explained in 
 \emph on
-Localsearch to improve chromosomes 
+Section 2.3
+\emph default
+) will be applied to JSP by using the Shifting Bottleneck Procedure.
+ Recall the pseudocode in 
+\emph on
+Section 2.3.2
+\emph default
+.
+ The part 
+\emph on
+in the pseudocode "Local search to improve chromosomes" 
 \emph default
 can be achieved in different ways.
- SPB will do this for our problem, JPS.
+ In this section, SPB will do this for our problem, JSP.
 
 \emph on
  
 \emph default
-After that some benchmarks will be presented, comparing it's results to
- other known GLS algorithms.
+After that some benchmarks will be presented, comparing its results to other
+ known GLS algorithms.
 \end_layout
 
 \begin_layout Subsubsection
