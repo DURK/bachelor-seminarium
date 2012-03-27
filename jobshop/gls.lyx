@@ -119,7 +119,7 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now consider the hybrid genetic approach for the SBP (SBGA).
+Now consider the hybrid genetic approach for the SBP (SB-GA).
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
@@ -252,7 +252,7 @@ key "cheng99"
 \end_inset
 
 .
- In the next section, SBGA will be tested for time and quality and will
+ In the next section, SB-GA will be tested for time and quality and will
  be compared to other genetic hybrids.
 \end_layout
 
@@ -271,23 +271,23 @@ To illustrate the effectiveness of the genetic algorithm above, a set of
 
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
- GLS and 12 other approaches to JSP, including SBGA 
+ GLS and 12 other approaches to JSP, including SB-GA 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Goncalves200577"
+key "Goncalves_ahybrid"
 
 \end_inset
 
 .
- In their results, SBGA solved 35 out of 43 instances,.
+ In their results, SB-GA solved 35 out of 43 instances,.
  Also, almost half of these solutions (17) were equal to the best-known
  solution (BKS).
 \end_layout
 
 \begin_layout Standard
-The average relative deviation (ARD) for SBGA, with respect to the BKS has
- been found to be 1,42%, which is better than the genetic hybrids of Aarts
- et al.
+The average relative deviation (ARD) for SB-GA, with respect to the BKS
+ has been found to be 1,42%, which is better than the genetic hybrids of
+ Aarts et al.
  (1994) 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -314,7 +314,50 @@ key "Goncalves_ahybrid"
 \end_layout
 
 \begin_layout Standard
-Unfortunately, more recent publications of SBGA-benchmarks for the standard
+Another benchmark for SB-GA was made in 1996 by Vaessens, Aarts and Lenstra
+ (1996) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vaessens-Aarts-Lenstra-1996"
+
+\end_inset
+
+, showing that SB-GA found solutions closer to BKS than other genetic algorithms
+, and in less time.
+ In seemed SB-GA worked especially well for the most difficult 15x15 problems
+ (LA36-LA40).
+ This benchmark shows an ARD of 1,48%, which is close to the 1,42% AT&T
+ found.
+ Lenstra also approximated the 
+\emph on
+Computer Independent Computation Time 
+\emph default
+(CICT) for SB-GA
+\emph on
+ 
+\emph default
+at 4500.
+ Compared to other GAs this is quite small, but compared to the non-genetic
+ SPB this is rather big.
+ SBP as proposed by Adams et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams-and-Joseph-1988"
+
+\end_inset
+
+ has a CICT of just 60 but a relatively large ARD of 2,50%.
+\end_layout
+
+\begin_layout Standard
+From both benchmarks can be concluded that SB-GA works best for the most
+ difficult problems, where the extra amount of time needed for calculation
+ will be less than the amount of time saved by finding a better schedule.
+\end_layout
+
+\begin_layout Standard
+Unfortunately, more recent publications of SB-GA benchmarks for the standard
  JSP are unavailable.
  This is because in the last decade, scientists have moved forward from
  a standard JSP to more complex problems like the flexible multi-objective
