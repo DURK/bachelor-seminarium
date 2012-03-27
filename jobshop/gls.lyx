@@ -262,7 +262,14 @@ To illustrate the effectiveness of the genetic algorithm above, a set of
 
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
- GLS and 12 other approaches to JSP, including SBGA.
+ GLS and 12 other approaches to JSP, including SBGA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GonÃ§alves200577"
+
+\end_inset
+
+.
  In their results, SBGA solved 35 out of 43 instances,.
  Also, almost half of these solutions (17) were equal to the best-known
  solution (BKS).
