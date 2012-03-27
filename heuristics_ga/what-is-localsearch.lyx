@@ -262,8 +262,39 @@ l power, time limit reached) and the algorithm returns a solution.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/state-space landscape.png
+	filename /Users/wouterkleinheerenbrink/TUDelft/bachelor-seminarium/jobshop/images/localsearch.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The local search method might use g(x) as fitness function but this might
+ result into local optimum.
+ The dotted line illustrates a smarter fitness function that uses some sort
+ of avering leaving the algorithm with just one optimum.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

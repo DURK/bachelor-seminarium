@@ -63,8 +63,263 @@
 Genetic Local Search
 \end_layout
 
+\begin_layout Subsubsection
+Local Search
+\end_layout
+
 \begin_layout Standard
-This section will focus on genetic algorithms that heavily rely on local
+Local search is a meta heuristic method to optimize solutions for NP-hard
+ problems.
+ Meta heuristics searches for the optimal solution in a discrete search
+ space.
+ This also indicates a (partial) exclusion of assumptions.
+ The essence of local search algorithms lies in the search of complete solutions
+ to these problems.
+ One certain solution is selected as a candidate solution and evaluated.
+ The evaluation of these solutions are based on a chosen heuristic, indicating
+ the value of this solution.
+ The value is determined by the all the surrounding solutions are located
+ in the candidate's neighborhood.
+ The most valued solution in it's neighbourhood is then selected as new
+ candidate solution.
+ This search goes on until the algorithm hits the neighbourhoods maximum.
+ Sometimes the computer has only a certain amount of computational power
+ and the search for it's global maximum takes too much time.
+ In that case the algorithm will terminate after a specific amount of time.
+ One third option is the lack of improvement between the candidate solutions.
+\end_layout
+
+\begin_layout Standard
+To go into detail, consider the following notions:
+\end_layout
+
+\begin_layout Itemize
+Set F contains all feasible solutions.
+\end_layout
+
+\begin_layout Itemize
+Cost function: maps 
+\begin_inset Formula $F\rightarrow\mathbb{R}$
+\end_inset
+
+, quantifying the fitness for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+ Higher is better.
+\end_layout
+
+\begin_layout Itemize
+Neighborhood function: maps 
+\begin_inset Formula $F\rightarrow2^{F}$
+\end_inset
+
+, defining for each solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+ a neighborhood 
+\begin_inset Formula $N(x)\subseteq F.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Improvement criterion: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Best improvement: Selecting 
+\begin_inset Formula $y\in N(x)$
+\end_inset
+
+ which has the highest value of 
+\begin_inset Formula $c(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+First improvement: Selecting 
+\begin_inset Formula $y$
+\end_inset
+
+ as next candidate when 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+At the start of a local search, choosing a candidate solution 
+\begin_inset Formula $x\in F$
+\end_inset
+
+, the cost function is executed to evaluate each 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula $\in N(x).$
+\end_inset
+
+ Now the next thing to know is the relation between 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ What is the size of 
+\begin_inset Formula $N(x)$
+\end_inset
+
+? This is different for each problem.
+ For instance, if we look for the biggest 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ in a graph, the relation between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ can be adding or removing a node from 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ A graph is a CLIQUE-graph if all nodes within that clique are connected
+ to each other.
+ So each node in a clique of size 4 is connected to the 3 other nodes.
+ Consider the size of 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $y$
+\end_inset
+
+ forms a 
+\begin_inset Formula $CLIQUE$
+\end_inset
+
+ of size 
+\begin_inset Formula $k+1$
+\end_inset
+
+ the inequality 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+ holds true and 
+\begin_inset Formula $y$
+\end_inset
+
+ is a possible next candidate solution.
+ The next candidate solution, when available, is being selected based on
+ the first improvement or the best improvement.
+ The first improvement selects the first 
+\begin_inset Formula $x$
+\end_inset
+
+ that holds the following constraint: 
+\begin_inset Formula $c(x)<c(y)$
+\end_inset
+
+.
+ Logically, the best improvement select the highest improving 
+\begin_inset Formula $c(y)\in N(x)$
+\end_inset
+
+.
+ Finally, the algorithm must hit a candidate solution that holds 
+\begin_inset Formula $c(x)=max(c(x)\in N(x))$
+\end_inset
+
+.
+ Finally, one stop condition will be true (optimal solution, out of computationa
+l power, time limit reached) and the algorithm returns a solution.
+ Notice that local search will return 'a' solution and not the optimal solution.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/state-space landscape.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The x-axis represents the set F containing all the feasible solutions.
+ The y-axis represents 
+\begin_inset Formula $c(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Imagine that the algorithm starts at the local minimum between point 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ The next iterative step will lead to a candidate solution in the direction
+ of point 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ This process continues until the candidate solution is at point 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Knowing that the global maximum is point a, the algorithm will return point
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, another local maximum.
+ It's easy to understand that the local search algorithm only return the
+ nearest local maximum.
+\end_layout
+
+\begin_layout Subsubsection
+Genetic Local Search
+\end_layout
+
+\begin_layout Standard
+This subsection will focus on genetic algorithms that heavily rely on local
  search, a common form of 
 \emph on
 hybrid genetic algorithms
