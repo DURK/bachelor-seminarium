@@ -294,7 +294,8 @@ The average relative deviation (ARD) for SBGA, with respect to the BKS has
 \end_layout
 
 \begin_layout Standard
-There are no recent publications of SBGA-benchmarks for JSP.
+Unfortunately, more recent publications of SBGA-benchmarks for JSP are unavailab
+le.
  This is because in the last decade, scientists have moved forward from
  a standard JSP to more complex problems like the flexible multi-objective
  JSP (fJSP), which is beyond the scope of this paper.
