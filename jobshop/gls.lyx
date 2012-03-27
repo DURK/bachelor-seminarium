@@ -64,14 +64,20 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-Combining local search with genetic algorithms will lead to genetic local
- search, a hybrid genetic algorithms.
-\end_layout
+In this section genetic local search (explained in Section 2.3) will be applied
+ to JSP by using Shifting Bottleneck Procedure.
+ Recall the pseudocode in Section 2.3.2.
+ 
+\emph on
+Localsearch to improve chromosomes 
+\emph default
+can be achieved in different ways.
+ SPB will do this for our problem, JPS.
 
-\begin_layout Standard
-In this section genetic local search will be applied to JSP by using Shifting
- Bottleneck Procedure.
- After that some benchmarks will be presented, comparing it's results to
+\emph on
+ 
+\emph default
+After that some benchmarks will be presented, comparing it's results to
  other known GLS algorithms.
  
 \end_layout
