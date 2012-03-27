@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Standard
-The job shop problem (JSP) is one of the hardest combinatorial optimalisation
+The job shop problem (JSP) is one of the hardest combinatorial optimization
  problems.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -68,7 +68,7 @@ key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-In optimalisation problem the best solution has to be found from all possible
+In optimization problem the best solution has to be found from all possible
  problems.
  Combinatorial optimization problems like JSP are optimization problems
  with discreet variables.
@@ -121,25 +121,9 @@ JSP was solved using a branch and bound algorithm (BB).
 Using BB is just one way of solving the problem.
  Although this algorithm is proven to produce the optimal solution of the
  10x10 benchmark problem, scientists are still looking for better (heuristic)
- algorithms for the complete JSP.
+ algorithms for JSP.
  Doing so will solve this problem faster with less use of memory or give
- more certainty about how optimal is the answer
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-BB is stated to be an exact algorithm right? In that case you know for sure
- that the answer is optimal.
- So 'how optimal' is incorrect
-\end_layout
-
-\begin_layout Plain Layout
-Karens: gaat hier over andere oplossingen
-\end_layout
-
-\end_inset
-
-.
+ more certainty about how optimal is the answer.
  
 \end_layout
 

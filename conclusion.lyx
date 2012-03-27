@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Standard
-The jobshop problem is one of the hardest combinatorial optimalisation problems
+The jobshop problem is one of the hardest combinatorial optimization problems
  which is in NP-hard computational class.
  This means that there is no exact solution to the problem, heuristics can
  be used.
@@ -72,49 +72,14 @@ The jobshop problem is one of the hardest combinatorial optimalisation problems
  The chromosome symbolic representation of the problem is based on the set
  of jobs which are represented by job number and the operation sequence
  (A_1).
- The soultions are constructed at initial step randomly to spread about
+ The solutions are constructed at initial step randomly to spread about
  the whole search space.
- Schedules are beeing build in the iteration step using crossover which
- guarantee that the generated schedule is legal.
+ Schedules are being build in the iteration step using crossover which guarantee
+ that the generated schedule is legal.
  After a schedule is obtained, a local search heuristic is applied to improve
  the solution each iterative step.
- The alghoritm terminates when the predefined fittness value is defined.
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
-Kernpunten:
-\end_layout
-
-\begin_layout Enumerate
-jsp np hard en waarom waar geen exacte oplossing voor bestaat daarom heuristics
-\end_layout
-
-\begin_layout Enumerate
-beunmethoden zoals greedy
-\end_layout
-
-\begin_layout Enumerate
-local search and ga can be used
-\end_layout
-
-\begin_layout Enumerate
-hoe ze elkaar aanvullen
-\end_layout
-
-\begin_layout Enumerate
-benchmarks
+ The algorithm terminates when the predefined fitness value has been reached
+ or the predefined maximum amount of generations has been reached.
 \end_layout
 
 \end_body
