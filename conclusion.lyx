@@ -65,12 +65,15 @@ The jobshop problem is one of the hardest combinatorial optimization problems
  This means that there is no exact solution to the problem, heuristics can
  be used.
  In this paper we showed how far you can get with genetic algorithms and
- local search.
+ local search, getting a two-level hybrid algoritm called genetc local search.
  By combining these two algorithms, it is possible to discover the whole
  search space without falling into the local maximum what local search usually
  does.
- The chromosome symbolic representation of the problem is based on the set
- of jobs which are represented by job number and the operation sequence
+\end_layout
+
+\begin_layout Standard
+The chromosome symbolic representation of jobshop problem is based on the
+ set of jobs which are represented by job number and the operation sequence
  (A_1).
  The solutions are constructed at initial step randomly to spread about
  the whole search space.
