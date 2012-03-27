@@ -60,12 +60,11 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic Local Search - intro herschrijven (geen GLS)
+Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-Next, some state-of-the-art hybrid genetic algorithms to the job shop problem
- are presented in this section.
+Intro
 \end_layout
 
 \begin_layout Subsubsection
