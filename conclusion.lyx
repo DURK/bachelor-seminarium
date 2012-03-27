@@ -63,12 +63,15 @@
 The jobshop problem is one of the hardest combinatorial optimization problems
  which is in NP-hard computational class.
  This means that there is no exact solution to the problem, heuristics can
- be used.
+ be used to approximate the solution.
  In this paper we showed how far you can get with genetic algorithms and
- local search, getting a two-level hybrid algoritm called genetc local search.
+ local search, getting a two-level hybrid algorithm called genetic local
+ search.
  By combining these two algorithms, it is possible to discover the whole
  search space without falling into the local maximum what local search usually
  does.
+ Also a disadvantage of GA: slow converging will be eliminated.
+ 
 \end_layout
 
 \begin_layout Standard
