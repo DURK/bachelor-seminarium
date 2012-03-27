@@ -131,7 +131,6 @@ Section 3.1
  Optimizing a machine in JSP means generating a schedule of all operations
  that must be done by this specific machine.
  The order in which operations are chosen is decided by the dispatcher rule.
- 
 \end_layout
 
 \begin_layout Standard
