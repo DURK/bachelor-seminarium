@@ -205,7 +205,182 @@ This chromosome must somehow map to a solution.
 \begin_inset Formula $B_{1}$
 \end_inset
 
- and so on as is shown in figure X.
+ and so on as is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:construction-ga--jsp"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp1.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Start out with the gene 
+\begin_inset Formula $A_{1}B_{1}A_{2}B_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp2.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the first gene A1 and schedule the first operation A1 to machine 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp3.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the second gene and schedule it
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp4.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the third and fourth and schedule them in order
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of construction a solution from a operation-based chromosome
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:construction-ga--jsp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -243,7 +418,49 @@ Although there is a perfect mapping possible there is a problem with this
 \emph on
 illegal
 \emph default
- combination.
+ combination as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:illegal-chromosome"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp5.pdf
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Applying crossover in such a way that A_1 and A_2 are swapped leads to illegal
+ chromosome
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:illegal-chromosome"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -407,6 +624,7 @@ Using this technique generates a valid new population, does exchange properties
 
 \begin_layout Standard
 \begin_inset Float figure
+placement p
 wide false
 sideways false
 status open
@@ -568,7 +786,7 @@ Using pure genetic algorithms will provide the user with a solution that
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
