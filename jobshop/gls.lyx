@@ -73,7 +73,6 @@ In this section genetic local search will be applied to JSP by using Shifting
  Bottleneck Procedure.
  After that some benchmarks will be presented, comparing it's results to
  other known GLS algorithms.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -91,11 +90,37 @@ The shifting bottleneck procedure (SBP)
  job shop problem.
  Given a JSP-instance that consists of a multi-machine schedule and a certain
  number of jobs.
- The SBP starts by creating a partial schedule of just the first machine.
- The SBP then continues by iteratively bringing another machine (named the
+ The machines are denoted as 
+\begin_inset Formula $M_{0},M_{1},...,M_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The SBP starts by creating a partial schedule of just the first machine
+ 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+.
+ This 
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ will be optimized by the use of a dispatcher rule.
+ A number of dispatcher rules for JSP are listed in Table <x>.
+ Optimizing a machine in JSP means generating a schedule of all operations
+ that must be done by this specific machine.
+ The order in which operations are chosen is decided by the dispatcher rule.
+\end_layout
+
+\begin_layout Standard
+The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
  On every iteration SBP locally reoptimizes the current partial schedule
- for each individual machine, one by one.
+ for each individual machine as descibed above, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
@@ -167,7 +192,7 @@ The procedure of deriving a schedule from the chromosome works as follows:
 
 \begin_layout Itemize
 -Given chromosome 
-\begin_inset Formula $[m_{1},m_{2},m_{3},...m_{m}]$
+\begin_inset Formula $[m_{1},m_{2},m_{3},...,m_{m}]$
 \end_inset
 
 .
@@ -186,7 +211,8 @@ Start with
 \end_layout
 
 \begin_layout Enumerate
-Optimally solve partial schedule (job sequence) for machine 
+Optimally solve partial schedule (job sequence by use of dispatcher rule)
+ for machine 
 \begin_inset Formula $m_{i}$
 \end_inset
 
