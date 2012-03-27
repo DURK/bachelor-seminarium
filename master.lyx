@@ -156,16 +156,6 @@ filename "heuristics_ga/what-are-heurstics.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "heuristics_ga/what-is-localsearch.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
 filename "heuristics_ga/what-are-ga.lyx"
 
 \end_inset
