@@ -95,7 +95,7 @@ reference "sub:Introduction-jsp"
 \end_layout
 
 \begin_layout Paragraph
-Representation
+Initial step
 \end_layout
 
 \begin_layout Standard
@@ -169,7 +169,23 @@ key "operation-based"
 ..
  As the name suggests, each gene in the chromosome represents an operation.
  Given a problem with two jobs A and B both consisting of two operations.
- Call them A_1, A_2, B_1 and B_2.
+ Call them 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+.
  The chromosome would have length of four genes.
 \end_layout
 
@@ -177,8 +193,194 @@ key "operation-based"
 This chromosome must somehow map to a solution.
  This can be done by popping each element from the chromosome and schedule
  this element at the first location possible, in order of appearence.
- In other words, if the chromosome is A_1 B_1 A_2 B_2, then A_1 is planned
- first, next B_1 and so on as is shown in figure X.
+ In other words, if the chromosome is 
+\begin_inset Formula $A_{1}B_{1}A_{2}B_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ is planned first, next 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ and so on as is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:construction-ga--jsp"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp1.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Start out with the gene 
+\begin_inset Formula $A_{1}B_{1}A_{2}B_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp2.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the first gene A1 and schedule the first operation A1 to machine 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp3.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the second gene and schedule it
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp4.pdf
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pop the third and fourth and schedule them in order
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of construction a solution from a operation-based chromosome
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:construction-ga--jsp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -186,29 +388,132 @@ Although there is a perfect mapping possible there is a problem with this
  representation.
  As stated before, the chromosome must be able to withstand crossover operations.
  In the job shop problem there is a preceedence constraint within the operations
-, meaning that A_1 should come before A_2.
- When applying a crossover it could easily be possible that A_2 is placed
- before A_1, resulting in A_2 being scheduled before A_1.
+, meaning that 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ should come before 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ When applying a crossover it could easily be possible that 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ is placed before 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, resulting in 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ being scheduled before 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+.
  This leads to an 
 \emph on
 illegal
 \emph default
- combination.
+ combination as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:illegal-chromosome"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ga-jsp5.pdf
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Applying crossover in such a way that A_1 and A_2 are swapped leads to illegal
+ chromosome
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:illegal-chromosome"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 A solution to prevent illegal combinations was found by Gen et al.
  They have numbered all operations by their parental job number.
  Give the same problem of two jobs with both two operations, the chromosome
- would consist of two A's and two B's.
+ would consist of two 
+\begin_inset Formula $A$
+\end_inset
+
+'s and two 
+\begin_inset Formula $B$
+\end_inset
+
+'s.
  The construction of the solution would be similar to the original situation
  but this time when a job is read from the chromosome, the first operation
  for that job is scheduled.
- Given the chromosome ABAB, the algorithm would now first find job A and
- therefore schedule operation A_1.
- Next is finds B, so it will schedule B_1.
- Again it will find job A, and will schedule the next task for job A which
- is A_2.
+ Given the chromosome 
+\begin_inset Formula $ABAB$
+\end_inset
+
+, the algorithm would now first find job 
+\begin_inset Formula $A$
+\end_inset
+
+ and therefore schedule operation 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+.
+ Next it finds 
+\begin_inset Formula $B$
+\end_inset
+
+, so it will schedule 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+.
+ Again it will find job 
+\begin_inset Formula $A$
+\end_inset
+
+, and will schedule the next task for job 
+\begin_inset Formula $A$
+\end_inset
+
+ which is 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -319,6 +624,7 @@ Using this technique generates a valid new population, does exchange properties
 
 \begin_layout Standard
 \begin_inset Float figure
+placement p
 wide false
 sideways false
 status open
@@ -480,7 +786,7 @@ Using pure genetic algorithms will provide the user with a solution that
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
