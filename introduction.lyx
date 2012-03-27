@@ -99,12 +99,9 @@ key "carlier-pinson"
 
 .
  15x15 problems are still considered to be unsolvable with exact methods.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Source
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goncalves_ahybrid"
 
 \end_inset
 
