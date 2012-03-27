@@ -60,7 +60,27 @@
 \begin_body
 
 \begin_layout Standard
+Kernpunten:
+\end_layout
 
+\begin_layout Enumerate
+jsp np hard en waarom waar geen exacte oplossing voor bestaat daarom heuristics
+\end_layout
+
+\begin_layout Enumerate
+beunmethoden zoals greedy
+\end_layout
+
+\begin_layout Enumerate
+local search and ga can be used
+\end_layout
+
+\begin_layout Enumerate
+hoe ze elkaar aanvullen
+\end_layout
+
+\begin_layout Enumerate
+benchmarks
 \end_layout
 
 \end_body

@@ -61,32 +61,28 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is one of the hardest combinatorial optimalisation
- problems
+ problems.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-.
- In optimalisation problem the best solution has to be found from all possible
+In optimalisation problem the best solution has to be found from all possible
  problems.
- Combinatorial optimalisation problems like JSP are optimalisation problems
+ Combinatorial optimization problems like JSP are optimization problems
  with discreet variables.
- Here we are looking for a pernutation from a finite set of solutions.
+ Here we are looking for a permutation from a finite set of solutions.
+ These kinds of problems has proven to be computationally challenging.
 \end_layout
 
 \begin_layout Standard
 The problem belongs to the set of NP-hard problems, which means that the
- exact method does not exist which calculates an optimal solution within
- polynomial time for an arbitrary instance of JSP and has also proven to
- be computationally challenging.
-\end_layout
-
-\begin_layout Standard
-A specific variant of JSP with 10 jobs and 10 operations is known as the
- 10x10 benchmark problem and was proposed by Muth and Thompson in 1963 and
- could not be solved for over 20 years.
+ exact method to solve this problem does not exist within polynomial time
+ for an arbitrary instance of JSP.
+ A specific variant of JSP with ten jobs and ten operations is known as
+ the 10x10 benchmark problem and was proposed by Muth and Thompson in 1963
+ and could not be solved for over twenty years.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fisher63probabilisticlearning"
@@ -94,18 +90,29 @@ key "Fisher63probabilisticlearning"
 \end_inset
 
  The first proven optimal solution was developed with exact algorithms by
- Carlier in 1987.
+ Carlier in 1987
 \begin_inset CommandInset citation
 LatexCommand cite
 key "carlier-pinson"
 
 \end_inset
 
+.
  15x15 problems are still considered to be unsolvable with exact methods.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Source
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The problem was solved using a branch and bound algorithm (BB).
+JSP was solved using a branch and bound algorithm (BB).
  BB algorithm is an exact algorithm that will enumerate all likely solutions
  in the solution space.
  Searching the complete solution space would be impossible and therefore
@@ -117,18 +124,41 @@ The problem was solved using a branch and bound algorithm (BB).
 Using BB is just one way of solving the problem.
  Although this algorithm is proven to produce the optimal solution of the
  10x10 benchmark problem, scientists are still looking for better (heuristic)
- solutions for the complete JSP.
+ algorithms for the complete JSP.
  Doing so will solve this problem faster with less use of memory or give
- more certainty about how optimal is the answer.
- JSP is an NP-hard problem what means that there is no algorithm which solves
- JSP in polynomial time.
- Because of that we need heuristic algorithms that solve the problem.
+ more certainty about how optimal is the answer
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+BB is stated to be an exact algorithm right? In that case you know for sure
+ that the answer is optimal.
+ So 'how optimal' is incorrect
+\end_layout
+
+\begin_layout Plain Layout
+Karens: gaat hier over andere oplossingen
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The JSP is an NP-hard problem which means that the problem is at least as
+ hard as the hardest problems in NP.
+ In practice this means that there is no exact algorithm to solve this problem
+ within polynomial time.
+ It might be possible to approximate the optimal solution by using a heuristic
+ algorithm.
  During the last century a lot of heuristics algorithms have been developed
  and some of them have proven to be very successful.
  This paper will discuss solutions that have been found for solving JSP
- using genetic algorithms and local search because these two technologies
- have proven to be very successful with hard combinatorial optimalisation
- problems in the past.
+ using genetic algorithms and local search.
+ These two technologies have proven to be very successful for hard combinatorial
+ optimization problems in the past.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -142,7 +172,6 @@ key "Vaessens-Aarts-Lenstra-1996"
 The paper will cover the basics of heuristics and specifically for genetic
  algorithms, local search and the combination of the two in the first section.
  In the second section these heuristics are applied to the job shop problem.
- 
 \end_layout
 
 \end_body
