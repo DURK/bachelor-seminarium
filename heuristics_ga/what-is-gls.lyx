@@ -72,7 +72,7 @@ Local search is a meta heuristic method to optimize solutions for NP-hard
  problems.
  Meta heuristics searches for the optimal solution in a discrete search
  space.
- This also indicates a (partial) exclusion of assumptions.
+ This indicates a (partial) exclusion of assumptions.
  The essence of local search algorithms lies in the search of complete solutions
  to these problems.
  One certain solution is selected as a candidate solution and evaluated.
@@ -98,7 +98,7 @@ Set F contains all feasible solutions.
 \end_layout
 
 \begin_layout Itemize
-Cost function: maps 
+Fitness function c: maps 
 \begin_inset Formula $F\rightarrow\mathbb{R}$
 \end_inset
 
@@ -261,13 +261,17 @@ At the start of a local search, choosing a candidate solution
 .
  Finally, one stop condition will be true (optimal solution, out of computationa
 l power, time limit reached) and the algorithm returns a solution.
- Notice that local search will return 'a' solution and not the optimal solution.
+ Notice that local search will return 
+\emph on
+a
+\emph default
+ solution and not the optimal solution.
  
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename images/state-space landscape.png
+	filename /home/nathan/Documents/TUDelft/bachelor-seminarium/jobshop/images/localsearch.pdf
 
 \end_inset
 
@@ -312,6 +316,18 @@ Imagine that the algorithm starts at the local minimum between point
 , another local maximum.
  It's easy to understand that the local search algorithm only return the
  nearest local maximum.
+\end_layout
+
+\begin_layout Standard
+The fitness function c(x) is represented as the blue dotted line.
+ This function is determined by the user and is an approximation to g(x).
+ Several choices are available, with different outcomes.
+ If the function c(x) is identical to g(x), local search will be the most
+ accurate.
+ Note that generating the function c(x) identical to g(x) is almost impossible
+ in real life problems.
+ Generating function c(x) like the blue dotted line will decrease the amount
+ of local maxima, but is less accurate.
 \end_layout
 
 \begin_layout Subsubsection
