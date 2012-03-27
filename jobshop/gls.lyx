@@ -123,10 +123,15 @@ The SBP starts by creating a partial schedule of just the first machine
 \end_inset
 
  will be optimized by the use of a dispatcher rule.
- A number of dispatcher rules for JSP are listed in Table <x>.
+ A number of dispatcher rules for JSP are listed in 
+\emph on
+Section 3.1
+\emph default
+.
  Optimizing a machine in JSP means generating a schedule of all operations
  that must be done by this specific machine.
  The order in which operations are chosen is decided by the dispatcher rule.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -303,8 +308,8 @@ Benchmarks
 To illustrate the effectiveness of the genetic algorithm above, a set of
  test problems will be needed.
  Consider the following classes of standard JSP test problems: Fischer and
- Thompson FT06, FT10 (the notorious 10x10 JSP), FT20 and Lawrence and A.
- LA01-LA40.
+ Thompson FT06, FT10 (the notorious 10x10 JSP), FT20 and L.
+ Aart's test problems LA01-LA40.
  This is the typical test suite for JSP.
 \end_layout
 
