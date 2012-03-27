@@ -121,8 +121,8 @@ From a population of chromosomes a new generation can be created.
  The regeneration process is started by evaluating the fitness of every
  chromosome of the current population.
  Fitness is determined by a set of rules that define the optimal solution.
- The fitness of a chromosome that represent repesents the maximum of a formula
- can be seen as the higher the number, the fitter the chromosome.
+ The fitness of a chromosome that represent represents the maximum of a
+ formula can be seen as the higher the number, the fitter the chromosome.
 \end_layout
 
 \begin_layout Standard
