@@ -252,8 +252,8 @@ key "cheng99"
 \end_inset
 
 .
- In the next section, SBGA will be tested for time, quality and ease-of-use
- and will be compared to other genetic hybrids.
+ In the next section, SBGA will be tested for time and quality and will
+ be compared to other genetic hybrids.
 \end_layout
 
 \begin_layout Subsubsection
@@ -288,14 +288,34 @@ key "GonÃ§alves200577"
 The average relative deviation (ARD) for SBGA, with respect to the BKS has
  been found to be 1,42%, which is better than the genetic hybrids of Aarts
  et al.
- (1994), Croce et al (1995).
- However Gonçalves and Beirão's <name algorithm> (1999) showed better results,
- solving all 43 test problems with an ARD of 0,90%.
+ (1994) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AARTSE.H.L.:1994"
+
+\end_inset
+
+, Croce et al (1995) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Croce1995"
+
+\end_inset
+
+.
+ However Gonçalves and Beirão's GLS (1999) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goncalves_ahybrid"
+
+\end_inset
+
+ showed better results, solving all 43 test problems with an ARD of 0,90%.
 \end_layout
 
 \begin_layout Standard
-Unfortunately, more recent publications of SBGA-benchmarks for JSP are unavailab
-le.
+Unfortunately, more recent publications of SBGA-benchmarks for the standard
+ JSP are unavailable.
  This is because in the last decade, scientists have moved forward from
  a standard JSP to more complex problems like the flexible multi-objective
  JSP (fJSP), which is beyond the scope of this paper.
