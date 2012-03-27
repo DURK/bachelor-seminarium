@@ -224,16 +224,6 @@ filename "jobshop/gls.lyx"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "jobshop/conclusion.lyx"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Conclusion
 \end_layout

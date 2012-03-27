@@ -121,7 +121,7 @@ A problem is
 NP-complete
 \series default
  if it is in NP and no other NP problem is more than polynomial factor harder.
- NP-complete problems are polinomial-time reducible to all other NP-problems.
+ NP-complete problems are polynomial-time reducible to all other NP-problems.
  Reducible means that for problems A and B a solution for A can be transformed
  to solution of B.
  So all yes-instances of A will be transformed to yes-instances of B and
@@ -139,17 +139,7 @@ NP-hard
  time.
  If NP-hard problem is not NP-complete, means it is also not in NP.
  This is the set of hardest problems.
- The most interesting problems found in real life are in this set
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Weird location for an opinion?
-\end_layout
-
-\end_inset
-
-.
+ The most interesting problems found in real life are in this set.
  Like mentioned above JSP is also NP-hard.
 \end_layout
 
