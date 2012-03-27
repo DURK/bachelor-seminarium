@@ -270,8 +270,32 @@ a
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename /home/nathan/Documents/TUDelft/bachelor-seminarium/jobshop/images/localsearch.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Visualization of search space and fitness function
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -327,7 +351,7 @@ The fitness function c(x) is represented as the blue dotted line.
  Note that generating the function c(x) identical to g(x) is almost impossible
  in real life problems.
  Generating function c(x) like the blue dotted line will decrease the amount
- of local maxima, but is less accurate.
+ of local maxima, making it less accurate.
 \end_layout
 
 \begin_layout Subsubsection
