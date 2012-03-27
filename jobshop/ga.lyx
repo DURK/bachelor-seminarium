@@ -119,14 +119,27 @@ In the early days of genetic algorithms researchers thought that binary
  representations were the only representation that would allow for crossovers
  to be applied.
  This has led to several implementations binary implementations of the algorithm
- [source].
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nakano1991"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 The view on genetic algorithms has changed and scientists found a way to
  apply crossover to symbolic representations.
  Using symbolic representations was found to be more suitable to permutational
- problems [reason+source].
+ problems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "permuations"
+
+\end_inset
+
+.
  This article will therefore only cover symbolic representations.
 \end_layout
 
