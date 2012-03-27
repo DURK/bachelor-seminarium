@@ -100,9 +100,9 @@ Genetic local search will in many cases produce a schedule that finishes
 \end_layout
 
 \begin_layout Standard
-Choosing between genetic local search or heuristics a consideration must
- be made if it is more important to get a quick schedule that might have
- a worst finishing time or to have a slower algorithm that with a higher
+When choosing between genetic local search or heuristics a consideration
+ must be made if it is more important to get a quick schedule that might
+ have a worst finishing time or to have a slower algorithm that with a higher
  probability of finding a better finishing time.
 \end_layout
 
