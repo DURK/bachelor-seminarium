@@ -64,14 +64,7 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-Combining local search with genetic algorithms will lead to genetic local
- search, a hybrid genetic algorithms.
-\end_layout
-
-\begin_layout Standard
-In this section genetic local search will be applied to JSP by using Shifting
- Bottleneck Procedure.
- 
+Intro
 \end_layout
 
 \begin_layout Subsubsection
@@ -270,28 +263,25 @@ To illustrate the effectiveness of the genetic algorithm above, a set of
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
  GLS and 12 other approaches to JSP, including SBGA.
- In their results, SBGA solved 35 out of 43 instances.
+ In their results, SBGA solved 35 out of 43 instances,.
  Also, almost half of these solutions (17) were equal to the best-known
  solution (BKS).
- 
 \end_layout
 
 \begin_layout Standard
-----------------------
+The average relative deviation (ARD) for SBGA, with respect to the BKS has
+ been found to be 1,42%, which is better than the genetic hybrids of Aarts
+ et al.
+ (1994), Croce et al (1995).
+ However Gonçalves and Beirão's <name algorithm> (1999) showed better results,
+ solving all 43 test problems with an ARD of 0,90%.
 \end_layout
 
 \begin_layout Standard
-MORE ABOUT RESULTS AND COMPARISONS
-\end_layout
-
-\begin_layout Standard
-----------------------
-\end_layout
-
-\begin_layout Standard
-The last 10 years, scientists have moved forward from a standard JSP to
- the more complex flexible multi-objective JSP (fJSP), which is beyond the
- scope of this paper.
+There are no recent publications of SBGA-benchmarks for JSP.
+ This is because the last decade, scientists have moved forward from a standard
+ JSP to the more complex flexible multi-objective JSP (fJSP), which is beyond
+ the scope of this paper.
 \end_layout
 
 \end_body
