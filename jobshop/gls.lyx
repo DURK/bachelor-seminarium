@@ -110,7 +110,7 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now consider the hybrid genetic approach for the SBP.
+Now consider the hybrid genetic approach for the SBP (SBGA).
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
@@ -243,8 +243,8 @@ key "cheng99"
 \end_inset
 
 .
- In the next section, the genetic SBP will be tested for time, quality and
- ease-of-use and will be compared to other genetic hybrids.
+ In the next section, SBGA will be tested for time, quality and ease-of-use
+ and will be compared to other genetic hybrids.
 \end_layout
 
 \begin_layout Subsubsection
@@ -252,7 +252,39 @@ Benchmarks
 \end_layout
 
 \begin_layout Standard
-blaaablablabla
+To illustrate the effectiveness of the genetic algorithm above, a set of
+ test problems will be needed.
+ Consider the following classes of standard JSP test problems: Fischer and
+ Thompson FT06, FT10 (the notorious 10x10 JSP), FT20 and Lawrence and A.
+ LA01-LA40.
+ This is the typical test suite for JSP.
+\end_layout
+
+\begin_layout Standard
+AT&T Labs Research made a comparison in 2002 between their self-introduced
+ GLS and 12 other approaches to JSP, including SBGA.
+ In their results, SBGA solved 35 out of 43 instances.
+ Also, almost half of these solutions (17) were equal to the best-known
+ solution (BKS).
+ 
+\end_layout
+
+\begin_layout Standard
+----------------------
+\end_layout
+
+\begin_layout Standard
+MORE ABOUT RESULTS AND COMPARISONS
+\end_layout
+
+\begin_layout Standard
+----------------------
+\end_layout
+
+\begin_layout Standard
+The last 10 years, scientists have moved forward from a standard JSP to
+ the more complex flexible multi-objective JSP (fJSP), which is beyond the
+ scope of this paper.
 \end_layout
 
 \end_body
