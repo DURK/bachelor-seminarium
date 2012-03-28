@@ -60,11 +60,56 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic Local Search
+Hybrid algorithms
+\end_layout
+
+\begin_layout Standard
+We beginnen te praten over hybrid.
+ Mini samenvatting, daarna nadeel noemen.
+ Zeggen dat het te combineren valt met een andere heuristic.
+ Een veelgebruikte is local search.
+ Zo vallen genetic algorithms en local search te combineren, een vorm hiervan
+ is GLS.
+ die gaan we toelichten.
+ Eerst local search.
+ Gaat ik morgen doen :)
+\end_layout
+
+\begin_layout Standard
+Meta-heuristics in de introductie toevoegen,
 \end_layout
 
 \begin_layout Subsubsection
 Local Search
+\end_layout
+
+\begin_layout Standard
+Local search is a meta-heuristic method to find the optimal solution for
+ NP-hard problems.
+ A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
+nsional search space.
+ Local search starts with a candidate solution, which is given or picked
+ at random.
+ The candidate solution is then compared to its neighbourhood, searching
+ for a better solution in each dimension of the search space.
+ The evaluation of a neighbourhood is done by the fitness function.
+ From here there are two options; the best improvement and the first improvement.
+ The 'best improvement' selects the best solution in its entire neighbourhood,
+ while the 'first improvement' selects the first solution that's better
+ than the current candidate solution.
+ Respectively, this leads to a fast convergence and a limited coverage of
+ the search space, or a slow convergence and a wider spread of coverage.
+ When local search finds this, or a, better solution it sets this as new
+ candidate solution.
+ The algorithm will terminate if a better solution in this neighbourhood
+ doesn't exists.
+ Termination can also take place if a certain amount of iterative steps
+ has been called or if the candidates fitness has reached a certain value.
+ Nog vertellen over local optima? of al in 2.3 intro?
+\end_layout
+
+\begin_layout Standard
+---
 \end_layout
 
 \begin_layout Standard
@@ -279,6 +324,7 @@ status open
 \begin_inset Graphics
 	filename ../jobshop/images/localsearch.pdf
 	width 100text%
+
 \end_inset
 
 

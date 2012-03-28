@@ -86,14 +86,14 @@ From 1960 until 1970 a new form of heuristics was introduced that was inspired
 Simultaneously two major algorithms were developed.
  On one side of the the globe the German computer scientist Rechenberg introduce
 d Evolutionary Algorithms and on the other side Johan Holland developed
- Genetic Algorithms at the University of Michigan.
+ Genetic Algorithms at the University of Michigan
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rechenberg1973,Holland-1975"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -108,8 +108,8 @@ Genetic algorithms are a specific group of heuristics defined by John Holland
 
 \begin_layout Standard
 Each solution in the set is represented by a chromosome.
- This chromosome might be a bit-string or even a set of mathematical equations.Th
-e different parts in chromosome are called genes.
+ This chromosome might be a bit-string or even a set of mathematical equations.
+ The different parts in chromosome are called genes.
  In case the chromosome is a bit-string, the developer might define every
  bit as being a gene.
  When creating a chromosome for a schedule, each gene could be symbol representi
@@ -144,9 +144,9 @@ key "introduction-ga"
 \end_layout
 
 \begin_layout Standard
-In the following paragaphs will explain the different steps of the genetic
+In the following paragaphs we will explain the different steps of the genetic
  algorithm in some more detail.
- These steps are also illustrated using pseudo code from Listing 
+ These steps are also illustrated using pseudo code in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Pseudocode-for-ga"
@@ -157,8 +157,14 @@ reference "lis:Pseudocode-for-ga"
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
-lstparams "basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4"
 inline false
 status open
 
@@ -184,17 +190,17 @@ begin
 
 \begin_layout Plain Layout
 
-    recombine P(t) by crossover and mutation
+    O(t) = recombine P(t) by crossover and mutation
 \end_layout
 
 \begin_layout Plain Layout
 
-    evaluate P(t)
+    evaluate O(t)
 \end_layout
 
 \begin_layout Plain Layout
 
-    select to new population P(t)
+    select from O(t) and add to new population P(t+1)
 \end_layout
 
 \begin_layout Plain Layout
@@ -212,8 +218,12 @@ begin
 end
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -223,11 +233,15 @@ name "lis:Pseudocode-for-ga"
 
 \end_inset
 
-Pseudo code of genetic algorithm 
+Pseudo code of genetic algorithm
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -237,7 +251,7 @@ Pseudo code of genetic algorithm
 \end_layout
 
 \begin_layout Paragraph
-Initial
+Initialization
 \end_layout
 
 \begin_layout Standard
@@ -287,8 +301,8 @@ crossover
  as good or even better than the chromosomes it was based upon.
  If this is the case, the solutions will converge to a, perhaps local, optimal
  solution.
- Their is no guarantee though that best combination of genes present is
- the right genes possible, for the starting generation might not necessarily
+ There is no guarantee though that the best combination of genes present
+ is the global optimum, for the starting generation might not necessarily
  contain the best solution or early selection has gotten rid of genes that
  were part of the optimal solution.
  This would cause the algorithm to find a local optimum instead of the global
@@ -296,7 +310,7 @@ crossover
 \end_layout
 
 \begin_layout Standard
-The chance of converging to a local optimum can be descreased by including
+The chance of converging to a local optimum can be decreased by including
  an incidental extra step: a 
 \emph on
 mutation
@@ -308,7 +322,8 @@ mutation
 \end_layout
 
 \begin_layout Standard
-Crossover and mutation are not applied for every step.
+During each iteration crossover and mutation are only applied to a selection
+ of chromosomes, picked by a random process with a preset probability.
  Having a too high frequency of one of the two might cause the algorithm
  to never converge to a certain optimum while having a too low frequency
  might cause the algorithm to converge too fast to a local optimum.
@@ -324,7 +339,8 @@ An extra step that can be added to the iterative step is the replacement
 \lang british
 behavior
 \lang english
- of the algorithm.
+ of the algorithm improving the chances of searching the complete solution
+ space.
 \end_layout
 
 \begin_layout Paragraph
@@ -344,18 +360,18 @@ ns.
 
 \begin_layout Standard
 Genetic algorithms are suitable for problems with a large solution space
- in which it is hard to guess where the optimum is.
+ in which it is hard to guess where the optimum is and when there is no
+ exact algorithm that can find an optimum within polynomial time.
  Due to the usage of a solution set, the algorithm is able to inspect multiple
  solutions in the solution space.
  The natural selection offers the possibility for the solutions to become
  closer to each other and for converging to a (local) optimum.
  In contrast to local search algorithms, the genetic algorithms has a built-in
- solution to lessen the change of a local optimum as solution by adding
- mutation that will make the algorithm search through a larger part of the
- solution space.
+ solution to decrease the chance converging to a local optimum, for example
+ by adding mutation step.
  It is important to find a good balance in applying crossover and mutation.
  Having an incorrect balance could cause the algorithm to become very slow,
- never to find an optimum or converging to a local optimum.
+ to never converge or to converge to quickly.
 \end_layout
 
 \end_body
