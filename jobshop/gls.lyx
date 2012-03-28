@@ -60,32 +60,18 @@
 \begin_body
 
 \begin_layout Subsection
-Genetic Local Search
+Genetic Hybrid Algorithms
 \end_layout
 
 \begin_layout Standard
-In this section genetic local search (explained in 
-\emph on
-Section 2.3
-\emph default
-) will be applied to JSP by using the Shifting Bottleneck Procedure.
- Recall the pseudocode in 
-\emph on
-Section 2.3.2
-\emph default
-.
- The part in the pseudocode
-\emph on
- "Local search to improve chromosomes" 
-\emph default
-can be achieved in different ways.
- In this section, SPB will do this for our problem, JSP.
-
-\emph on
- 
-\emph default
-After that some benchmarks will be presented, comparing its results to other
- known GLS algorithms.
+In this section a genetic algorithm (Section 2.2) will be combined with a
+ local search algorithm (Section 2.3) to approximate the optimal solution
+ for several well-known JSP benchmark problems.
+ Results for these benchmarks will be presented and compared to other well-known
+ genetic hybrid algorithms.
+ Note that the given example is not the most efficient genetic hybrid (GHA)
+ to solve JSP, but is does provide a convenient way of demonstrating how
+ JSP can be solved using a GHA.
 \end_layout
 
 \begin_layout Subsubsection
@@ -93,13 +79,13 @@ Shifting Bottleneck Procedure
 \end_layout
 
 \begin_layout Standard
-The first example is a combination of a genetic algorithm with a bottleneck
- shifting procedure.
+This example is a combination of a genetic algorithm with a shifting bottleneck
+ procedure.
  
 \emph on
 The shifting bottleneck procedure (SBP)
 \emph default
- is an extensively used heuristic to approach optimal solutions for the
+ is an extensively used heuristic to approximate optimal solutions for the
  job shop problem.
  Given a JSP-instance that consists of a multi-machine schedule and a certain
  number of jobs.
@@ -123,11 +109,7 @@ The SBP starts by creating a partial schedule of just the first machine
 \end_inset
 
  will be optimized by the use of a dispatcher rule.
- A number of dispatcher rules for JSP are listed in 
-\emph on
-Section 3.1
-\emph default
-.
+ A number of dispatcher rules for JSP are listed in Section 3.1.
  Optimizing a machine in JSP means generating a schedule of all operations
  that must be done by this specific machine.
  The order in which operations are chosen is decided by the dispatcher rule.
@@ -228,8 +210,8 @@ Start with
 \end_layout
 
 \begin_layout Enumerate
-Optimally solve partial schedule (job sequence by use of dispatcher rule)
- for machine 
+Use a dispatcher rule to solve partial schedule (job sequence) for machine
+ 
 \begin_inset Formula $m_{i}$
 \end_inset
 
@@ -322,7 +304,7 @@ key "Goncalves_ahybrid"
 \end_inset
 
 .
- In their results, SB-GA solved 35 out of 43 instances,.
+ In their results, SB-GA was able to solve 35 out of 43 instances.
  Also, almost half of these solutions (17) were equal to the best-known
  solution (BKS).
 \end_layout
@@ -394,7 +376,7 @@ key "Adams-and-Joseph-1988"
 \end_layout
 
 \begin_layout Standard
-From both benchmarks can be concluded that SB-GA works best for the most
+From both benchmarks it can be concluded that SB-GA works best for the most
  difficult problems, where it is worth more to find a compact schedule than
  a quick solution.
  
