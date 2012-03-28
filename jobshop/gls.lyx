@@ -121,7 +121,7 @@ The SBP then continues by iteratively bringing another machine (named the
  On every iteration SBP locally reoptimizes the current partial schedule
  for each individual machine as descibed above, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
- problem to repeatedly solving single-machine scheduling problems 
+ problem to repeatedly solving single-machine scheduling problems
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adams-and-Joseph-1988"
@@ -131,8 +131,7 @@ key "Adams-and-Joseph-1988"
 .
  By improving partial schedules constructed in previous iterations, before
  entering the next iteration, SBP is called an constructive algorithm combined
- with local search.
- 
+ with local search
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cesar-Rego-and-Renato-Duarte-2009"
@@ -143,7 +142,15 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now consider the hybrid genetic approach for the SBP (SB-GA).
+Now consider SB-GA, a hybrid genetic approach for the SBP, proposed by Dorndorf
+ and Pesch
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dorndorf199525"
+
+\end_inset
+
+.
  In this approach a chromosome is denoted as an encoded list of ordered
  machines.
  Genetic algorithms evolve those chromosomes in order to retrieve better
@@ -151,7 +158,7 @@ Now consider the hybrid genetic approach for the SBP (SB-GA).
  The bottleneck shifting procedure is used to derive a schedule from these
  encodings of machine sequences.
  Resulting schedules differ greatly in quality, depending on the sequence
- of bottleneck machines 
+ of bottleneck machines
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -269,7 +276,7 @@ This genetic shifting bottleneck procedure differs from the standard shifting
  In the genetic approach the bottleneck is not a criterion for the choice
  of the next machine, because this is determined by the given chromosome.
  Thus, this genetic approach doesn't need to identify a bottleneck machine
- on every iteration 
+ on every iteration
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -288,15 +295,32 @@ Benchmarks
 \begin_layout Standard
 To illustrate the effectiveness of the genetic algorithm above, a set of
  test problems will be needed.
- Consider the following classes of standard JSP test problems: Fischer and
- Thompson FT06, FT10 (the notorious 10x10 JSP), FT20 and L.
- Aart's test problems LA01-LA40.
+ Consider the following two test suites of standard JSP problems: FT and
+ LA.
+ 
+\end_layout
+
+\begin_layout Standard
+UITLEG FT PROBLEMEN
+\end_layout
+
+\begin_layout Standard
+UITLEG LA PROBLEMEN
+\end_layout
+
+\begin_layout Standard
+---------------------------------
+\end_layout
+
+\begin_layout Standard
+As benchmarks, we will use FT06, FT10 (the notorious 10x10 JSP, mentioned
+ in Section 1), FT20 and LA01-LA40.
  This is the typical test suite for JSP.
 \end_layout
 
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
- GLS and 12 other approaches to JSP, including SB-GA 
+ GLS and 12 other approaches to JSP, including SB-GA
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Goncalves_ahybrid"
@@ -304,23 +328,29 @@ key "Goncalves_ahybrid"
 \end_inset
 
 .
- In their results, SB-GA was able to solve 35 out of 43 instances.
- Also, almost half of these solutions (17) were equal to the best-known
- solution (BKS).
+ In their results, SB-GA was able to solve 35 out of 43 instances, of which
+ 17 optimally.
+ In other words, almost half of these solutions were equal to the 
+\emph on
+best-known solution
+\emph default
+ (BKS).
 \end_layout
 
 \begin_layout Standard
-The average relative deviation (ARD) for SB-GA, with respect to the BKS
- has been found to be 1,42%, which is better than the genetic hybrids of
- Aarts et al.
- (1994) 
+The 
+\emph on
+average relative deviation
+\emph default
+ (ARD) for SB-GA, with respect to the BKS has been found to be 1,42%, which
+ is better than the genetic hybrids of Aarts
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AARTSE.H.L.:1994"
 
 \end_inset
 
-, Croce et al (1995) 
+ and Croce
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Croce1995"
@@ -328,7 +358,7 @@ key "Croce1995"
 \end_inset
 
 .
- However Gonçalves and Beirão's GLS (1999) 
+ Only Gonçalves's GLS algorithm
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Goncalves_ahybrid"
@@ -340,7 +370,6 @@ key "Goncalves_ahybrid"
 
 \begin_layout Standard
 Another benchmark for SB-GA was made in 1996 by Vaessens, Aarts and Lenstra
- (1996) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -362,10 +391,9 @@ Computer Independent Computation Time
  
 \emph default
 at 4500.
- Compared to other GAs this is quite small, but compared to the non-genetic
- SPB this is rather big.
- SBP as proposed by Adams et al.
- 
+ Compared to other hybrid GAs this is rather small, but compared to the
+ non-genetic SPB this is rather big.
+ SBP as proposed by Adams
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adams-and-Joseph-1988"
@@ -376,10 +404,12 @@ key "Adams-and-Joseph-1988"
 \end_layout
 
 \begin_layout Standard
-From both benchmarks it can be concluded that SB-GA works best for the most
- difficult problems, where it is worth more to find a compact schedule than
- a quick solution.
- 
+From both benchmarks it can be observed that SB-GA is best used for the
+ most difficult problems.
+ Namely, in these cases the low ARD makes up for the relatively large computatio
+n time.
+ So, SB-GA is recommendable over standard SBP where it is worth more to
+ find a compact schedule than a quick solution.
 \end_layout
 
 \begin_layout Standard
