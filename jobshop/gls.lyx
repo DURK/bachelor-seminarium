@@ -74,9 +74,9 @@ Section 2.3
 Section 2.3.2
 \emph default
 .
- The part 
+ The part in the pseudocode
 \emph on
-in the pseudocode "Local search to improve chromosomes" 
+ "Local search to improve chromosomes" 
 \emph default
 can be achieved in different ways.
  In this section, SPB will do this for our problem, JSP.
