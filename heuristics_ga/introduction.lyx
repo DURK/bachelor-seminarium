@@ -158,8 +158,7 @@ There are also a lot of ways to solve a problem.
  These two are different specific types of heuristics.
  Local search can be used to optimize solutions in discrete search space
  to a local optimum.
- Genetic algorithms (GA) can also be used.
- GA use the same strategy to solve problems as nature does.
+ Genetic alghoritms use the same strategy to solve problems as nature does.
  They try to evolve a solution to a problem using the natural selection
  and the survival of the fittest.
  Genetic local search (GLS) combines these two methods, getting an effective

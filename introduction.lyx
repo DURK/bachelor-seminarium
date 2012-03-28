@@ -61,34 +61,39 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is one of the hardest combinatorial optimization
- problems.
+ problems
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-In optimization problem the best solution has to be found from all possible
- problems.
+.
+ In optimization problem the best solution has to be found from all possible
+ solutions.
  Combinatorial optimization problems like JSP are optimization problems
- with discreet variables.
+ with discrete variables.
  Here we are looking for a permutation from a finite set of solutions.
  These kinds of problems has proven to be computationally challenging.
 \end_layout
 
 \begin_layout Standard
-The problem belongs to the set of NP-hard problems, which means that the
- exact method to solve this problem does not exist within polynomial time
- for an arbitrary instance of JSP.
+The JSP is an NP-hard problem which means that the problem is at least as
+ hard as the hardest problems in NP.
+ In practice this means that there is no exact algorithm to solve this problem
+ within polynomial time for an arbitrary instance of JSP.
+ It might be possible to approximate the optimal solution by using a heuristic
+ algorithm.
  A specific variant of JSP with ten jobs and ten operations is known as
  the 10x10 benchmark problem and was proposed by Muth and Thompson in 1963
- and could not be solved for over twenty years.
+ and could not be solved for over twenty years
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fisher63probabilisticlearning"
 
 \end_inset
 
+.
  The first proven optimal solution was developed with exact algorithms by
  Carlier in 1987
 \begin_inset CommandInset citation
@@ -98,23 +103,23 @@ key "carlier-pinson"
 \end_inset
 
 .
- 15x15 problems are still considered to be unsolvable with exact methods.
+ 15x15 problems are still considered to be unsolvable with exact methods
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Goncalves_ahybrid"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
 JSP was solved using a branch and bound algorithm (BB).
  BB algorithm is an exact algorithm that will enumerate all likely solutions
  in the solution space.
- Searching the complete solution space would be impossible and therefore
- the algorithm will constantly split up the space (add boundaries) and discard
- solutions that are not possible.
+ Searching the complete solution space would be very time-consuming and
+ therefore the algorithm will constantly split up the space (add boundaries)
+ and discard not optimal solutions.
 \end_layout
 
 \begin_layout Standard
@@ -128,25 +133,19 @@ Using BB is just one way of solving the problem.
 \end_layout
 
 \begin_layout Standard
-The JSP is an NP-hard problem which means that the problem is at least as
- hard as the hardest problems in NP.
- In practice this means that there is no exact algorithm to solve this problem
- within polynomial time.
- It might be possible to approximate the optimal solution by using a heuristic
- algorithm.
- During the last century a lot of heuristics algorithms have been developed
+During the last century a lot of heuristics algorithms have been developed
  and some of them have proven to be very successful.
  This paper will discuss solutions that have been found for solving JSP
  using genetic algorithms and local search.
- These two technologies have proven to be very successful for hard combinatorial
- optimization problems in the past.
+ These two methods have proven to be very successful for hard combinatorial
+ optimization problems in the past
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard

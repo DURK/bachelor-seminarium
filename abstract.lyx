@@ -61,24 +61,21 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is one of the hardest well-known combinatorial
- optimalisation problems.
+ optimization problems.
  This problem gained a lot of attention from computer scientists, who published
- a large amount of papers presenting numerous solutions to JSP.
+ a large number of papers presenting numerous solutions to JSP.
  However no polynomial-time solution to JSP has been found.
  This is because JSP is a member of the NP-hard class.
  This property makes this scheduling problem very interesting for many heuristic
 s, from simple dispatching rules to genetic algorithms and multi objective
  scheduling.
  Not all of these algorithms solve JSP well.
- Some of them perform well on global search but converge slowly, like genetic
- algorithms.
+ Some of them are good in discovering the whole solution space but are slowly,
+ like genetic algorithms.
  Others like local search are perfect for performing fine-tuning.
  Combining those two would provide a better answer for JSP and other constrained
  combinatorial optimization problems.
-\end_layout
-
-\begin_layout Standard
-In this paper we concentrate on genetic algorithms and a hybrid combination
+ In this paper we concentrate on genetic algorithms and a hybrid combination
  of genetic algorithms with local search.
 \end_layout
 
