@@ -93,20 +93,16 @@ Heuristic algorithms are developed in order to solve problems for which
  within an acceptable amount of time.
  The amount of time that would lie between the margins of acceptability,
  is defined by the user of the heuristic and depends on the problem.
+ Also, computer scientists want the most efficient algorithms to find these
+ approximations to the optimal solution for a problem.
+ However, because there may not be an exact solution to the problem, a heuristic
+ algorithm in most cases cannot be theoretically proven to be the most efficient.
 \end_layout
 
 \begin_layout Standard
-Also, we want the most efficient algorithms to find these approximations
- to the optimal solution for a problem.
- However, a heuristic algorithm in most cases cannot be theoretically proven
- to be correct, because it cannot guarantee to produce an acceptable solution
- to a given problem.
- Efficiency can therefore only be measured in practice; empirically.
-\end_layout
-
-\begin_layout Standard
-So, by using a "rule of thumb", we iteratively determine whether an algorithm
- solves the problem and quantify how efficiently it does that.
+So, by using a "rule of thumb", computer scientists iteratively determine
+ whether an algorithm solves the problem and quantify how efficiently it
+ does that.
  This typically involves testing by trial and error, adjusting formulas
  and variables on every iteration, until being satisfied with the accuracy
  of the results and efficiency of the algorithm.
@@ -136,15 +132,15 @@ key "Bentley-1982"
 
 \begin_layout Standard
 A greedy algorithm always makes the choice that looks best in the current
- state, without considering the consequences for a subsequent state.
+ problem, without considering results from subproblems.
  In other words, greedy algorithms continuously make a locally optimal choice
  in the hope that this choice will lead to a globally optimal solution.
  The definition of a local and global optimal, which can be either a maximum
- or a minimum, will be explained in
+ or a minimum, will be explained in 
 \emph on
- 
+Section 2.2
 \emph default
-Section 2.2.
+.
  In case of the TSP, each local optimal choice could be defined as visiting
  an unvisited city nearest to the current city.
 \end_layout
