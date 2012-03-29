@@ -101,7 +101,7 @@ Genetic algorithms are a specific group of heuristics defined by John Holland
  at the University of Michigan in 1960.
  Holland was inspired by the way nature was able to produce solutions to
  problems quicker than man could using formulas.
- He defined a set of rules for an algorithm to work with a solution-set,
+ He defined a set of rules for an algorithm to work with a solution set,
  also called a population.
  
 \end_layout
@@ -121,8 +121,17 @@ From a population of chromosomes a new generation can be created.
  The regeneration process is started by evaluating the fitness of every
  chromosome of the current population.
  Fitness is determined by a set of rules that define the optimal solution.
- The fitness of a chromosome that represent represents the maximum of a
- formula can be seen as the higher the number, the fitter the chromosome.
+ The fitness of a chromosome that represent represents
+\begin_inset Caption
+
+\begin_layout Plain Layout
+represent dubbel
+\end_layout
+
+\end_inset
+
+ the maximum of a formula can be seen as the higher the number, the fitter
+ the chromosome.
 \end_layout
 
 \begin_layout Standard
