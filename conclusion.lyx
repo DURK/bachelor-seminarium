@@ -71,98 +71,40 @@ Heuristic algorithms are a great way of approximating a computationally
 \begin_layout Standard
 Genetic Algorithms are an inter-disciplinary combination of modern computer
  science and evolutionary principles.
- So, if Charles Darwin was a computer scientist, he would likely be a great
+ So if Charles Darwin was a computer scientist, he would likely be a great
  enthusiast of Genetic Algorithms.
- Pure genetic algorithms (GA) perform sub-optimal on the job shop problem
- (JSP).
- Better results can be obtained by combining pure GAs with other heuristics.
- Two level hybrid algorithms such as the Shifting Bottleneck Genetic Algorithm
- (SB-GA) show good results on most test cases.
- In the future more research might be done on combing heuristics like local
- search on multiple levels to constantly improve the solution chromosomes.
+ We have shown that pure genetic algorithms (GA) perform sub-optimal on
+ JSP.
+ Better results can be obtained by combining pure GAs with other heuristics,
+ so called genetic hybrid algorithms.
+ Such hybrid algorithms, like the Shifting Bottleneck Genetic Algorithm
+ (SB-GA), show impressive results on a typical suite of JSP test cases.
  Genetic hybrid algorithms will in many cases produce a schedule that finishes
  earlier than a schedule that is produced using another heuristics.
- The downside is that the hybrid algorithms require a longer time to compute
- their results than most other heuristics.
+ The downside is that these hybrid algorithms require a relatively long
+ computation time compared to other heuristics.
 \end_layout
 
 \begin_layout Standard
-We have noticed that there is an important trade-off.
- The algorithm will either produce a schedule with an optimal finishing
- time and take longer or it will produce a sub-optimal schedule very quick.
- Depending on the problem at hand, a precise or quick algorithm is preferable.
- If we inspect this paper on this principle, we see that this trade-off
+We have strongly noticed that there is an important time vs quality trade-off.
+ An approximation algorithm to JSP will either produce a schedule with an
+ optimal finishing time and take longer, or will produce a sub-optimal schedule
+ very quickly.
+ Depending on the problem at hand, a precise or quick algorithm may be preferabl
+e.
+ If we inspect this paper on this phenomenon, we see that this trade-off
  acts on different levels.
- In local search this trade-off is between the first- or best improvement.
- In genetic hybrid algorithms we see that the GA searches in a wide search
- space, while LS narrows down this space and is focused on the optimal solution
- around.
- So when choosing between a algorithms a consideration must be made if it
- is more important to get a quick schedule that might have a worst finishing
- time or to have a slower algorithm with a higher probability of finding
- a better finishing time.
-\end_layout
-
-\begin_layout Standard
-There is still a considerable room for improvement.
- As discussed in Section 3.3.2 no algorithms achieve optimal solutions for
- all instances of the test cases.
- We have observed that many algorithms operate at two levels: small changes
- like local search on one level and big changes like genetics on the other
- level.
- It might be interesting to design a three level algorithm.
- 
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
-- 
-\end_layout
-
-\begin_layout Standard
--Dirk, volgens mij is dit van jou.
- Ik snap niet zo heel veel wat ik hiermee moet.
-\end_layout
-
-\begin_layout Standard
--Daar past dat stukje goed bij.
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
-Dit is in vele dingen terug te zien, local search (best/first), hybrids
- (GA en LS), het speelt op elk niveau.
- Oplossingen worden steeds beter, en daarom worden de problemen juist moeilijker
- gemaakt.
- Logisch, aangezien het prestaties van de vorige algoritmes kennelijk 'acceptabe
-l' waren, anders waren ze niet bekend geworden.
- Leuk zweverig en abstract stukje dus.
-\end_layout
-
-\begin_layout Standard
-------------DIRK:------------------
-\end_layout
-
-\begin_layout Standard
-Heuristic algorithms are a great way of approximating a computationally
- complex problem like the job shop problem for which no exact algorithm
- exists.
- In this paper we have shown an interesting type of heuristics called Genetic
- Algorithms.
-\end_layout
-
-\begin_layout Standard
-Genetic Algorithms are an inter-disciplinary combination of modern computer
- science and evolutionary principles.
- {{So If Charles Darwin was a computer scientist, he would probably be a
- great enthusiast of Genetic Algorithms.
- }}
+ In local search this trade-off manifests itself in deciding between the
+ first- and best improvement.
+ In genetic hybrid algorithms the trade-off manifests itself as follows:
+ the GA searches in a wide search space, while local search narrows down
+ this space and focuses on the optimal solution within its surrounding search
+ space.
+ So when choosing between approximation algorithms one must consider if
+ it is more important to obtain a schedule quickly with a possibly worse
+ finishing time, or obtain a schedule slowly with a higher probability of
+ finding a better finishing time.
+ It all depends on the users priorities.
 \end_layout
 
 \end_body
