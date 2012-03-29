@@ -74,12 +74,19 @@ Pure genetic algorithms (GA) perform sub-optimal on job shop problem (JSP).
 \end_layout
 
 \begin_layout Standard
-There is a trade-off between the time algorithms run and the probability
- to find the best answer, for JSP the tightest schedule.
- So when choosing between algorithms a consideration must be made if it
- is more important to produce a schedule very quick that might have a finishing
- time that is suboptimal or to have a slower algorithm with a higher probability
- of finding the optimal finishing time.
+Noticeable is that there is trade-off, the algorithm will either produce a schedule with an optimal finishing time
+ and take longer or it will produce a sub-optimal schedule very quick.
+ Depending on the problem, a or quick algorithm is wanted.
+ If we inspect this paper on this principle, we see that this trade-off
+ acts on different levels.
+ In local search this trade-off is between the first- or best improvement.
+ In hybrid algorithms we see that the GA searches in a wide search space,
+ while LS narrows down this space and is focused on the optimal solution
+ around.
+ So when choosing between a algorithms a consideration must be made if it
+ is more important to get a quick schedule that might have a worst finishing
+ time or to have a slower algorithm with a higher probability of finding
+ a better finishing time.
 \end_layout
 
 \begin_layout Standard
@@ -98,12 +105,16 @@ There is still a considerable room for improvement.
 \end_layout
 
 \begin_layout Standard
--
+- 
 \end_layout
 
 \begin_layout Standard
--Dirk: volgens mij is dit van jou.
+-Dirk, volgens mij is dit van jou.
  Ik snap niet zo heel veel wat ik hiermee moet.
+\end_layout
+
+\begin_layout Standard
+-Daar past dat stukje goed bij.
 \end_layout
 
 \begin_layout Standard
@@ -118,18 +129,6 @@ Dit is in vele dingen terug te zien, local search (best/first), hybrids
  Logisch, aangezien het prestaties van de vorige algoritmes kennelijk 'acceptabe
 l' waren, anders waren ze niet bekend geworden.
  Leuk zweverig en abstract stukje dus.
-\end_layout
-
-\begin_layout Standard
-Noticeable is that there is trade-off, the algorithm will be either good
- or quick.
- Depending on the problem, a or quick algorithm is wanted.
- If we inspect this paper on this principle, we see that this trade-off
- acts on different levels.
- In local search this trade-off is between the first- or best improvement.
- In hybrid algorithms we see that the GA searches in a wide search space,
- while LS narrows down this space and is focused on the optimal solution
- around..
 \end_layout
 
 \end_body
