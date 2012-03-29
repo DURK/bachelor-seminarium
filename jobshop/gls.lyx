@@ -305,10 +305,6 @@ To illustrate the effectiveness of the genetic algorithm above, a set of
  This is the typical test suite for JSP.
 \end_layout
 
-\begin_layout Paragraph*
-AT&T
-\end_layout
-
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
  GLS and 12 other approaches to JSP, including SB-GA
@@ -593,7 +589,9 @@ Gonçalves and Beirão (1999)
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Comparison between well-known Genetic Algorithms for JSP
+Comparison between well-known Genetic Algorithms for JSP.
+ ARD is defined as the relative deviation with respect to the best-known
+ solution.
 \end_layout
 
 \end_inset
