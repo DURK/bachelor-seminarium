@@ -389,20 +389,15 @@ Visualization of a search space and fitness function
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
 The x-axis represents the set F containing all feasible solutions; the y-axis
- represents 
-=======
-The x-axis represents the set F containing all feasible solutions and the
- y-axis represents 
->>>>>>> 4d266b6a474410d752f691258ec8fa2d58622b4d
+ represents the fitness.
+ The blue dotted line is plotted as an example for the fitness function.
+ Note that 
 \begin_inset Formula $c(x)$
 \end_inset
 
-.
- The blue dotted line is plotted as an example for the fitness function.
- Note that this is a preferable fitness function, since there is only one
- local maximum, thus making it the global maximum.
+ is a preferable fitness function, since there is only one local maximum,
+ thus making it the global maximum.
  Most fitness functions look more similar to 
 \begin_inset Formula $g(x)$
 \end_inset
@@ -411,12 +406,8 @@ The x-axis represents the set F containing all feasible solutions and the
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
 Now imagine that the algorithm starts at the local minimum marked with an
  
-=======
-Now imagine the algorithm starts at the local minimum marked with an 
->>>>>>> 4d266b6a474410d752f691258ec8fa2d58622b4d
 \begin_inset Formula $s$
 \end_inset
 
