@@ -71,14 +71,15 @@ Optimization problems have a solution space containing all possible solutions.
  Among these solutions is the optimal solution.
  This space might be very small making it possible to see the optimal solution
  right away without using an algorithm.
- But it is also possible to have a very large solution space or even infinitly
- large space making it impossible to traverse the space completely, by hand
- or even with an algorithm.
+ But an optimization problem could have a very large solution space or even
+ an infinitely large space.
+ This makes it practically impossible or even completely impossible to traverse
+ the whole solution space, even by using an algorithm.
 \end_layout
 
 \begin_layout Standard
-For some problems there exists an exact algorithm that will lead to the
- optimal solution, without inspecting each solution seperately.
+For some problems an exact algorithm exists that will guarantee an optimal
+ solution, without inspecting each solution separately.
  An example is the algorithm for finding the maximum of a simple formula
  like 
 \begin_inset Formula $f(x)=x^{2}$
@@ -88,32 +89,32 @@ For some problems there exists an exact algorithm that will lead to the
 \end_layout
 
 \begin_layout Standard
-In case there is no known algorithm that does not have to inspect each algorithm
-, it is nesscerary to inspect each element to find a proven optimal.
- This will only be an option for solution spaces that are not infinite.
+In case such an algorithm is not known, it is necessary to inspect each
+ element to find a proven optimal solution.
+ This can only be done for solution spaces that are not infinite.
 \end_layout
 
 \begin_layout Standard
-In order to find an optimal solution using an exact algorithm, it is important
- that this algorithm can run in polynomial time.
- If the algorithm does not run in polynomial time.
- This means that the number of steps to be executed during calculation exceeds
- expontional growth for every element added to the problem set.
+In order to find the optimal solution using an exact algorithm, it is important
+ that this algorithm runs in polynomial time.
+ If the algorithm does not run in polynomial time then the number of steps
+ to be executed during calculation exceeds exponential growth for every
+ element added to the problem.
  It is therefore unlikely that the algorithm will produce a solution within
  a lifetime for large solution spaces.
 \end_layout
 
 \begin_layout Standard
-Given that is currently impossible to find a proven optimal solution, it
- might be enough to find an approximate optimal solution.
+Given that it is currently impossible to find a proven optimal solution,
+ it might be enough to find an approximate optimal solution.
  It will not be possible to prove that this solution is the optimal solution,
  but it might be good enough in practice.
 \end_layout
 
 \begin_layout Standard
-Heuristics algorithms are used to approximate the optimal solution.
+Heuristic algorithms are used to approximate the optimal solution.
  This section will first explain the essence of heuristics.
- The second part will cover genetic algorithms, a type of heurtics.
+ The second part will cover genetic algorithms, a type of heuristics.
  The last part will cover hybrid genetic algorithm, an even more advanced
  heuristic.
 \end_layout
