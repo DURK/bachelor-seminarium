@@ -60,58 +60,29 @@
 \begin_body
 
 \begin_layout Standard
-The jobshop problem is a well-known combinatorial optimization problem that
- belongs to the NP-hard computational class.
- This means that there is no exact algorithm for finding a soltuion to the
- problem.
- Heuristics can be used to approximate the solution.
- This paper showed how close you can get to an optimal solution with genetic
- algorithms and local search and by using a two-level hybrid algorithm called
- genetic local search.
- 
+Pure genetic alghoritms perform poor on JSP.
+ By combining them with other heuristics better results can be reached.
+ Two level hybrid algorithms such as SBP show good results on the most test
+ cases.
+ In the future more research might be done on combing the heuristics like
+ local search on multiple levels to constantly improve the solution chromosomes.
+ Hybrid algorithms will in many cases produce a schedule that finishes earlier
+ than a schedule that is produced using another heuristics.
+ The downside is that the hybrid algorithms require a longer time to compute
+ their results than most heuristics.
 \end_layout
 
 \begin_layout Standard
-Genetic algorithms have the special property of searching a large part of
- the solution space with a high probability of converging to a global optimum.
- It is possible, though, that a genetic algorithm will never find approach
- the actual optimum because it stays in the neighbourhood.
-\end_layout
-
-\begin_layout Standard
-Local search has the property of searching through the solutions surrounding
- the solution that was found before.
- This increases the chance of approaching the actual optimum but requires
- another algorithm that prevents local search from reaching a local optimum.
-\end_layout
-
-\begin_layout Standard
-Combining genetic algorithms with local search algorithm solves the issue
- of genetic algorithms not approaching the optimum near enough while still
- providing local search with the required methods to search a larger part
- of the solution space.
-\end_layout
-
-\begin_layout Standard
-Genetic local search will in many cases produce a schedule that finishes
- earlier than a schedule that is produced using heuristics.
- The counterpart is that the genetic local search algorithms require a longer
- time to compute their results than most heuristics.
-\end_layout
-
-\begin_layout Standard
-When choosing between genetic local search or heuristics a consideration
- must be made if it is more important to get a quick schedule that might
- have a worst finishing time or to have a slower algorithm that with a higher
+There is a tade-off between the time algoritms run and the probability on
+ best known answer.
+ So when choosing between a hybrid genetic algorithms and heuristics a considera
+tion must be made if it is more important to get a quick schedule that might
+ have a worst finishing time or to have a slower algorithm with a higher
  probability of finding a better finishing time.
 \end_layout
 
 \begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--Advies: herschrijven
+--
 \end_layout
 
 \begin_layout Standard
@@ -124,16 +95,6 @@ When choosing between genetic local search or heuristics a consideration
 
 \begin_layout Standard
 -
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Uit feedback (mondeling):
-\end_layout
-
-\begin_layout Standard
--wat is de toekomst (verbeteringen)
 \end_layout
 
 \begin_layout Standard
@@ -143,30 +104,19 @@ There is still a considerable room for improvement.
 \end_layout
 
 \begin_layout Standard
--wat zijn state of the art algoritmen?
+-
 \end_layout
 
 \begin_layout Standard
-Pure alghoritms like genetic algorithms perform poor on JSP.
- By combining them with other heuristics better results can be reached.
- Two level hybrid algorithms such as SBP show good results on the most test
- cases.
- In the future more research might be done on combing the heuristics on
- multiple levels to constantly improve the solution chromosomes.
- 
+-
 \end_layout
 
 \begin_layout Standard
--Wat is er leuk aan?
-\end_layout
-
-\begin_layout Paragraph
-Nieuwe conclusie
+-
 \end_layout
 
 \begin_layout Standard
-Dingen dat het een trade-off is tussen de tijd dat het kost en de kans op
- BKS.
+-
 \end_layout
 
 \begin_layout Standard
