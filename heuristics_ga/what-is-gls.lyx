@@ -476,14 +476,14 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
 local optimization
 \emph default
 .
- An example of pseudo-code for GLS is shown in listing 
+ An example of pseudo-code for GLS is shown in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Pseudocode-for-optimization-1"
 
 \end_inset
 
- and illustrated in figure
+ and illustrated in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:The-recombination-,-local"
@@ -592,7 +592,39 @@ Pseudo-code for optimization
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../jobshop/images/pseudo-to-figure.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-recombination-,-local"
+
+\end_inset
+
+The recombination-, local search-, and evaluation-steps in the pseudo-code
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
