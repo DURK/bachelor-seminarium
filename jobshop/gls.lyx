@@ -143,8 +143,8 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now consider SB-GA, a hybrid genetic approach for the SBP, proposed by Dorndorf
- and Pesch
+Now consider the Shifting Bottleneck Genetic Algorithm (SB-GA), a hybrid
+ genetic approach for the SBP, proposed by Dorndorf and Pesch
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dorndorf199525"
@@ -1052,7 +1052,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Authors
 \end_layout
 
 \end_inset
