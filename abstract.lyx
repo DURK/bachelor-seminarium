@@ -70,8 +70,8 @@ The job shop problem (JSP) is one of the hardest well-known combinatorial
 s, from simple dispatching rules to genetic algorithms and multi objective
  scheduling.
  Not all of these algorithms solve JSP well.
- Some of them are good in discovering the whole solution space but are slowly,
- like genetic algorithms.
+ Some of them are good in discovering the whole solution space but converge
+ slowly, like genetic algorithms.
  Others like local search are perfect for performing fine-tuning.
  Combining those two would provide a better answer for JSP and other constrained
  combinatorial optimization problems.

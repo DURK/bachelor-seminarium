@@ -69,8 +69,8 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 .
- In optimization problem the best solution has to be found from all possible
- solutions.
+ An optimization problem is the problem of finding the best solution from
+ all feasible solutions.
  Combinatorial optimization problems like JSP are optimization problems
  with discrete variables.
  Here we are looking for a permutation from a finite set of solutions.
@@ -80,7 +80,7 @@ key "Vaessens-Aarts-Lenstra-1996"
 \begin_layout Standard
 The JSP is an NP-hard problem which means that the problem is at least as
  hard as the hardest problems in NP.
- In practice this means that there is no exact algorithm to solve this problem
+ In practice this means that there is no algorithm to solve this problem
  within polynomial time for an arbitrary instance of JSP.
  It might be possible to approximate the optimal solution by using a heuristic
  algorithm.
@@ -125,11 +125,9 @@ JSP was solved using a branch and bound algorithm (BB).
 \begin_layout Standard
 Using BB is just one way of solving the problem.
  Although this algorithm is proven to produce the optimal solution of the
- 10x10 benchmark problem, scientists are still looking for better (heuristic)
- algorithms for JSP.
- Doing so will solve this problem faster with less use of memory or give
- more certainty about how optimal is the answer.
- 
+ 10x10 benchmark problem, research is still being done to find better (heuristic
+) algorithms for JSP.
+ Doing so will solve this problem faster or with less use of memory.
 \end_layout
 
 \begin_layout Standard
