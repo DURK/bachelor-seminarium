@@ -71,10 +71,11 @@ Genetic hybrid algorithms take multiple heuristic algorithms and combine
  It is possible to speed up this process by improving each chromosome.
  This allows faster convergence, while maintaining a widely covered search
  space.
- In this section local search will be used to assist the genetic algorithm
- for a faster convergence.
- At the end of this section an example of a genetic local search with local
- search is presented, genetic local search.
+ In this section we choose local search as an example of a heuristic that
+ can be hybridized with a genetic algorithm.
+ This specific example is called genetic local search.
+ In the following section, we will first explain the principles of local
+ search.
 \end_layout
 
 \begin_layout Subsubsection
