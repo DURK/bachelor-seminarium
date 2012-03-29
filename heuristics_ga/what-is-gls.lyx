@@ -60,23 +60,21 @@
 \begin_body
 
 \begin_layout Subsection
-Hybrid algorithms
+Genetic Hybrid Algorithms
 \end_layout
 
 \begin_layout Standard
-We beginnen te praten over hybrid.
- Mini samenvatting, daarna nadeel noemen.
- Zeggen dat het te combineren valt met een andere heuristic.
- Een veelgebruikte is local search.
- Zo vallen genetic algorithms en local search te combineren, een vorm hiervan
- is GLS.
- die gaan we toelichten.
- Eerst local search.
- Gaat ik morgen doen :)
-\end_layout
-
-\begin_layout Standard
-Meta-heuristics in de introductie toevoegen,
+Genetic hybrid algorithms use multiple algorithms and combine them for better
+ performance.
+ As explained in Section 2.2, genetic algorithms converge slowly towards
+ the optimal solution.
+ It is possible to speed up this process by improving each chromosome.
+ This enables the possibility to converge faster, while maintaining a widely
+ covered search space.
+ In this paper local search is used in combination with a genetic algorithm,
+ making it a hybrid algorithm.
+ After the explanation of local search, genetic local search is taken to
+ demonstrate as a genetic algorithm with local search.
 \end_layout
 
 \begin_layout Subsubsection
@@ -84,8 +82,7 @@ Local Search
 \end_layout
 
 \begin_layout Standard
-Local search is a meta-heuristic method to find the optimal solution for
- NP-hard problems.
+Local search is a meta-heuristic method to find the optimal solution.
  A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
 nsional search space.
  Local search starts with a candidate solution, which is given or picked
@@ -97,45 +94,155 @@ nsional search space.
  The 'best improvement' selects the best solution in its entire neighbourhood,
  while the 'first improvement' selects the first solution that's better
  than the current candidate solution.
- Respectively, this leads to a fast convergence and a limited coverage of
- the search space, or a slow convergence and a wider spread of coverage.
- When local search finds this, or a, better solution it sets this as new
+ Zie tabel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search space coverage
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convergence
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Best improvement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Small
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fast
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First improvement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wide
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Slow
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison best- and first improvement 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When local search finds this, or a, better solution it sets this as new
  candidate solution.
  The algorithm will terminate if a better solution in this neighbourhood
  doesn't exists.
  Termination can also take place if a certain amount of iterative steps
  has been called or if the candidates fitness has reached a certain value.
- Nog vertellen over local optima? of al in 2.3 intro?
+ 
+\end_layout
+
+\begin_layout Paragraph
+Example
 \end_layout
 
 \begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-Local search is a meta heuristic method to optimize solutions for NP-hard
- problems.
- Meta heuristics searches for the optimal solution in a discrete search
- space.
- This indicates a (partial) exclusion of assumptions.
- The essence of local search algorithms lies in the search of complete solutions
- to these problems.
- One certain solution is selected as a candidate solution and evaluated.
- The evaluation of these solutions are based on a chosen heuristic, indicating
- the value of this solution.
- The value is determined by the all the surrounding solutions are located
- in the candidate's neighborhood.
- The most valued solution in it's neighbourhood is then selected as new
- candidate solution.
- This search goes on until the algorithm hits the neighbourhoods maximum.
- Sometimes the computer has only a certain amount of computational power
- and the search for it's global maximum takes too much time.
- In that case the algorithm will terminate after a specific amount of time.
- One third option is the lack of improvement between the candidate solutions.
-\end_layout
-
-\begin_layout Standard
-To go into detail, consider the following notions:
+Consider the following notions for the CLIQUE-problem.
 \end_layout
 
 \begin_layout Itemize
@@ -152,7 +259,6 @@ Fitness function c: maps
 \end_inset
 
 .
- Higher is better.
 \end_layout
 
 \begin_layout Itemize
@@ -171,6 +277,13 @@ Neighborhood function: maps
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+For CLIQUE: adding or removing a node to the current selection of nodes
+ to check if it forms a CLIQUE.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Improvement criterion: 
 \end_layout
@@ -202,118 +315,6 @@ First improvement: Selecting
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-At the start of a local search, choosing a candidate solution 
-\begin_inset Formula $x\in F$
-\end_inset
-
-, the cost function is executed to evaluate each 
-\begin_inset Formula $y$
-\end_inset
-
-
-\begin_inset Formula $\in N(x).$
-\end_inset
-
- Now the next thing to know is the relation between 
-\begin_inset Formula $y$
-\end_inset
-
- and 
-\begin_inset Formula $x$
-\end_inset
-
-.
- What is the size of 
-\begin_inset Formula $N(x)$
-\end_inset
-
-? This is different for each problem.
- For instance, if we look for the biggest 
-\begin_inset Formula $CLIQUE$
-\end_inset
-
- in a graph, the relation between 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- can be adding or removing a node from 
-\begin_inset Formula $x$
-\end_inset
-
-.
- A graph is a CLIQUE-graph if all nodes within that clique are connected
- to each other.
- So each node in a clique of size 4 is connected to the 3 other nodes.
- Consider the size of 
-\begin_inset Formula $CLIQUE$
-\end_inset
-
- 
-\begin_inset Formula $x$
-\end_inset
-
-, 
-\begin_inset Formula $k$
-\end_inset
-
-.
- If 
-\begin_inset Formula $y$
-\end_inset
-
- forms a 
-\begin_inset Formula $CLIQUE$
-\end_inset
-
- of size 
-\begin_inset Formula $k+1$
-\end_inset
-
- the inequality 
-\begin_inset Formula $c(x)<c(y)$
-\end_inset
-
- holds true and 
-\begin_inset Formula $y$
-\end_inset
-
- is a possible next candidate solution.
- The next candidate solution, when available, is being selected based on
- the first improvement or the best improvement.
- The first improvement selects the first 
-\begin_inset Formula $x$
-\end_inset
-
- that holds the following constraint: 
-\begin_inset Formula $c(x)<c(y)$
-\end_inset
-
-.
- Logically, the best improvement select the highest improving 
-\begin_inset Formula $c(y)\in N(x)$
-\end_inset
-
-.
- Finally, the algorithm must hit a candidate solution that holds 
-\begin_inset Formula $c(x)=max(c(x)\in N(x))$
-\end_inset
-
-.
- Finally, one stop condition will be true (optimal solution, out of computationa
-l power, time limit reached) and the algorithm returns a solution.
- Notice that local search will return 
-\emph on
-a
-\emph default
- solution and not the optimal solution.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -405,11 +406,7 @@ Genetic Local Search
 
 \begin_layout Standard
 This subsection will focus on genetic algorithms that heavily rely on local
- search, a common form of 
-\emph on
-hybrid genetic algorithms
-\emph default
-.
+ search, a common form of hybrid genetic algorithms.
  Genetic algorithms are designed to be effective at global search, but converge
  slowly.
  Local search on the other hand is effective at fine-tuning but often falls
@@ -437,9 +434,9 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
  Selection of chromosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
- after 'birth' by using a fitness function as shown in 
+ after 'birth' by using a fitness function as shown in Section
 \emph on
-Section
+ 2.2
 \emph default
 .
  In genetic algorithms combined with local search, selection is based on
