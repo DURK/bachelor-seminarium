@@ -107,7 +107,7 @@ In order to find the optimal solution using an exact algorithm, it is important
 \begin_layout Standard
 Given that it is currently impossible to find a proven optimal solution,
  it might be enough to find an approximate optimal solution.
- It will not be possible to prove that this solution is the optimal solution,
+ It may not be possible to prove that this solution is the optimal solution,
  but it might be good enough in practice.
 \end_layout
 
