@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage{fullpage}
+\usepackage{a4wide}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -35,7 +35,7 @@ figs-within-sections
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -125,13 +125,6 @@ thispagestyle{empty}
 LatexCommand input
 filename "abstract.lyx"
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
