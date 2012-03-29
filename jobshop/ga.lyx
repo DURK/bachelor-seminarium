@@ -118,7 +118,7 @@ In the early days of genetic algorithms researchers thought that binary
  representations were the only representation that would allow for crossovers
  to be applied.
  This has led to several binary representations of the JSP in the form of
- a chromosome
+ a chromosome 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "nakano1991"
@@ -132,6 +132,7 @@ key "nakano1991"
 But the view on genetic algorithms has changed and a way was found to apply
  crossover to symbolic representations.
  Using symbolic representations is more suitable to permutational problems
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "permuations"
@@ -165,7 +166,7 @@ direct
 To illustrate the use of a direct symbolic representation we will show how
  an operation-based representation could work.
  Operation-based representation is one of the many ways of representing
- the schedule
+ the schedule 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -489,7 +490,7 @@ name "fig:illegal-chromosome"
 \end_layout
 
 \begin_layout Standard
-A solution to prevent illegal combinations was found by Gen et al
+A solution to prevent illegal combinations was found by Gen et al 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gen1994"
@@ -575,7 +576,7 @@ The crossover method will combine the genes of different chromosomes to
 
 \begin_layout Standard
 There are many solutions to this problem that use an extra algorithm on
- top of the default crossover algorithm
+ top of the default crossover algorithm 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "syswerda1989,davis1985,cheng1997"
@@ -593,7 +594,7 @@ An example of such a method crossover is
 \emph on
 partially-mapped crossover (PMX)
 \emph default
- that was proposed by Goldberg and Lingle
+ that was proposed by Goldberg and Lingle 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "goldberg1985"
