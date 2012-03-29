@@ -371,7 +371,8 @@ Genetic algorithms are suitable for problems with a large solution space
  by adding a mutation step.
  It is important to find a good balance in applying crossover and mutation.
  Having an incorrect balance could cause the algorithm to become very slow,
- to never converge or to converge to quickly.
+ to never converge or to converge to quickly causing a local optimum to
+ be found.
 \end_layout
 
 \end_body
