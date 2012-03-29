@@ -72,8 +72,10 @@ Genetic hybrid algorithms take multiple heuristic algorithms and combine
  This allows faster convergence, while maintaining a widely covered search
  space.
  In this section we choose local search as an example of a heuristic that
- will be hybridized with a genetic algorithm. This specific example is called genetic local search.
- Therefore we will first explain the principles of local search.
+ can be hybridized with a genetic algorithm.
+ This specific example is called genetic local search.
+ In the following section, we will first explain the principles of local
+ search.
 \end_layout
 
 \begin_layout Subsubsection
