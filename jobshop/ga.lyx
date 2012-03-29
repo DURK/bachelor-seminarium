@@ -91,7 +91,7 @@ reference "sub:Introduction-jsp"
 
 .
  A permutation problem means that there is a list of items, in the JSP case
- a list of operations, that must be ordered in some way.
+ a list of operations, which must be ordered in some way.
 \end_layout
 
 \begin_layout Paragraph
@@ -99,7 +99,7 @@ Initial step
 \end_layout
 
 \begin_layout Standard
-Developping a genetic algorithm for a permutation problem starts with the
+Developing a genetic algorithm for a permutation problem starts with the
  design of a representation.
  This representation must hold all characteristics of the solution in order
  to create a consistent schedule.
@@ -131,7 +131,7 @@ key "nakano1991"
 \begin_layout Standard
 But the view on genetic algorithms has changed and a way was found to apply
  crossover to symbolic representations.
- Using symbolic representations is more suitable to permutational problems
+ Using symbolic representations is more suitable to permutation problems
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -213,7 +213,7 @@ key "operation-based"
 \begin_layout Standard
 This chromosome must somehow map to a solution.
  This can be done by popping each element from the chromosome and schedule
- this element at the first location possible, in order of appearence.
+ this element at the first location possible, in order of appearance.
  In other words, if the chromosome is 
 \begin_inset Formula $A_{1}B_{1}A_{2}B_{2}$
 \end_inset
@@ -384,7 +384,7 @@ Pop the third and fourth and schedule them in order
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Example of construction a solution from a operation-based chromosome
+Example of construction a solution from an operation-based chromosome
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:construction-ga--jsp"
@@ -538,11 +538,11 @@ key "gen1994"
 \begin_inset Formula $A$
 \end_inset
 
-, and will schedule the next task for job 
+ and will schedule the next task for job 
 \begin_inset Formula $A$
 \end_inset
 
- which is 
+, which is 
 \begin_inset Formula $A_{2}$
 \end_inset
 
@@ -552,11 +552,11 @@ key "gen1994"
 \begin_layout Standard
 This solves the preceding constraint but there is still a problem left,
  which is repetition.
- There is a fixed number of operations within a job and using plain crossover
+ There are a fixed number of operations within a job and using plain crossover
  methods could result in having a job occuring more times than there are
- operations for this job while another job occures less times than there
+ operations for this job while another job occurs less times than there
  are operations.
- This can not be fixed in the operation and will therefore be fixed in the
+ This cannot be fixed in the operation and will therefore be fixed in the
  crossover method described in the next paragraph.
 \end_layout
 
@@ -567,7 +567,7 @@ Crossover
 \begin_layout Standard
 The crossover method will combine the genes of different chromosomes to
  generate a new population.
- During this operation some genes are switched from one chromesome to the
+ During this operation some genes are switched from one chromosome to the
  other.
  In some basic genetic algorithms this operation is rather easy because
  all permutations of genes are valid, but as explained in the previous paragraph
@@ -621,7 +621,7 @@ reference "fig:pmx2"
 \end_inset
 
 ).
- If the other genes are just copied one-to-one it would cause a conflict
+ If the other genes were just copied one-to-one it would cause a conflict
  within the chromosome because the chromosomes now have more jobs within
  the chromosome than in the actual problem.
  This is where the algorithm takes effect.
@@ -787,22 +787,22 @@ Fitness
 \begin_layout Standard
 Next the fitness of each chromosome must be determined.
  A straightforward way of determining the fitness is to construct the schedule
- in the way describe in the representation paragragh.
+ in the way describe in the representation paragraph.
  Once a schedule has been built the finish time is known.
- This finish time can be used as fitnessvalue.
+ This finish time can be used as fitness value.
 \end_layout
 
 \begin_layout Standard
 Another approach could be to look for other properties of the algorithm.
  One example is to look at the amount of time machines are not doing anything
- while waiting for another job and use this as fitnessvalue.
+ while waiting for another job and use this as fitness value.
 \end_layout
 
 \begin_layout Standard
 Using pure genetic algorithms will provide the user with a solution that
  in some case is near-optimal.
  Currently pure genetic algorithms are not used anymore.
- Genetics algorithms are always combined with other stragetegies like local
+ Genetics algorithms are always combined with other strategies like local
  search.
  The next section will show how combining genetic algorithms with local
  search will provide better solutions to problems than pure genetic algorithms.

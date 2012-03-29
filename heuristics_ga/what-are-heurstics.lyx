@@ -132,7 +132,7 @@ key "Bentley-1982"
 
 \begin_layout Standard
 A greedy algorithm always makes the choice that looks best in the current
- problem, without considering results from subproblems.
+ problem, without considering results from sub problems.
  In other words, greedy algorithms continuously make a locally optimal choice
  in the hope that this choice will lead to a globally optimal solution.
  The definition of a local and global optimal, which can be either a maximum

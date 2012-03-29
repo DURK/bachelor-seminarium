@@ -71,7 +71,7 @@ name "sub:Introduction-jsp"
 \end_layout
 
 \begin_layout Standard
-The job shop problem (JSP) is a well known problem because of its many possible
+The job shop problem (JSP) is a well-known problem because of its many possible
  applications in manufacturing.
  JSP is central to many supply chain problems that integrate production
  planning and scheduling.
@@ -114,7 +114,7 @@ reference "fig:Example-of-scheduling"
 \end_inset
 
 , there are 3 jobs and 3 machines.
- Each job consists of 3 operations which have to be processed in a given
+ Each job consists of 3 operations that have to be processed in a given
  sequence.
  The makespan here is 6.
 \end_layout
@@ -129,7 +129,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -146,7 +146,7 @@ status collapsed
 
 \begin_layout Plain Layout
 On the left a schedule for three machines.
- To the right a list of three jobs each having three operations.
+ To the right a list of three jobs having three operations each.
  The labels state the machine on which the operations must be filled
 \end_layout
 
@@ -266,7 +266,7 @@ An example of a schedule with an earlier finish time of 12.
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Example of scheduling a jobshop problem
+Example of scheduling a job shop problem
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Example-of-scheduling"
@@ -287,7 +287,7 @@ name "fig:Example-of-scheduling"
 \end_layout
 
 \begin_layout Standard
-There are several ways to solve a job shop scheduling problem using different
+There are several ways to solve a job shop-scheduling problem using different
  types of heuristic algorithms.
  The easiest heuristics solutions for JSP are dispatching rules, which are
  actually rules of thumb, discussed in Section 
@@ -301,9 +301,9 @@ reference "sub:Heuristics"
  Dispatching rules are fast, simple to implement and reasonably good in
  a relatively short time, but often limited in practice by giving an unpredictab
 le bad solution when more constraints are needed.
- A dispatching rule prioritizes all the jobs that are awaiting for processing
+ A dispatching rule prioritizes all the jobs that are waiting for processing
  on a machine.
- When a machine has no more jobs to process, a dispatching rule allocate
+ When a machine has no more jobs to process, a dispatching rule allocates
  the job with the highest priority to the machine.
  Dispatching rules prioritize in different ways, for example shortest processing
  time first, earliest completion time first etc.

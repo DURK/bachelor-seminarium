@@ -120,7 +120,7 @@ The SBP starts by creating a partial schedule of just the first machine
 The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
  On every iteration SBP locally re-optimizes the current partial schedule
- for each individual machine as descibed above, one by one.
+ for each individual machine as described above, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
@@ -131,7 +131,7 @@ key "Adams-and-Joseph-1988"
 
 .
  By improving partial schedules constructed in previous iterations, before
- entering the next iteration, SBP is called an constructive algorithm combined
+ entering the next iteration, SBP is called a constructive algorithm combined
  with local search 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -304,7 +304,7 @@ key "Fisher63probabilisticlearning"
 
 \end_inset
 
- and the fourty problems defined by Lawrence
+ and the forty problems defined by Lawrence
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lawrence-1984"
@@ -313,7 +313,7 @@ key "Lawrence-1984"
 
 .
  The number of jobs for these problems ranges from six to thirty, the number
- of operations for each job ranges from five to fiteen and the number of
+ of operations for each job ranges from five to fifteen and the number of
  operations for all jobs ranges from 36 to 300.
  This is the typical test suite for JSP.
 \end_layout
@@ -1243,7 +1243,7 @@ Comparison between SB-GA and the standard SBP.
 \begin_layout Standard
 Unfortunately, more recent publications of SB-GA benchmarks for the standard
  JSP are unavailable.
- This is probably because in the last decade, researchrs have moved forward
+ This is probably because in the last decade, researchers have moved forward
  from a standard JSP to more complex problems like the flexible multi-objective
  JSP (fJSP), which is beyond the scope of this paper.
 \end_layout
