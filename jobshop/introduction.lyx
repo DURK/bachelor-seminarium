@@ -59,17 +59,6 @@
 
 \begin_body
 
-\begin_layout Subsection
-Introduction to the job shop problem
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Introduction-jsp"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 The job shop problem (JSP) is a well-known problem because of its many possible
  applications in manufacturing.
