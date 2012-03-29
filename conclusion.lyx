@@ -74,8 +74,9 @@ Pure genetic algorithms (GA) perform sub-optimal on job shop problem (JSP).
 \end_layout
 
 \begin_layout Standard
-Noticeable is that there is trade-off, the algorithm will either produce a schedule with an optimal finishing time
- and take longer or it will produce a sub-optimal schedule very quick.
+Noticeable is that there is trade-off, the algorithm will either produce
+ a schedule with an optimal finishing time and take longer or it will produce
+ a sub-optimal schedule very quick.
  Depending on the problem, a or quick algorithm is wanted.
  If we inspect this paper on this principle, we see that this trade-off
  acts on different levels.
@@ -129,6 +130,26 @@ Dit is in vele dingen terug te zien, local search (best/first), hybrids
  Logisch, aangezien het prestaties van de vorige algoritmes kennelijk 'acceptabe
 l' waren, anders waren ze niet bekend geworden.
  Leuk zweverig en abstract stukje dus.
+\end_layout
+
+\begin_layout Standard
+------------DIRK:------------------
+\end_layout
+
+\begin_layout Standard
+Heuristic algorithms are a great way of approximating a computationally
+ complex problem like the job shop problem for which no exact algorithm
+ exists.
+ In this paper we have shown an interesting type of heuristics called Genetic
+ Algorithms.
+\end_layout
+
+\begin_layout Standard
+Genetic Algorithms are an inter-disciplinary combination of modern computer
+ science and evolutionary principles.
+ {{So If Charles Darwin was a computer scientist, he would probably be a
+ great enthusiast of Genetic Algorithms.
+ }}
 \end_layout
 
 \end_body
