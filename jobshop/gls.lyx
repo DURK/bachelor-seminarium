@@ -64,14 +64,12 @@ Genetic Hybrid Algorithms
 \end_layout
 
 \begin_layout Standard
-In this section a genetic algorithm (Section 2.2) will be combined with a
- local search algorithm (Section 2.3) to approximate the optimal solution
- for several well-known JSP benchmark problems.
- Results for these benchmarks will be presented and compared to other well-known
- genetic hybrid algorithms.
- Note that the given example is not the most efficient genetic hybrid (GHA)
- to solve JSP, but is does provide a convenient way of demonstrating how
- JSP can be solved using a GHA.
+In this section a genetic algorithm will be combined with a local search
+ algorithm to approximate the optimal solution.
+ The first part of this section will give an example of a genetic hybrid
+ algorithm.
+ The second part will show how this algorithm perform compared to other
+ genetic hybrids.
 \end_layout
 
 \begin_layout Subsubsection
@@ -289,7 +287,7 @@ key "cheng99"
 \end_layout
 
 \begin_layout Subsubsection
-Benchmarks
+Performance
 \end_layout
 
 \begin_layout Standard
