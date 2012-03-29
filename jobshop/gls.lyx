@@ -120,7 +120,7 @@ The SBP starts by creating a partial schedule of just the first machine
 The SBP then continues by iteratively bringing another machine (named the
  bottleneck) into the schedule.
  On every iteration SBP locally re-optimizes the current partial schedule
- for each individual machine as descibed above, one by one.
+ for each individual machine as described above, one by one.
  In essence, this reduces the JSP from solving a multi-machine scheduling
  problem to repeatedly solving single-machine scheduling problems 
 \begin_inset CommandInset citation
