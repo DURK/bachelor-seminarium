@@ -337,7 +337,7 @@ An extra step that can be added to the iterative step is the replacement
  ones.
  This will also stimulate the diverse 
 \lang british
-behavior
+behaviour
 \lang english
  of the algorithm improving the chances of searching the complete solution
  space.
