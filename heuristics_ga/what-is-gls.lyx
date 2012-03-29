@@ -236,7 +236,7 @@ Comparison best- and first improvement
 When local search finds this, or a better, solution it sets this as new
  candidate solution.
  The algorithm will terminate if a better solution in this neighbourhood
- doesn't exists.
+ doesn't exist.
  Termination can also take place if a certain amount of iterative steps
  has been taken or if the candidates fitness has reached a user specified
  value.

@@ -160,5 +160,24 @@ Pure alghoritms like genetic algorithms perform poor on JSP.
 -Wat is er leuk aan?
 \end_layout
 
+\begin_layout Paragraph
+Nieuwe conclusie
+\end_layout
+
+\begin_layout Standard
+Dingen dat het een trade-off is tussen de tijd dat het kost en de kans op
+ BKS.
+\end_layout
+
+\begin_layout Standard
+Dit is in vele dingen terug te zien, local search (best/first), hybrids
+ (GA en LS), het speelt op elk niveau.
+ Oplossingen worden steeds beter, en daarom worden de problemen juist moeilijker
+ gemaakt.
+ Logisch, aangezien het prestaties van de vorige algoritmes kennelijk 'acceptabe
+l' waren, anders waren ze niet bekend geworden.
+ Leuk zweverig en abstract stukje dus.
+\end_layout
+
 \end_body
 \end_document
