@@ -152,7 +152,7 @@ filename "introduction.lyx"
 \end_layout
 
 \begin_layout Section
-Basics of heuristics, genetic algorithms and local search
+Basics of heuristics and (hybrid) genetic algorithms
 \end_layout
 
 \begin_layout Standard

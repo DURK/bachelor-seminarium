@@ -84,8 +84,8 @@ Local Search
 
 \begin_layout Standard
 Local search is a meta-heuristic method to find the optimal solution.
- However, local search doesn't guarantee that the optimal solution will
- be found, this will be explained later.
+ However, local search doesn't guarantee the optimal solution will be found,
+ which will be explained later.
  A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
 nsional search space.
  Local search starts with a candidate solution, which is given or picked
@@ -99,7 +99,7 @@ nsional search space.
  while the first improvement selects the first solution that is better than
  the current candidate solution.
  Because the best improvement searches the whole neighbourhood it converges
- slowly, while the first improvement is the other way around.
+ slowly, while the first improvement works the other way around.
  This is illustrated in Table 1.
 \end_layout
 
@@ -234,8 +234,8 @@ Comparison best- and first improvement
 \end_layout
 
 \begin_layout Standard
-When local search finds this, or a better, solution it sets this as new
- candidate solution.
+When local search finds this improved solution it sets this as new candidate
+ solution.
  The algorithm will terminate if a better solution in this neighbourhood
  doesn't exist.
  Termination can also take place if a certain amount of iterative steps
@@ -389,16 +389,21 @@ Visualization of a search space and fitness function
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 The x-axis represents the set F containing all feasible solutions; the y-axis
  represents 
+=======
+The x-axis represents the set F containing all feasible solutions and the
+ y-axis represents 
+>>>>>>> 4d266b6a474410d752f691258ec8fa2d58622b4d
 \begin_inset Formula $c(x)$
 \end_inset
 
 .
- As an example for the fitness function the blue dotted line is plotted.
- Note that this is a preferable fitness function, since there is a simple
- line towards the global maximum.
- Most fitness functions are looking more similar to 
+ The blue dotted line is plotted as an example for the fitness function.
+ Note that this is a preferable fitness function, since there is only one
+ local maximum, thus making it the global maximum.
+ Most fitness functions look more similar to 
 \begin_inset Formula $g(x)$
 \end_inset
 
@@ -406,8 +411,12 @@ The x-axis represents the set F containing all feasible solutions; the y-axis
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 Now imagine that the algorithm starts at the local minimum marked with an
  
+=======
+Now imagine the algorithm starts at the local minimum marked with an 
+>>>>>>> 4d266b6a474410d752f691258ec8fa2d58622b4d
 \begin_inset Formula $s$
 \end_inset
 
@@ -415,12 +424,12 @@ Now imagine that the algorithm starts at the local minimum marked with an
  The grey area represents the neighbourhood of the candidate solution.
  The next iterative step will lead to a candidate solution in the direction
  of the local maximum on the right side, since the fitness value of the
- solution to its right is higher then the solution to the left side.
+ solution to its right is higher than the one to its left side.
  This process continues until the candidate solution reaches this local
  maximum.
  Remember that local search will terminate here and returns the solution
- at this local maximum, but it is not the global maximum.
- This is avoidable with a genetic algorithm.
+ at this local maximum, which in this example is not the global maximum.
+ This situation is avoidable with the use of a genetic algorithm.
 \end_layout
 
 \begin_layout Subsubsection
@@ -434,8 +443,12 @@ Genetic Local Search
 \end_layout
 
 \begin_layout Standard
-This subsection will focus on genetic algorithms that heavily rely on local
- search, a common form of hybrid genetic algorithms.
+A commonly encountered form of genetic hybrid algorithms, for solving combinator
+ial optimization problems, is 
+\emph on
+genetic local search
+\emph default
+ (GLS).
  Genetic algorithms are designed to be effective at global search, but converge
  slowly.
  Local search on the other hand is effective at fine-tuning but often falls
@@ -451,7 +464,7 @@ key "cheng99"
 
 .
  In this section, the general principles of combining genetic algorithms
- with local search are introduced first.
+ with local search are introduced.
 \end_layout
 
 \begin_layout Standard
@@ -464,8 +477,7 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  2.2
 \emph default
 .
- In genetic algorithms combined with local search, selection is based on
- fitness after performing local search.
+ In GLS, selection is based on fitness after performing local search.
  This means offspring will be improved and these improvements will be passed
  on trough crossover.
  In essence, this causes offspring to 'learn', a principle called 
@@ -473,8 +485,7 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
 local optimization
 \emph default
 .
- An example of pseudo code for such an optimization is shown in listing
- 
+ An example of pseudo-code for GLS is shown in listing 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Pseudocode-for-optimization-1"
