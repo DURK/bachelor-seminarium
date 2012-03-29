@@ -61,7 +61,7 @@
 
 \begin_layout Standard
 The job shop problem (JSP) is a well-known scheduling problem and is one
- of the hardest combinatorial optimization problems
+ of the hardest combinatorial optimization problems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -98,7 +98,7 @@ The challenging part of solving problems like JSP is that there is no exact
 However, exact algorithms for specific variants of JSP have been found.
  A specific variant with ten jobs and ten operations, known as the 10x10
  benchmark problem, was proposed by Muth and Thompson in 1963 and remained
- unsolved for over twenty years
+ unsolved for over twenty years 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fisher63probabilisticlearning"
@@ -107,7 +107,7 @@ key "Fisher63probabilisticlearning"
 
 .
  The first proven optimal solution was developed with exact algorithms by
- Carlier in 1987
+ Carlier in 1987 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "carlier-pinson"
@@ -116,7 +116,7 @@ key "carlier-pinson"
 
 .
  More difficult instances like the 15x15 JSP are still considered to be
- unsolvable within polynomial time using exact algorithms
+ unsolvable within polynomial time using exact algorithms 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Goncalves_ahybrid"

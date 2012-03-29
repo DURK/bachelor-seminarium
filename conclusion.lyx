@@ -106,5 +106,59 @@ When choosing between genetic local search or heuristics a consideration
  probability of finding a better finishing time.
 \end_layout
 
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+-Advies: herschrijven
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+-
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Uit feedback (mondeling):
+\end_layout
+
+\begin_layout Standard
+-wat is de toekomst (verbeteringen)
+\end_layout
+
+\begin_layout Standard
+There is still a considerable room for improvement.
+ As discussed in Section 3.3.2 no algorithms achieve optimal solutions for
+ all instances of the test cases.
+\end_layout
+
+\begin_layout Standard
+-wat zijn state of the art algoritmen?
+\end_layout
+
+\begin_layout Standard
+Pure alghoritms like genetic algorithms perform poor on JSP.
+ By combining them with other heuristics better results can be reached.
+ Two level hybrid algorithms such as SBP show good results on the most test
+ cases.
+ In the future more research might be done on combing the heuristics on
+ multiple levels to constantly improve the solution chromosomes.
+ 
+\end_layout
+
+\begin_layout Standard
+-Wat is er leuk aan?
+\end_layout
+
 \end_body
 \end_document
