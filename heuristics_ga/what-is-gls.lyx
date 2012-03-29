@@ -71,9 +71,8 @@ Genetic hybrid algorithms take multiple heuristic algorithms and combine
  It is possible to speed up this process by improving each chromosome.
  This allows faster convergence, while maintaining a widely covered search
  space.
- In this section, we choose local search as an example of a heuristic that
- will be hybridized with a genetic algorithm, making it a genetic hybrid
- algorithm.
+ In this section we choose local search as an example of a heuristic that
+ will be hybridized with a genetic algorithm. This specific example is called genetic local search.
  Therefore we will first explain the principles of local search.
 \end_layout
 
@@ -423,6 +422,12 @@ Now imagine that the algorithm starts at the local minimum marked with a
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Genetic-Local-Search"
+
+\end_inset
+
 Genetic Local Search
 \end_layout
 
@@ -435,7 +440,7 @@ This subsection will focus on genetic algorithms that heavily rely on local
  into local maxima, as shown in Section 2.2.
  The hybrid approach combines the best of both worlds by combining genetic
  algorithms that perform global search to avoid falling into local maxima
- with local search that handles the fine-tuning 
+ with local search that handles the fine-tuning
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -452,7 +457,11 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
  Selection of chromosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
- after 'birth' by using a fitness function as shown in Section 2.2.
+ after 'birth' by using a fitness function as shown in Section
+\emph on
+ 2.2
+\emph default
+.
  In genetic algorithms combined with local search, selection is based on
  fitness after performing local search.
  This means offspring will be improved and these improvements will be passed
@@ -503,17 +512,17 @@ begin
 
 \begin_layout Plain Layout
 
-  initialize P(t) 
+  initialize P(t)
 \end_layout
 
 \begin_layout Plain Layout
 
-  localsearch to improve chromosomes  
+  localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Plain Layout
 
-  evaluate P(t)	  
+  evaluate P(t)
 \end_layout
 
 \begin_layout Plain Layout
@@ -523,27 +532,27 @@ begin
 
 \begin_layout Plain Layout
 
-    recombine P(t) by crossover and mutation	
+    O(t) = recombine P(t) by crossover and mutation
 \end_layout
 
 \begin_layout Plain Layout
 
-    localsearch to improve chromosomes		  
+	localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Plain Layout
 
-    evaluate P(t)						 
+    evaluate O(t)
 \end_layout
 
 \begin_layout Plain Layout
 
-    select to new population P(t)				
+    select from O(t) and add to new population P(t+1)
 \end_layout
 
 \begin_layout Plain Layout
 
-    t++										
+    t++
 \end_layout
 
 \begin_layout Plain Layout
