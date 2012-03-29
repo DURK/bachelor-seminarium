@@ -63,21 +63,20 @@
 Heuristic algorithms are a great way of approximating a computationally
  complex problem like the job shop problem (JSP) for which no exact algorithm
  exists.
- In this paper we have shown an interesting type of heuristics called Genetic
- Algorithms.
+ In this paper we have shown an interesting type of heuristics called genetic
+ algorithms (GAs).
  
 \end_layout
 
 \begin_layout Standard
-Genetic Algorithms are an inter-disciplinary combination of modern computer
- science and evolutionary principles.
+GAs are an inter-disciplinary combination of modern computer science and
+ evolutionary principles.
  So if Charles Darwin was a computer scientist, he would likely be a great
- enthusiast of Genetic Algorithms.
- We have shown that pure genetic algorithms (GA) perform sub-optimal on
- JSP.
+ enthusiast of GAs.
+ We have shown that pure GAs perform sub-optimal on JSP.
  Better results can be obtained by combining pure GAs with other heuristics,
- so called genetic hybrid algorithms.
- Such hybrid algorithms, like the Shifting Bottleneck Genetic Algorithm
+ resulting in so called genetic hybrid algorithms.
+ Such hybrid algorithms, like the shifting bottleneck genetic algorithm
  (SB-GA), show impressive results on a typical suite of JSP test cases.
  Genetic hybrid algorithms will in many cases produce a schedule that finishes
  earlier than a schedule that is produced using another heuristics.
