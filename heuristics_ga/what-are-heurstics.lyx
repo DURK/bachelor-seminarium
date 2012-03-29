@@ -118,7 +118,7 @@ greedy algorithm
 \emph on
 traveling salesman problem (TSP)
 \emph default
-, which is NP-hard 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bentley-1982"
