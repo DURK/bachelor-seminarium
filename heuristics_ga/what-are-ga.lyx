@@ -146,7 +146,7 @@ key "introduction-ga"
 \begin_layout Standard
 In the following paragraphs we will explain the different steps of the genetic
  algorithm in some more detail.
- These steps are also illustrated using pseudo code in Algorithm 
+ These steps are also illustrated using pseudo-code in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lis:Pseudocode-for-ga"
@@ -233,7 +233,7 @@ name "lis:Pseudocode-for-ga"
 
 \end_inset
 
-Pseudo code of genetic algorithm
+Pseudo-code of genetic algorithm
 \end_layout
 
 \end_inset

@@ -128,7 +128,7 @@ Noticeable is that there is trade-off, the algorithm will be either good
  In local search this trade-off is between the first- or best improvement.
  In hybrid algorithms we see that the GA searches in a wide search space,
  while LS narrows down this space and is focused on the optimal solution
- around.
+ around..
 \end_layout
 
 \end_body
