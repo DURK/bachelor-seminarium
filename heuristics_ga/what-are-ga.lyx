@@ -121,17 +121,8 @@ From a population of chromosomes a new generation can be created.
  The regeneration process is started by evaluating the fitness of every
  chromosome of the current population.
  Fitness is determined by a set of rules that define the optimal solution.
- The fitness of a chromosome that represent represents
-\begin_inset Caption
-
-\begin_layout Plain Layout
-represent dubbel
-\end_layout
-
-\end_inset
-
- the maximum of a formula can be seen as the higher the number, the fitter
- the chromosome.
+ The fitness of a chromosome that represents the maximum of a formula, can
+ be seen as the higher the number, the fitter the chromosome.
 \end_layout
 
 \begin_layout Standard
@@ -357,12 +348,12 @@ Termination step
 \end_layout
 
 \begin_layout Standard
-There a multiple ways to terminate the algorithm.
- It depends on the type of problem which methods suits best.
+There are multiple ways to terminate the algorithm.
+ It depends on the type of a problem which methods suit best.
  One of the ways is to stop when the population contains a (percentage)
  of chromosomes that meet a preset fitness value.
- Another way is stop when the population has not changed over the last generatio
-ns.
+ Another way is to stop when the population has not changed over the last
+ generations.
  It is also possible to stop after a fixed number of generations or after
  a period of time.
 \end_layout
@@ -373,11 +364,11 @@ Genetic algorithms are suitable for problems with a large solution space
  exact algorithm that can find an optimum within polynomial time.
  Due to the usage of a solution set, the algorithm is able to inspect multiple
  solutions in the solution space.
- The natural selection offers the possibility for the solutions to become
+ The natural selection offers a possibility for the solutions to become
  closer to each other and for converging to a (local) optimum.
  In contrast to local search algorithms, the genetic algorithms has a built-in
- solution to decrease the chance converging to a local optimum, for example
- by adding mutation step.
+ solution to decrease the chance of converging to a local optimum, for example
+ by adding a mutation step.
  It is important to find a good balance in applying crossover and mutation.
  Having an incorrect balance could cause the algorithm to become very slow,
  to never converge or to converge to quickly.
