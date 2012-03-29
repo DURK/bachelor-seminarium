@@ -69,17 +69,17 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 .
- Solving such a problem depicts finding the optimal solution from the set
+ Solving such a problem involves finding the optimal solution from the set
  of all feasible solutions.
  Combinatorial optimization problems like JSP are problems with discrete
  variables, where the optimal solution is an optimal permutation of a finite
  set of variables.
- These kinds of problems has proven to be computationally challenging.
+ These kinds of problems have proven to be computationally challenging.
 \end_layout
 
 \begin_layout Standard
-The challenging part of solving problems like JSP is the fact that there
- is no exact algorithm to solve this problem within polynomial time.
+The challenging part of solving problems like JSP is that there is no exact
+ algorithm to solve this problem within polynomial time.
  Exact algorithms simply calculate the optimal answer for every possible
  instance of a problem.
  For JSP, such an algorithm has not yet been found.
@@ -87,7 +87,7 @@ The challenging part of solving problems like JSP is the fact that there
 \end_layout
 
 \begin_layout Standard
-Though, exact algorithms for specific variants of JSP have been found.
+However, exact algorithms for specific variants of JSP have been found.
  A specific variant with ten jobs and ten operations (known as the 10x10
  benchmark problem) was proposed by Muth and Thompson in 1963 and remained
  unsolved for over twenty years
@@ -122,13 +122,19 @@ key "Goncalves_ahybrid"
 .
  Fortunately, there are ways of approximating the optimal solution using
  a heuristic algorithm (also called heuristics).
- During the last century many heuristic algorithms have been developed and
- some of them have proven to be very successful.
- This paper will discuss solutions that have been found for solving JSP
- using genetic algorithms and local search, which are specific types of
- heuristics.
- These two methods have proven to be very successful for hard combinatorial
- optimization problems in the past
+ During the last century many heuristic algorithms for JSP have been developed
+ and some of them have proven to be very successful
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goncalves_ahybrid"
+
+\end_inset
+
+.
+ In this paper we will discuss solutions for JSP using genetic algorithms
+ and hybrid genetic algorithms, which are specific types of heuristics.
+ In the past, these heuristics have proven to be very successful for hard
+ combinatorial optimization problems
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -139,10 +145,10 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_layout
 
 \begin_layout Standard
-The first section of this paper will cover the basics of heuristics, specificall
-y genetic algorithms, local search and genetic hybrid algorithms.
- In the second section these specific types of heuristics are applied to
- JSP.
+In the first section of this paper we will cover the basics of heuristics
+ and specifically focus on genetic algorithms and genetic hybrid algorithms.
+ In the second section these specific types of heuristics will be applied
+ to JSP.
 \end_layout
 
 \begin_layout Standard
