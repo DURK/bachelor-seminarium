@@ -289,33 +289,23 @@ key "cheng99"
 \end_layout
 
 \begin_layout Subsubsection
-Benchmarks
+Performance
 \end_layout
 
 \begin_layout Standard
 To illustrate the effectiveness of the genetic algorithm above, a set of
- test problems will be needed.
- Consider the following two test suites of standard JSP problems: FT and
- LA.
- 
-\end_layout
-
-\begin_layout Standard
-UITLEG FT PROBLEMEN
-\end_layout
-
-\begin_layout Standard
-UITLEG LA PROBLEMEN
-\end_layout
-
-\begin_layout Standard
----------------------------------
-\end_layout
-
-\begin_layout Standard
-As benchmarks, we will use FT06, FT10 (the notorious 10x10 JSP, mentioned
- in Section 1), FT20 and LA01-LA40.
+ test problems is needed.
+ Consider the following test suite of standard JSP problems: three problems
+ (ft06, ft10, ft20) from Fisher and Thompson<quote> and 40 problems from
+ Lawrence<quote>.
+ The number of jobs for these problems ranges from 6 to 30, the number of
+ operations for each job ranges from 5 to 15, and the number of operations
+ for all jobs ranges from 36 to 300.
  This is the typical test suite for JSP.
+\end_layout
+
+\begin_layout Paragraph*
+AT&T
 \end_layout
 
 \begin_layout Standard
@@ -329,7 +319,7 @@ key "Goncalves_ahybrid"
 
 .
  In their results, SB-GA was able to solve 35 out of 43 instances, of which
- 17 optimally.
+ 17 where solved to optimally.
  In other words, almost half of these solutions were equal to the 
 \emph on
 best-known solution
@@ -343,7 +333,7 @@ The
 average relative deviation
 \emph default
  (ARD) for SB-GA, with respect to the BKS has been found to be 1,42%, which
- is better than the genetic hybrids of Aarts
+ is better than the genetic hybrid algorithms of Aarts
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AARTSE.H.L.:1994"
@@ -369,6 +359,253 @@ key "Goncalves_ahybrid"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ARD
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aarts et al.
+ (1994)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GLS1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,97%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aarts et al.
+ (1994)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ GLS2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,71%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Croce et al.
+ (1995)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,37%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dorndorf et al.
+ (1995)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PGA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,61%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dorndorf et al.
+ (1995)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SB-GA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,42%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gonçalves and Beirão (1999)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,90%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison between well-known Genetic Algorithms for JSP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Another benchmark for SB-GA was made in 1996 by Vaessens, Aarts and Lenstra
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -376,8 +613,8 @@ key "Vaessens-Aarts-Lenstra-1996"
 
 \end_inset
 
-, showing that SB-GA found solutions closer to BKS than other genetic algorithms
-, and in less time.
+, showing that SB-GA found solutions closer to the BKS than other genetic
+ algorithms, and in less time.
  In seemed SB-GA worked especially well for the most difficult 15x15 problems
  (LA36-LA40).
  This benchmark shows an ARD of 1,48%, which is close to the 1,42% AT&T
