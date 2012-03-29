@@ -60,7 +60,7 @@
 \begin_body
 
 \begin_layout Standard
-Pure genetic alghoritms perform poor on JSP.
+Pure genetic algorithms perform poor on JSP.
  By combining them with other heuristics better results can be reached.
  Two level hybrid algorithms such as SBP show good results on the most test
  cases.
@@ -73,34 +73,23 @@ Pure genetic alghoritms perform poor on JSP.
 \end_layout
 
 \begin_layout Standard
-There is a tade-off between the time algoritms run and the probability on
- best known answer.
- So when choosing between a hybrid genetic algorithms and heuristics a considera
-tion must be made if it is more important to get a quick schedule that might
- have a worst finishing time or to have a slower algorithm with a higher
- probability of finding a better finishing time.
-\end_layout
-
-\begin_layout Standard
---
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
-\end_layout
-
-\begin_layout Standard
--
+There is a trade-off between the time algorithms run and the probability
+ to find the best known answer for.
+ So when choosing between a algorithms a consideration must be made if it
+ is more important to get a quick schedule that might have a worst finishing
+ time or to have a slower algorithm with a higher probability of finding
+ a better finishing time.
 \end_layout
 
 \begin_layout Standard
 There is still a considerable room for improvement.
  As discussed in Section 3.3.2 no algorithms achieve optimal solutions for
  all instances of the test cases.
+ We have observed that many algorithms operate at two levels: small changes
+ like local search on one level and big changes like genetics on the other
+ level.
+ It might be interesting to design a three level algorithm.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -112,7 +101,8 @@ There is still a considerable room for improvement.
 \end_layout
 
 \begin_layout Standard
--
+-Dirk: volgens mij is dit van jou.
+ Ik snap niet zo heel veel wat ik hiermee moet.
 \end_layout
 
 \begin_layout Standard
