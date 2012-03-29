@@ -131,5 +131,34 @@ Noticeable is that there is trade-off, the algorithm will be either good
  around..
 \end_layout
 
+\begin_layout Standard
+------------------------DIRK VANAF HIER------------------------
+\end_layout
+
+\begin_layout Standard
+Heuristic algorithms are a great way of approximating a computationally
+ complex problem like the job shop problem for which no exact algorithm
+ exists.
+ In this paper we have shown an interesting type of heuristics called Genetic
+ Algorithms.
+\end_layout
+
+\begin_layout Standard
+Genetic Algorithms are an inter-disciplinary combination of modern computer
+ science and evolutionary principles.
+ {{So If Charles Darwin was a computer scientist, he would most likely be
+ a great enthusiast of Genetic Algorithms.
+ }}
+\end_layout
+
+\begin_layout Standard
+There is a trade-off between the time algorithms run and the probability
+ to find the best known answer for.
+ So when choosing between heuristics one must consider if it is more important
+ to get a quick schedule that might have a worst finishing time or to have
+ a slower algorithm with a higher probability of finding a better finishing
+ time.
+\end_layout
+
 \end_body
 \end_document
