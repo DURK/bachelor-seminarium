@@ -513,17 +513,17 @@ begin
 
 \begin_layout Plain Layout
 
-  initialize P(t) 
+  initialize P(t)
 \end_layout
 
 \begin_layout Plain Layout
 
-  localsearch to improve chromosomes  
+  localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Plain Layout
 
-  evaluate P(t)	  
+  evaluate P(t)
 \end_layout
 
 \begin_layout Plain Layout
@@ -533,27 +533,27 @@ begin
 
 \begin_layout Plain Layout
 
-    recombine P(t) by crossover and mutation	
+    O(t) = recombine P(t) by crossover and mutation
 \end_layout
 
 \begin_layout Plain Layout
 
-    localsearch to improve chromosomes		  
+	localsearch to improve chromosomes
 \end_layout
 
 \begin_layout Plain Layout
 
-    evaluate P(t)						 
+    evaluate O(t)
 \end_layout
 
 \begin_layout Plain Layout
 
-    select to new population P(t)				
+    select from O(t) and add to new population P(t+1)
 \end_layout
 
 \begin_layout Plain Layout
 
-    t++										
+    t++
 \end_layout
 
 \begin_layout Plain Layout
