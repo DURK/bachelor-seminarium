@@ -85,7 +85,7 @@ This chapter will cover a couple of methods that use pure genetic algorithms
 The JSP is a permutation problem as described in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Introduction-jsp"
+reference "sec:The-job-shop"
 
 \end_inset
 
@@ -604,7 +604,7 @@ key "goldberg1985"
 .
  The algorithm starts like a default crossover algorithm by selecting two
  chromosomes from the parental population.
- Next the algorithm chooses two random cutting positions as shown in figure
+ Next the algorithm chooses two random cutting positions as shown in Figure
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -650,7 +650,6 @@ Using this technique generates a valid new population, does exchange properties
 
 \begin_layout Standard
 \begin_inset Float figure
-placement p
 wide false
 sideways false
 status open
@@ -806,45 +805,6 @@ Using pure genetic algorithms will provide the user with a solution that
  search.
  The next section will show how combining genetic algorithms with local
  search will provide better solutions to problems than pure genetic algorithms.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/pseudo-to-figure.pdf
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:The-recombination-,-local"
-
-\end_inset
-
-The recombination-, local search-, and evaluation-steps in the pseudo-code
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
