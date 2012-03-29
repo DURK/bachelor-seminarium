@@ -68,8 +68,11 @@ In this section a genetic algorithm will be combined with a local search
  algorithm to approximate the optimal solution.
  The first part of this section will give an example of a genetic hybrid
  algorithm.
- The second part will show how this algorithm perform compared to other
+ The second part will show how this algorithm performs compared to other
  genetic hybrids.
+ Note that the given example is not the most efficient genetic hybrid algorithm
+ to solve JSP, but is does provide a convenient way of demonstrating how
+ JSP can be solved in a genetic hybrid approach.
 \end_layout
 
 \begin_layout Subsubsection
