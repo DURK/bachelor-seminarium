@@ -75,7 +75,6 @@ The job shop problem (JSP) is a well known problem because of its many possible
  applications in manufacturing.
  JSP is central to many supply chain problems that integrate production
  planning and scheduling.
- But it is also one of the hardest combinatorial problems.
  The JSP is defined as follows: "for n jobs and m machines, find a way to
  process jobs as fast as possible".
  The following must be taken in consideration:

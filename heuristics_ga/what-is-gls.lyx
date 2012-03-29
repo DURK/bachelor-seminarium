@@ -64,17 +64,17 @@ Genetic Hybrid Algorithms
 \end_layout
 
 \begin_layout Standard
-Genetic hybrid algorithms use multiple algorithms and combine them for better
- performance.
+Genetic hybrid algorithms take multiple heuristic algorithms and combine
+ them for better performance.
  As explained in Section 2.2, genetic algorithms converge slowly towards
  the optimal solution.
  It is possible to speed up this process by improving each chromosome.
- This enables the possibility to converge faster, while maintaining a widely
- covered search space.
- In this paper local search is used in combination with a genetic algorithm,
+ This allows faster convergence, while maintaining a widely covered search
+ space.
+ --As an example local search is picked combination with a genetic algorithm,
  making it a hybrid algorithm.
  After the explanation of local search, genetic local search is taken to
- demonstrate a genetic algorithm with local search.
+ demonstrate a genetic algorithm with local search.--
 \end_layout
 
 \begin_layout Subsubsection
@@ -82,10 +82,11 @@ Local Search
 \end_layout
 
 \begin_layout Standard
-Local search is a meta-heuristic method to find the optimal solution, something
- that isn't guaranteed.
- A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
-nsional search space.
+Local search is a meta-heuristic method to find the optimal solution.
+ Local search doesn't guarantee that the optimal solution will be found,
+ this will be explained later.
+ The A meta-heuristic is a combination of multiple heuristics, creating
+ a multi-dimensional search space.
  Local search starts with a candidate solution, which is given or picked
  at random.
  The candidate solution is then compared to its neighbourhood, searching
@@ -98,7 +99,7 @@ nsional search space.
  the current candidate solution.
  Because the best improvement searches the whole neighbourhood it converges
  slowly, while the first improvement is the other way around.
- See Table 1.
+ This is illustrated in Table 1.
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +268,7 @@ Fitness function c: maps
 \end_layout
 
 \begin_layout Itemize
-Neighborhood function: maps 
+Neighbourhood function: maps 
 \begin_inset Formula $F\rightarrow2^{F}$
 \end_inset
 
@@ -365,8 +366,11 @@ The x-axis represents the set F containing all feasible solutions, the y-axis
  As an example for the fitness function the blue dotted line is plotted.
  Note that this is a preferable fitness function, since there is a simple
  line towards the global maximum.
- Most fitness functions are looking more similar to g(x), which makes it
- harder for the algorithm to find the optimal solution.
+ Most fitness functions are looking more similar to 
+\begin_inset Formula $g(x)$
+\end_inset
+
+, which makes it harder for the algorithm to find the optimal solution.
 \end_layout
 
 \begin_layout Standard
@@ -450,8 +454,13 @@ reference "fig:The-recombination-,-local"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
-lstparams "basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4"
 inline false
 status open
 
@@ -520,8 +529,12 @@ begin
 end
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -536,6 +549,10 @@ Pseudo-code for optimization
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
