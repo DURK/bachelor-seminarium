@@ -445,7 +445,7 @@ This subsection will focus on genetic algorithms that heavily rely on local
  into local maxima, as shown in Section 2.2.
  The hybrid approach combines the best of both worlds by combining genetic
  algorithms that perform global search to avoid falling into local maxima
- with local search that handles the fine-tuning
+ with local search that handles the fine-tuning 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cheng99"
@@ -462,11 +462,7 @@ Typical genetic algorithms recombine parents, followed by mutation, in order
  to produce new chromosomes.
  Selection of chromosomes is based on their fitness.
  In standard genetic algorithms, this fitness can be calculated immediately
- after 'birth' by using a fitness function as shown in Section
-\emph on
- 2.2
-\emph default
-.
+ after 'birth' by using a fitness function as shown in Section 2.2.
  In genetic algorithms combined with local search, selection is based on
  fitness after performing local search.
  This means offspring will be improved and these improvements will be passed

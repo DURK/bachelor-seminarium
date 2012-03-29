@@ -86,7 +86,7 @@ From 1960 until 1970 a new form of heuristics was introduced that was inspired
 Simultaneously two major algorithms were developed.
  On one side of the the globe the German computer scientist Rechenberg introduce
 d Evolutionary Algorithms and on the other side Johan Holland developed
- Genetic Algorithms at the University of Michigan
+ Genetic Algorithms at the University of Michigan 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rechenberg1973,Holland-1975"
@@ -133,14 +133,14 @@ Once this fitness is known a new generation can be created by selecting
  These two chromosomes will now be used to create a new chromosome, using
  a crossover technique that will be explained later on in this section.
  Using this strategy, the population will overall become better with each
- new generation.
+ new generation 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "introduction-ga"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
