@@ -94,7 +94,9 @@ nsional search space.
  The 'best improvement' selects the best solution in its entire neighbourhood,
  while the 'first improvement' selects the first solution that's better
  than the current candidate solution.
- Zie tabel.
+ Because the best improvement searches the whole neighbourhood it converges
+ slowly, while the first improvement is the other way around.
+ See tabel 1.
 \end_layout
 
 \begin_layout Standard
@@ -279,8 +281,8 @@ Neighborhood function: maps
 
 \begin_deeper
 \begin_layout Itemize
-For CLIQUE: adding or removing a node to the current selection of nodes
- to check if it forms a CLIQUE.
+Adding or removing a node to the current selection of nodes to check if
+ it forms a CLIQUE.
 \end_layout
 
 \end_deeper
@@ -349,55 +351,35 @@ Visualization of search space and fitness function
 \end_layout
 
 \begin_layout Standard
-The x-axis represents the set F containing all the feasible solutions.
- The y-axis represents 
+The x-axis represents the set F containing all the feasible solutions, the
+ y-axis represents 
 \begin_inset Formula $c(x)$
 \end_inset
 
 .
+ As an example for the fitness function the blue dotted line is plotted.
+ Note that this is a prefeable fitness function, since there is a simple
+ line towards the global maximum.
+ Most fitness functions are looking more similar to g(x), which makes it
+ harder for the algorithm to find the optimal solution.
 \end_layout
 
 \begin_layout Standard
-Imagine that the algorithm starts at the local minimum between point 
-\begin_inset Formula $b$
-\end_inset
-
- and 
-\begin_inset Formula $c$
-\end_inset
-
-.
- The next iterative step will lead to a candidate solution in the direction
- of point 
-\begin_inset Formula $b$
-\end_inset
-
-.
- This process continues until the candidate solution is at point 
-\begin_inset Formula $b$
-\end_inset
-
-.
- Knowing that the global maximum is point a, the algorithm will return point
+Now imagine that the algorithm starts at the local minimum marked with a
  
-\begin_inset Formula $b$
+\begin_inset Formula $s$
 \end_inset
 
-, another local maximum.
- It's easy to understand that the local search algorithm only return the
- nearest local maximum.
-\end_layout
-
-\begin_layout Standard
-The fitness function c(x) is represented as the blue dotted line.
- This function is determined by the user and is an approximation to g(x).
- Several choices are available, with different outcomes.
- If the function c(x) is identical to g(x), local search will be the most
- accurate.
- Note that generating the function c(x) identical to g(x) is almost impossible
- in real life problems.
- Generating function c(x) like the blue dotted line will decrease the amount
- of local maxima, making it less accurate.
+.
+ The grey area represents the neighbourhood of the candidate solution.
+ The next iterative step will lead to a candidate solution in the direction
+ of the local maximum on the right, since the fitness value of the solution
+ to its right is higher then the solution to the left.
+ This process continues until the candidate solution reaches this local
+ maximum.
+ Remember that local search will terminate here and returns the solution
+ at this local maximum, but it is not the global maximum.
+ This is avoidable with a genetic algorithm.
 \end_layout
 
 \begin_layout Subsubsection
