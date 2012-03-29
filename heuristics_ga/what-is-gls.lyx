@@ -74,7 +74,7 @@ Genetic hybrid algorithms use multiple algorithms and combine them for better
  In this paper local search is used in combination with a genetic algorithm,
  making it a hybrid algorithm.
  After the explanation of local search, genetic local search is taken to
- demonstrate as a genetic algorithm with local search.
+ demonstrate a genetic algorithm with local search.
 \end_layout
 
 \begin_layout Subsubsection
@@ -82,7 +82,8 @@ Local Search
 \end_layout
 
 \begin_layout Standard
-Local search is a meta-heuristic method to find the optimal solution.
+Local search is a meta-heuristic method to find the optimal solution, something
+ that isn't guaranteed.
  A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
 nsional search space.
  Local search starts with a candidate solution, which is given or picked
@@ -90,13 +91,14 @@ nsional search space.
  The candidate solution is then compared to its neighbourhood, searching
  for a better solution in each dimension of the search space.
  The evaluation of a neighbourhood is done by the fitness function.
- From here there are two options; the best improvement and the first improvement.
- The 'best improvement' selects the best solution in its entire neighbourhood,
- while the 'first improvement' selects the first solution that's better
- than the current candidate solution.
+ From here there are two options: the 'best improvement' and the 'first
+ improvement'.
+ The best improvement selects the best solution in its entire neighbourhood,
+ while the first improvement selects the first solution that is better than
+ the current candidate solution.
  Because the best improvement searches the whole neighbourhood it converges
  slowly, while the first improvement is the other way around.
- See tabel 1.
+ See Table 1.
 \end_layout
 
 \begin_layout Standard
@@ -230,12 +232,13 @@ Comparison best- and first improvement
 \end_layout
 
 \begin_layout Standard
-When local search finds this, or a, better solution it sets this as new
+When local search finds this, or a better, solution it sets this as new
  candidate solution.
  The algorithm will terminate if a better solution in this neighbourhood
  doesn't exists.
  Termination can also take place if a certain amount of iterative steps
- has been called or if the candidates fitness has reached a certain value.
+ has been taken or if the candidates fitness has reached a user specified
+ value.
  
 \end_layout
 
@@ -318,7 +321,9 @@ First improvement: Selecting
 
 \end_deeper
 \begin_layout Standard
+\align center
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -326,7 +331,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../jobshop/images/localsearch.pdf
-	width 100text%
+	width 66text%
 
 \end_inset
 
@@ -351,14 +356,14 @@ Visualization of search space and fitness function
 \end_layout
 
 \begin_layout Standard
-The x-axis represents the set F containing all the feasible solutions, the
- y-axis represents 
+The x-axis represents the set F containing all feasible solutions, the y-axis
+ represents 
 \begin_inset Formula $c(x)$
 \end_inset
 
 .
  As an example for the fitness function the blue dotted line is plotted.
- Note that this is a prefeable fitness function, since there is a simple
+ Note that this is a preferable fitness function, since there is a simple
  line towards the global maximum.
  Most fitness functions are looking more similar to g(x), which makes it
  harder for the algorithm to find the optimal solution.
@@ -373,8 +378,8 @@ Now imagine that the algorithm starts at the local minimum marked with a
 .
  The grey area represents the neighbourhood of the candidate solution.
  The next iterative step will lead to a candidate solution in the direction
- of the local maximum on the right, since the fitness value of the solution
- to its right is higher then the solution to the left.
+ of the local maximum on the right side, since the fitness value of the
+ solution to its right is higher then the solution to the left side.
  This process continues until the candidate solution reaches this local
  maximum.
  Remember that local search will terminate here and returns the solution
@@ -392,11 +397,7 @@ This subsection will focus on genetic algorithms that heavily rely on local
  Genetic algorithms are designed to be effective at global search, but converge
  slowly.
  Local search on the other hand is effective at fine-tuning but often falls
- into local maxima, as shown in 
-\emph on
-Section 2.2
-\emph default
-.
+ into local maxima, as shown in Section 2.2.
  The hybrid approach combines the best of both worlds by combining genetic
  algorithms that perform global search to avoid falling into local maxima
  with local search that handles the fine-tuning
