@@ -392,6 +392,12 @@ Now imagine that the algorithm starts at the local minimum marked with a
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Genetic-Local-Search"
+
+\end_inset
+
 Genetic Local Search
 \end_layout
 

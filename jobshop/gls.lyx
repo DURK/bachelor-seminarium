@@ -143,8 +143,8 @@ key "Cesar-Rego-and-Renato-Duarte-2009"
 \end_layout
 
 \begin_layout Standard
-Now consider SB-GA, a hybrid genetic approach for the SBP, proposed by Dorndorf
- and Pesch
+Now consider the Shifting Bottleneck Genetic Algorithm (SB-GA), a hybrid
+ genetic approach for the SBP, proposed by Dorndorf and Pesch
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dorndorf199525"
@@ -294,17 +294,17 @@ Performance
 \end_layout
 
 \begin_layout Standard
-To illustrate the effectiveness of the genetic algorithm above, a set of
- test problems is needed.
+To illustrate the effectiveness of the hybrid genetic algorithm that was
+ explained in the previous section, a set of test problems is required.
  Consider the following test suite of standard JSP problems: three problems
- (ft06, ft10, ft20) from Fisher and Thompson
+ (ft06, ft10, ft20) as defined by Fisher and Thompson
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fisher63probabilisticlearning"
 
 \end_inset
 
- and 40 problems from Lawrence
+ and the fourty problems defined by Lawrence
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lawrence-1984"
@@ -312,15 +312,15 @@ key "Lawrence-1984"
 \end_inset
 
 .
- The number of jobs for these problems ranges from 6 to 30, the number of
- operations for each job ranges from 5 to 15 and the number of operations
- for all jobs ranges from 36 to 300.
+ The number of jobs for these problems ranges from six to thirty, the number
+ of operations for each job ranges from five to fiteen and the number of
+ operations for all jobs ranges from 36 to 300.
  This is the typical test suite for JSP.
 \end_layout
 
 \begin_layout Standard
 AT&T Labs Research made a comparison in 2002 between their self-introduced
- GLS and 12 other approaches to JSP, including SB-GA
+ GLS and twelve other approaches to JSP, including SB-GA
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Goncalves_ahybrid"
@@ -329,8 +329,7 @@ key "Goncalves_ahybrid"
 
 .
  In their results, SB-GA was able to solve 35 out of 43 instances, of which
- 17 where solved to optimally.
- In other words, almost half of these solutions were equal to the 
+ 17 were found be equal to the 
 \emph on
 best-known solution
 \emph default
@@ -679,7 +678,7 @@ Comparison between well-known GAs for JSP.
 \end_layout
 
 \begin_layout Standard
-Another performance-test for SB-GA was done in 1996 by Lenstra
+Another performance-test for SB-GA was executed in 1996 by Lenstra
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vaessens-Aarts-Lenstra-1996"
@@ -687,8 +686,8 @@ key "Vaessens-Aarts-Lenstra-1996"
 \end_inset
 
 , showing that SB-GA found solutions closer to the BKS than other genetic
- algorithms, and in most cases in less time.
- Note Gonçalves's algorithm had not been proposed by then.
+ algorithms and in most cases in less time.
+ Note Gonçalves's algorithm had not been proposed yet.
  It seemed SB-GA worked especially well for the most difficult 15x15 problems
  (LA36-LA40).
  This benchmark shows an ARD of 1,48%, which is close to the 1,42% AT&T
@@ -703,7 +702,14 @@ Computer Independent Computation Time
 \emph default
 at 4.500.
  Compared to other hybrid GAs this is relatively small, but compared to
- the non-genetic SPB this is relatively big, as can be seen in Table 3.
+ the non-genetic SPB this is relatively large, as can be seen in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Comparison-between-well-known"
+
+\end_inset
+
+.
  SBP as proposed by Adams
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1006,6 +1012,12 @@ SBP
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Comparison-between-well-known"
+
+\end_inset
+
 Comparison between well-known GAs for JSP and the standard SBP.
  CICT is defined as the approximated Computer Independent Computation Time.
 \end_layout
@@ -1022,13 +1034,26 @@ Comparison between well-known GAs for JSP and the standard SBP.
 
 \begin_layout Standard
 For the sake of clarity, the ARD and CICT of the SBP and its genetic variant
- are shown in Table 4.
- The data in this table confirm the claims made in Section 2.3.2 about the
- main differences between GAs and local search.
+ are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Comparison-between-SB-GA"
+
+\end_inset
+
+.
+ The data in this table confirms the claims made in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Genetic-Local-Search"
+
+\end_inset
+
+ about the main differences between GAs and local search.
  The relatively high CICT of SB-GA confirms that the genetic algorithm converges
- slowly, and the relatively low ARD confirms the algorithm has done a better
+ slowly and the relatively low ARD confirms the algorithm has done a better
  job finding the global maximum.
- Exactly the opposite claims count for SBP.
+ Exactly the opposite claims can be made for SBP.
 \end_layout
 
 \begin_layout Standard
@@ -1196,6 +1221,12 @@ SBP
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Comparison-between-SB-GA"
+
+\end_inset
+
 Comparison between SB-GA and the standard SBP.
 \end_layout
 
@@ -1212,8 +1243,8 @@ Comparison between SB-GA and the standard SBP.
 \begin_layout Standard
 Unfortunately, more recent publications of SB-GA benchmarks for the standard
  JSP are unavailable.
- This is because in the last decade, scientists have moved forward from
- a standard JSP to more complex problems like the flexible multi-objective
+ This is probably because in the last decade, researchrs have moved forward
+ from a standard JSP to more complex problems like the flexible multi-objective
  JSP (fJSP), which is beyond the scope of this paper.
 \end_layout
 
