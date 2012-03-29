@@ -553,7 +553,7 @@ key "gen1994"
 This solves the preceding constraint but there is still a problem left,
  which is repetition.
  There are a fixed number of operations within a job and using plain crossover
- methods could result in having a job occuring more times than there are
+ methods could result in having a job occurring more times than there are
  operations for this job while another job occurs less times than there
  are operations.
  This cannot be fixed in the operation and will therefore be fixed in the
