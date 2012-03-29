@@ -1,14 +1,600 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2012.3.11)  11 MAR 2012 18:48
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.6.16)  29 MAR 2012 23:35
 entering extended mode
-**C:/Users/karensg/seminarium/bachelor-seminarium/master.lyx
-(C:/Users/karensg/seminarium/bachelor-seminarium/master.lyx
-! You can't use `macro parameter character #' in vertical mode.
-l.1 #
-     LyX 2.0 created this file. For more info see http://www.lyx.org/
-? 
-! Emergency stop.
-l.1 #
-     LyX 2.0 created this file. For more info see http://www.lyx.org/
-End of file on the terminal!
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**master.tex
+(./master.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-!  ==> Fatal error occurred, no output PDF file produced!
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks17
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks18
+\float@box=\box28
+\@float@everytoks=\toks19
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks25
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks26
+\ex@=\dimen107
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks27
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks28
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks29
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count109
+
+(./a4wide.sty (/usr/local/texlive/2010/texmf-dist/tex/latex/ntgclass/a4.sty
+
+LaTeX Warning: You have requested package `a4wide',
+               but the package provides `a4'.
+
+Package: a4 2004/04/15 v1.2g A4 based page layout
+)) (/usr/local/texlive/2010/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+)
+\c@ContinuedFloat=\count110
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count111
+\sf@farskip=\skip49
+\sf@captopadj=\dimen124
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count112
+\c@subfigure@save=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@subtable@save=\count116
+\c@lotdepth=\count117
+\sf@top=\skip52
+\sf@bottom=\skip53
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count118
+\U@D=\dimen125
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+))
+(./master.aux)
+\openout1 = `master.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+\c@lstlisting=\count119
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen126
+\scratchbox=\box32
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen127
+\MPnumerator=\count124
+\everyMPtoPDFconversion=\toks33
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 38.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) (./abstract.tex) (./introduction.tex
+
+LaTeX Warning: Citation `Vaessens-Aarts-Lenstra-1996' on page 1 undefined on in
+put line 2.
+
+
+LaTeX Warning: Citation `Fisher63probabilisticlearning' on page 1 undefined on 
+input line 24.
+
+
+LaTeX Warning: Citation `carlier-pinson' on page 1 undefined on input line 26.
+
+
+LaTeX Warning: Citation `Goncalves_ahybrid' on page 1 undefined on input line 2
+8.
+
+) [1
+
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./heuristics_ga/introduction.tex) (./heuristics_ga/what-are-heurstics.tex
+
+LaTeX Warning: Citation `Bentley-1982' on page 2 undefined on input line 31.
+
+[2]
+
+LaTeX Warning: Citation `Cormen-Leiserson-Rivest-Stein-2001' on page 3 undefine
+d on input line 47.
+
+) (./heuristics_ga/what-are-ga.tex
+
+LaTeX Warning: Citation `rechenberg1973' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation `Holland-1975' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation `introduction-ga' on page 3 undefined on input line 43.
+
+
+[3]) (./heuristics_ga/what-is-gls.tex [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+
+<jobshop/images/localsearch.pdf, id=27, 519.9425pt x 288.07625pt>
+File: jobshop/images/localsearch.pdf Graphic file (type pdf)
+
+<use jobshop/images/localsearch.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+
+LaTeX Warning: Citation `cheng99' on page 6 undefined on input line 131.
+
+<jobshop/images/pseudo-to-figure.pdf, id=34, 692.5875pt x 257.96375pt>
+File: jobshop/images/pseudo-to-figure.pdf Graphic file (type pdf)
+
+<use jobshop/images/pseudo-to-figure.pdf>) [6 <./jobshop/images/localsearch.pdf
+>] [7 <./jobshop/images/pseudo-to-figure.pdf>] (./jobshop/introduction.tex
+<jobshop/images/jobshop_1.pdf, id=204, 1106.1325pt x 202.7575pt>
+File: jobshop/images/jobshop_1.pdf Graphic file (type pdf)
+
+<use jobshop/images/jobshop_1.pdf>
+Overfull \hbox (3.33252pt too wide) in paragraph at lines 28--29
+[][] 
+ []
+
+<jobshop/images/jobshop2.pdf, id=205, 1106.1325pt x 202.7575pt>
+File: jobshop/images/jobshop2.pdf Graphic file (type pdf)
+
+<use jobshop/images/jobshop2.pdf>
+<jobshop/images/jobshop3.pdf, id=206, 1106.1325pt x 202.7575pt>
+File: jobshop/images/jobshop3.pdf Graphic file (type pdf)
+
+<use jobshop/images/jobshop3.pdf>
+Overfull \hbox (3.33252pt too wide) in paragraph at lines 36--37
+[][] 
+ []
+
+<jobshop/images/jobshop4.pdf, id=207, 1106.1325pt x 202.7575pt>
+File: jobshop/images/jobshop4.pdf Graphic file (type pdf)
+
+<use jobshop/images/jobshop4.pdf>
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 42--42
+[][] 
+ []
+
+) (./jobshop/ga.tex
+
+LaTeX Warning: Citation `nakano1991' on page 8 undefined on input line 37.
+
+
+LaTeX Warning: Citation `permuations' on page 8 undefined on input line 41.
+
+[8] [9 <./jobshop/images/jobshop_1.pdf> <./jobshop/images/jobshop2.pdf> <./jobs
+hop/images/jobshop3.pdf> <./jobshop/images/jobshop4.pdf>]
+
+LaTeX Warning: Citation `cheng99' on page 10 undefined on input line 55.
+
+
+LaTeX Warning: Citation `operation-based' on page 10 undefined on input line 55
+.
+
+<jobshop/images/ga-jsp1.pdf, id=414, 678.535pt x 157.58875pt>
+File: jobshop/images/ga-jsp1.pdf Graphic file (type pdf)
+
+<use jobshop/images/ga-jsp1.pdf>
+Overfull \hbox (3.33252pt too wide) in paragraph at lines 70--71
+[][] 
+ []
+
+<jobshop/images/ga-jsp2.pdf, id=415, 678.535pt x 156.585pt>
+File: jobshop/images/ga-jsp2.pdf Graphic file (type pdf)
+
+<use jobshop/images/ga-jsp2.pdf>
+<jobshop/images/ga-jsp3.pdf, id=416, 678.535pt x 157.58875pt>
+File: jobshop/images/ga-jsp3.pdf Graphic file (type pdf)
+
+<use jobshop/images/ga-jsp3.pdf>
+Overfull \hbox (3.33252pt too wide) in paragraph at lines 77--78
+[][] 
+ []
+
+<jobshop/images/ga-jsp4.pdf, id=417, 678.535pt x 157.58875pt>
+File: jobshop/images/ga-jsp4.pdf Graphic file (type pdf)
+
+<use jobshop/images/ga-jsp4.pdf>
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 83--83
+[][] 
+ []
+
+<jobshop/images/ga-jsp5.pdf, id=418, 202.7575pt x 118.4425pt>
+File: jobshop/images/ga-jsp5.pdf Graphic file (type pdf)
+
+<use jobshop/images/ga-jsp5.pdf>
+
+LaTeX Warning: Citation `gen1994' on page 10 undefined on input line 105.
+
+
+LaTeX Warning: Citation `syswerda1989' on page 10 undefined on input line 134.
+
+
+LaTeX Warning: Citation `davis1985' on page 10 undefined on input line 134.
+
+
+LaTeX Warning: Citation `cheng1997' on page 10 undefined on input line 134.
+
+
+LaTeX Warning: Citation `goldberg1985' on page 10 undefined on input line 140.
+
+[10] [11 <./jobshop/images/ga-jsp1.pdf> <./jobshop/images/ga-jsp2.pdf> <./jobsh
+op/images/ga-jsp3.pdf> <./jobshop/images/ga-jsp4.pdf> <./jobshop/images/ga-jsp5
+.pdf>] <jobshop/images/pmx_1.pdf, id=796, 684.5575pt x 93.34875pt>
+File: jobshop/images/pmx_1.pdf Graphic file (type pdf)
+
+<use jobshop/images/pmx_1.pdf>
+<jobshop/images/pmx_2.pdf, id=797, 684.5575pt x 209.78375pt>
+File: jobshop/images/pmx_2.pdf Graphic file (type pdf)
+
+<use jobshop/images/pmx_2.pdf>
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 163--167
+[][][] 
+ []
+
+<jobshop/images/pmx_3.pdf, id=798, 685.56125pt x 210.7875pt>
+File: jobshop/images/pmx_3.pdf Graphic file (type pdf)
+
+<use jobshop/images/pmx_3.pdf>) (./jobshop/gls.tex [12 <./jobshop/images/pmx_1.
+pdf> <./jobshop/images/pmx_2.pdf> <./jobshop/images/pmx_3.pdf>]
+
+LaTeX Warning: Citation `Adams-and-Joseph-1988' on page 13 undefined on input l
+ine 35.
+
+
+LaTeX Warning: Citation `Cesar-Rego-and-Renato-Duarte-2009' on page 13 undefine
+d on input line 38.
+
+
+LaTeX Warning: Citation `Dorndorf199525' on page 13 undefined on input line 41.
+
+
+
+LaTeX Warning: Citation `cheng99' on page 13 undefined on input line 47.
+
+
+LaTeX Warning: Citation `cheng99' on page 13 undefined on input line 69.
+
+
+LaTeX Warning: Citation `Fisher63probabilisticlearning' on page 13 undefined on
+ input line 79.
+
+
+LaTeX Warning: Citation `Lawrence-1984' on page 13 undefined on input line 80.
+
+
+LaTeX Warning: Citation `Goncalves_ahybrid' on page 13 undefined on input line 
+87.
+
+
+LaTeX Warning: Citation `AARTSE.H.L.:1994' on page 13 undefined on input line 9
+4.
+
+
+LaTeX Warning: Citation `Croce1995' on page 13 undefined on input line 94.
+
+
+LaTeX Warning: Citation `Goncalves_ahybrid' on page 13 undefined on input line 
+95.
+
+[13]
+
+LaTeX Warning: Citation `Vaessens-Aarts-Lenstra-1996' on page 14 undefined on i
+nput line 127.
+
+
+LaTeX Warning: Citation `Adams-and-Joseph-1988' on page 14 undefined on input l
+ine 137.
+
+) [14] (./conclusion.tex) [15]
+No file master.bbl.
+(./master.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5742 strings out of 493747
+ 80427 string characters out of 3143546
+ 148155 words of memory out of 3000000
+ 8896 multiletter control sequences out of 15000+200000
+ 18365 words of font info for 51 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 44i,10n,45p,450b,1208s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/
+texlive/2010/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+2010/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2010
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2010/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on master.pdf (15 pages, 942163 bytes).
+PDF statistics:
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 906 compressed objects within 10 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
