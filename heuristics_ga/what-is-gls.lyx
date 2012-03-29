@@ -71,10 +71,10 @@ Genetic hybrid algorithms take multiple heuristic algorithms and combine
  It is possible to speed up this process by improving each chromosome.
  This allows faster convergence, while maintaining a widely covered search
  space.
- --As an example local search is picked combination with a genetic algorithm,
- making it a hybrid algorithm.
- After the explanation of local search, genetic local search is taken to
- demonstrate a genetic algorithm with local search.--
+ In this section local search will be used to assist the genetic algorithm
+ for a faster convergence.
+ At the end of this section an example of a genetic local search with local
+ search is presented, genetic local search.
 \end_layout
 
 \begin_layout Subsubsection
@@ -83,15 +83,15 @@ Local Search
 
 \begin_layout Standard
 Local search is a meta-heuristic method to find the optimal solution.
- Local search doesn't guarantee that the optimal solution will be found,
- this will be explained later.
- The A meta-heuristic is a combination of multiple heuristics, creating
- a multi-dimensional search space.
+ However, local search doesn't guarantee that the optimal solution will
+ be found, this will be explained later.
+ A meta-heuristic is a combination of multiple heuristics, creating a multi-dime
+nsional search space.
  Local search starts with a candidate solution, which is given or picked
  at random.
  The candidate solution is then compared to its neighbourhood, searching
  for a better solution in each dimension of the search space.
- The evaluation of a neighbourhood is done by the fitness function.
+ The evaluation of a neighbourhood is done by a fitness function.
  From here there are two options: the 'best improvement' and the 'first
  improvement'.
  The best improvement selects the best solution in its entire neighbourhood,
@@ -248,13 +248,32 @@ Example
 \end_layout
 
 \begin_layout Standard
-Consider the following notions for the CLIQUE-problem.
+Consider the following notions for the MAXCLIQUE-problem.
 \end_layout
 
 \begin_layout Itemize
-Set F contains all feasible solutions.
+Set F contains all feasible solutions 
+\begin_inset Formula $x$
+\end_inset
+
+.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Every possible selection of nodes.
+ 
+\begin_inset Formula $|x|$
+\end_inset
+
+ will be 
+\begin_inset Formula $2...|F|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Fitness function c: maps 
 \begin_inset Formula $F\rightarrow\mathbb{R}$
@@ -267,8 +286,19 @@ Fitness function c: maps
 .
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Neighbourhood function: maps 
+c(x) must hold: c(2-size clique) < c(3-size clique) < ...
+ < c(n-size clique)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Neighbourhood function 
+\begin_inset Formula $N(x)$
+\end_inset
+
+: maps 
 \begin_inset Formula $F\rightarrow2^{F}$
 \end_inset
 
@@ -305,6 +335,7 @@ Best improvement: Selecting
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -343,7 +374,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Visualization of search space and fitness function
+Visualization of a search space and fitness function
 \end_layout
 
 \end_inset
