@@ -91,7 +91,7 @@ Heuristic algorithms are developed in order to solve problems for which
  too much time or space.
  Using heuristics, the optimal solution to a problem can be approximated
  within an acceptable amount of time.
- The amount of time that would lie between the margins of acceptability,
+ The amount of time that would lie between the margins of acceptability
  is defined by the user of the heuristic and depends on the problem.
  Also, computer scientists want the most efficient algorithms to find these
  approximations to the optimal solution for a problem.
@@ -136,12 +136,19 @@ A greedy algorithm always makes the choice that looks best in the current
  In other words, greedy algorithms continuously make a locally optimal choice
  in the hope that this choice will lead to a globally optimal solution.
  The definition of a local and global optimal, which can be either a maximum
- or a minimum, will be explained in 
+ or a minimum, will be explained in Section 
 \emph on
-Section 2.2
-\emph default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Genetic-algorithms"
+
+\end_inset
+
 .
- In case of the TSP, each local optimal choice could be defined as visiting
+ 
+\emph default
+In case of the TSP, each local optimal choice could be defined as visiting
  an unvisited city nearest to the current city.
 \end_layout
 
